@@ -1,0 +1,147 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+//@use "../-node_modules/bootstrap/scss/functions";
+@import "bootstrap-5.3.8/functions";
+
+// 2. Include any default variable overrides here
+
+$blue: #131879;
+$teal: #00A19A; 
+/*
+$primary: #000000;
+//$secondary: #000000;
+$secondary: #00A19A; 
+$body-color: #000000; //var(--wtf-body-color);
+//$primary: #000000; //var(--wtf-primary);
+//$secondary: #00A19A; // 0,161,154 
+//$body-color: #343a40; //same as gray-800 in bs //52, 58, 64
+*/
+
+//$blue: #131879;
+//$enable-shadows: true;
+$grid-columns:100;
+//$grid-gutter-width: 0rem;
+$prefix: "wtf-";
+
+//btn
+$btn-border:0;
+$btn-border-radius:0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+
+$carousel-control-width:5%;
+
+
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "bootstrap-5.3.8/variables-wtf";
+@import "bootstrap-5.3.8/variables-dark";
+
+// 4. Include any default map overrides here
+
+/*
+$default-font-size: 1.6rem;
+
+$font-family: Verdana, Arial, Helvetica, 'sans-serif';
+$font-family-error: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+*/
+
+//all wtf variables here
+@import "variables";
+
+
+
+// 5. Include remainder of required parts
+@import "bootstrap-5.3.8/maps";
+@import "bootstrap-5.3.8/mixins";
+@import "bootstrap-5.3.8/root";
+
+
+// 6. Optionally include any other parts as needed
+@import "bootstrap-5.3.8/utilities";
+@import "bootstrap-5.3.8/reboot";
+@import "bootstrap-5.3.8/type";
+@import "bootstrap-5.3.8/images";
+@import "bootstrap-5.3.8/containers";
+@import "bootstrap-5.3.8/grid";
+@import "bootstrap-5.3.8/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "bootstrap-5.3.8/utilities/api";
+
+
+
+// 8. Add additional custom code here
+@import "bootstrap-5.3.8/bootstrap";
+
+
+//Base 1.Mixins 2.Animations 3.Typography
+@import "Abase-animations";
+@import "Abase-line";
+@import "Abase-iconic";
+
+//colour modes
+@import "colour-background";
+@import "colour-mode-dark";
+@import "colour-mode-mar";
+@import "colour-mode-marlene";
+@import "colour-mode-gradient";
+
+@import "badge";
+
+@import "breadcrumb";
+
+@import "button";
+
+@import "calendar";
+
+@import "card";
+
+@import "divider";
+
+@import "dropdown-btn-mode-line";
+@import "dropdown-btn-mode-base";
+@import "dropdown-btn-mode-iconic";
+
+@import "error"; //404 page
+
+@import "feature";
+
+@import "footer-line";
+
+@import "form";
+
+@import "gallery";
+
+@import "hero-cover-line"; 
+@import "hero";
+
+@import "list-iconic";
+@import "list-wp";
+
+@import "nav-line";
+
+@import "navbar-iconic";
+@import "navbar-line";
+
+@import "portfolio";
+
+@import "separator-wp";
+
+@import "table-comparison-line";
+
+@import "tooltip";
+
+@import "typo";
+@import "typo-line";
+
+
+
+
+
+
+/*  wtf Site */
+@import "wtf-body";
+@import "work-logos"; 
