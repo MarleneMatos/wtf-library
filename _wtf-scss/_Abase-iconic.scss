@@ -1,0 +1,103 @@
+$wtf-line-border-radius: 3px;
+$wtf-line-border-height: 3px; //how thick line will be
+$wtf-line-title-width: 70px;
+
+//variables
+//$wtf-line-card-flip-bg-image: url(/wp-content/uploads/cropped-wtf-logo-square-wbg.png);
+//$custom-title-icon-before: url(../../assets/icons/icomoon-free490/SVG/flickr.svg);
+$wtf-line-card-flip-bg-image: url(../../_wp-webtechfocus-v2/wp-content/uploads/wtf-logo.png);
+$wtf-line-card-flip-height: 52rem;
+$wtf-line-card-flip-image-height: 23rem;
+$wtf-line-card-flip-perspective: 150rem;
+$wtf-line-card-flip-front-bg-colour: $white;
+$wtf-line-card-flip-linear-gradient-colour-light: $wtf-colour-primary-light;
+$wtf-line-card-flip-linear-gradient-colour-dark: $wtf-colour-primary-dark;
+
+/* -- line Title -- */
+
+// @include wtfIconicTitle;
+@mixin wtfIconicTitle {
+  &::after {
+    content: "";
+    //background-image: var(--wtf-primary);
+    background-color: var(--wtf-heading-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    height: $wtf-line-border-height;
+    width: $wtf-line-title-width;
+    border-radius: $wtf-line-border-radius !important;
+  }
+
+}
+
+// @include wtfIconicNavLink;
+@mixin wtfIconicNavLink {
+  &-link {
+    position: relative;
+    font-family: var(--wtf-body-font-family);
+    @include wtfp;
+
+    &:hover {
+      &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: $wtf-line-border-height;
+        border-radius: $wtf-line-border-radius !important;
+        background-color: var(--wtf-heading-color);
+        margin-bottom: 5px;
+      }
+
+    }
+
+    &.active {
+      color: var(--wtf-primary);
+
+      &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: $wtf-line-border-height;
+        border-radius: $wtf-line-border-radius !important;
+        background-color: var(--wtf-heading-color);
+
+      }
+    }
+
+  }
+
+}
+
+// @include wtfIconic;
+@mixin wtfIconic {
+  border: $wtf-line-border-height solid var(--wtf-heading-color);
+  border-radius: $wtf-line-border-radius;
+
+}
+
+// @include wtfIconicBottom;
+@mixin wtfIconicBottom {
+  border-bottom: $wtf-line-border-height solid var(--wtf-heading-color);
+
+}
+
+
+//@include wtfIconicMenuIcon;
+@mixin wtfIconicMenuIcon {
+  width: calc($wtf-menu-icon-width * $fraction-lg);
+  height: $wtf-line-border-height;
+  //border-bottom-width: $wtf-line-border-height;
+  border-radius: $wtf-line-border-radius !important;
+  display: inline-block;
+
+  @include media-breakpoint-up(sm) {
+    width: $wtf-menu-icon-width;
+  }
+}

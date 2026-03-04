@@ -1,0 +1,285 @@
+/*  buttons */
+// @include btn-box-shadow;
+@mixin btn-box-shadow {
+    box-shadow: 0px 3px 6px rgba(0, 42, 94, 0.3);
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 42, 94, 0.3);
+    -moz-box-shadow: 0px 3px 6px rgba(0, 42, 94, 0.3);
+}
+
+
+/*  header */
+// @include nav-box-shadow;
+@mixin nav-box-shadow {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+// @include savingsBox-inner-shadow;
+@mixin savingsBox-inner-shadow {
+    box-shadow: 0px 3px 5px rgba($black, 0.16);
+    -webkit-box-shadow: 0px 3px 5px rgba($black, 0.16);
+    -moz-box-shadow: 0px 3px 5px rgba($black, 0.16);
+}
+
+// @include savingsBox-outer-shadow;
+@mixin savingsBox-outer-shadow {
+    box-shadow: 0px 10px 15px rgba($black, 0.16);
+    -webkit-box-shadow: 0px 10px 15px rgba($black, 0.16);
+    -moz-box-shadow: 0px 10px 15px rgba($black, 0.16);
+}
+
+// @include savingsBox-outer-shadow-hover;
+@mixin savingsBox-outer-shadow-hover {
+    box-shadow: 0px 10px 15px rgba($black, 0.26);
+    -webkit-box-shadow: 0px 10px 15px rgba($black, 0.26);
+    -moz-box-shadow: 0px 10px 15px rgba($black, 0.26);
+}
+
+// @include savingsRow-shadow-hover;
+@mixin savingsRow-shadow-hover {
+    box-shadow: 0px 0px 5px 3px rgba($black, 0.1);
+    -webkit-box-shadow: 0px 0px 5px 3px rgba($black, 0.1);
+    -moz-box-shadow: 0px 0px 5px 3px rgba($black, 0.1);
+}
+
+// @include checkbox-shadow;
+@mixin checkbox-shadow {
+    box-shadow: 1px 1px rgba($black, 0.16);
+    -webkit-box-shadow: 1px 1px rgba($black, 0.16);
+    -moz-box-shadow: 1px 1px rgba($black, 0.16);
+}
+
+
+// @include input-shadow;
+@mixin input-shadow {
+    box-shadow: 1px 1px rgba($black, 0.16);
+    -webkit-box-shadow: 1px 1px rgba($black, 0.16);
+    -moz-box-shadow: 1px 1px rgba($black, 0.16);
+}
+// @include input-shadow-hover;
+@mixin input-shadow-hover {
+    box-shadow: 1px 1px rgba($primary, 0.16);
+    -webkit-box-shadow: 1px 1px rgba($primary, 0.16);
+    -moz-box-shadow: 1px 1px rgba($primary, 0.16);
+}
+
+/*  general */
+// @include general-box-shadow;
+@mixin general-box-shadow {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+// @include remove-box-shadow;
+@mixin remove-box-shadow {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+/* checkmark mixins*/
+// @include smallCheckBoxCalculator;
+@mixin smallCheckBoxCalculator {
+    height: 2.2rem;
+    width: 2.2rem;
+    border: 2px $primary solid;
+    border-radius: 0.5rem;
+    background-color: $secondary;
+    //line-height: 2.2rem;
+}
+
+// @include inlineCheckBoxCalculator;
+@mixin inlineCheckBoxCalculator {
+    display: inline-block;
+    
+}
+
+// @include smallCheckBoxCalculatorAfter;
+@mixin smallCheckBoxCalculatorAfter {
+    content: url("assets/icons/icomoon-free490/SVG/checkmark.svg");
+    fill:$white;
+    height: 1.2rem;
+    width: 1.6rem;
+    opacity: 0;
+    transition: opacity .2s;
+    margin: 0.5rem 0.3rem;
+    display: block;
+    line-height: 0;
+}
+
+
+//individual products checkbox
+
+
+// @include comproductCheckBoxCalculator;
+@mixin comproductCheckBoxCalculator {
+    height: 10px;
+    width: 10px;
+    border: 1px $gray-600 solid;
+    border-radius: 1px;
+    background-color: $white;
+    //line-height: 2.2rem;
+}
+
+// @include comproductCheckBoxCalculatorAfter;
+@mixin comproductCheckBoxCalculatorAfter {
+    content: url("/Media/Design/current-products.svg");
+    height: 7px;
+    width: 7px;
+    opacity: 0;
+    transition: opacity .2s;
+    margin: 1.5px 1.5px;
+    display: block;
+    line-height: 0;
+}
+
+
+
+// @include formCheckBox;
+@mixin formCheckBox {
+    height: 2.4rem;
+    width: 2.4rem;
+    float: left;
+    margin: 0rem 1rem 1rem 0;
+    border: 1px $gray-400 solid;
+    background-color: $white;
+    display: inline-block;
+    //@include borderRadius5px;
+    @include checkbox-shadow;
+}
+
+// @include inlineFormCheckBox;
+@mixin inlineFormCheckBox {
+    display: inline-block;
+}
+
+// @include formCheckBoxAfter;
+@mixin formCheckBoxAfter {
+    //content: url("assets/icons/icomoon-free490/SVG/checkmark.svg");
+    height: 1.8rem;
+    width: 1.8rem;
+    opacity: 0;
+    transition: opacity .2s;
+    margin: 0.3rem;
+    display: block;
+    line-height: 0;
+
+    // Older browsers
+    content: "";
+    background-image: $custom-checkbox-icon-checked;
+    background-size: cover;
+
+    //Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        background-color: $primary;
+        -webkit-mask-image: $custom-checkbox-icon-checked;
+        -webkit-mask-size: cover;
+        mask-image: $custom-checkbox-icon-checked;
+        mask-size: cover;
+        background-image: none;
+    }
+}
+
+
+// @include memberFormCheckBox;
+@mixin memberFormCheckBox {
+    height: 2.4rem;
+    width: 2.4rem;
+    float: left;
+    margin: 0rem 1rem 1rem 0;
+    border: 1px $gray-400 solid;
+    background-color: $white;
+    display: inline-block;
+}
+
+// @include memberFormCheckBoxAfter;
+@mixin memberFormCheckBoxAfter {
+    //content: url("assets/icons/icomoon-free490/SVG/checkmark.svg");
+    height: 1.8rem;
+    width: 1.8rem;
+    opacity: 0;
+    transition: opacity .2s;
+    margin: 0.3rem;
+    display: block;
+    line-height: 0;
+
+
+    // Older browsers
+    content: "";
+    background-image: $custom-checkbox-icon-checked;
+    background-size: cover;
+
+    //Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        background-color: $primary;
+        -webkit-mask-image: $custom-checkbox-icon-checked;
+        -webkit-mask-size: cover;
+        mask-image: $custom-checkbox-icon-checked;
+        mask-size: cover;
+        background-image: none;
+        height: 2.4rem;
+    width: 2.4rem;
+    }
+}
+
+
+// @include rememberFormCheckBox;
+@mixin rememberFormCheckBox {
+    height: 2.4rem;
+    width: 2.4rem;
+    float: left;
+    margin: 0rem 1rem 1rem 0;
+    border: 1px $gray-400 solid;
+    background-color: $white;
+    display: inline-block;
+}
+
+// @include rememberFormCheckBoxAfter;
+@mixin rememberFormCheckBoxAfter {
+    //content: url("assets/icons/icomoon-free490/SVG/checkmark.svg");
+    height: 1.8rem;
+    width: 1.8rem;
+    opacity: 0;
+    transition: opacity .2s;
+    margin: 0.3rem;
+    display: block;
+    line-height: 0;
+
+    // Older browsers
+    content: "";
+    background-image: $custom-checkbox-icon-checked;
+    background-size: cover;
+
+    //Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        background-color: $primary;
+        -webkit-mask-image: $custom-checkbox-icon-checked;
+        -webkit-mask-size: cover;
+        mask-image: $custom-checkbox-icon-checked;
+        mask-size: cover;
+        background-image: none;
+    }
+}
+
+// @include viewPassword;
+@mixin viewPassword {
+    //content: "\f070";
+    content: "view";
+    height: 2.4rem;
+    width: 2.4rem;
+    //@include font-awesome;
+    color: $secondary;
+}
+
+// @include viewPasswordAfter;
+@mixin viewPasswordAfter {
+    height: 1.8rem;
+    width: 1.8rem;
+    opacity: 0;
+    transition: opacity .2s;
+    margin: 0.3rem;
+    display: block;
+    line-height: 0;
+}

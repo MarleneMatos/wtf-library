@@ -1,0 +1,9 @@
+
+  .form-control {
+
+      color: var(--wtf-primary);
+
+    &::placeholder{
+      color: var(--wtf-border-color);
+    }
+  }

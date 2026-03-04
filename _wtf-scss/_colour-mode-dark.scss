@@ -1,0 +1,29 @@
+[data-bs-theme="dark"] {
+  //--wtf-brand-color: var(--wtf-primary);
+  --wtf-primary: #fff !important;
+  --wtf-primary-rgb: #{to-rgb(#ffffff)} !important;
+  //--wtf-secondary: #fff !important;
+  //--wtf-secondary-rgb: #{to-rgb(#ffffff)} !important;
+  --wtf-body-color: #fff !important;
+  --wtf-body-color-rgb: #{to-rgb(#ffffff)} !important;
+  --wtf-heading-color: #fff !important;
+  --wtf-link-color: #fff !important;
+  --wtf-link-color-rgb: #{to-rgb(#ffffff)} !important;
+
+  .bg-primary {
+    --wtf-primary: #000 !important;
+    --wtf-primary-rgb: #{to-rgb(#000000)} !important;
+    --wtf-body-color: #fff !important;
+    --wtf-heading-color: #fff !important;
+
+    .btn-primary {
+      --wtf-primary: #fff !important;
+      --wtf-primary-rgb: #{to-rgb(#ffffff)} !important;
+    }
+  }
+
+  .dropdown-item.active,
+  .dropdown-item:active {
+    color: var(--wtf-body-bg);
+  }
+}

@@ -1,0 +1,72 @@
+.feature-skill {
+    position: relative;
+    background-color:  var(--wtf-primary);
+    min-height: 30rem;
+
+    @include media-breakpoint-up(md) {
+        min-height: 40vh;
+    }
+    
+
+    &__icon {
+        position: absolute;
+        width: 60%;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        &--i1 {
+            left: 0rem;
+            top: 0rem;
+
+            @include media-breakpoint-up(xl) {
+                left: -1rem;
+                top: -1rem;
+
+            }
+        }
+
+        &--i2 {
+            right: 0rem;
+            bottom: 0rem;
+            z-index: 100;
+
+            @include media-breakpoint-up(xl) {
+                right: -1rem;
+                bottom: -1rem;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.05) translateY(-.5rem);
+            z-index: 20;
+        }
+
+    }
+
+    &:hover &__icon:not(:hover) {
+        transform: scale(.95);
+    }
+
+    &__content {
+        background-color: $gray-100;
+        padding-right: $section-padding-mobile !important;
+        padding-left: $section-padding-mobile !important;
+        padding-top: $section-padding-mobile !important;
+        padding-bottom: $section-padding-mobile !important;
+
+        @include media-breakpoint-up(md) {
+            padding-right: $section-padding !important;
+            padding-left: $section-padding !important;
+            padding-top: $section-padding !important;
+            padding-bottom: $section-padding !important;
+        }
+
+    }
+
+    &__text {
+        font-style: italic;
+    }
+
+
+}

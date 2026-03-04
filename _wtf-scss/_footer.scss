@@ -1,0 +1,14 @@
+.footer {
+  padding: 0.5rem 0;
+
+
+  &__copyright {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &.scrolled {
+            background-color: var(--wtf-body-bg);
+            box-shadow: $footer-box-shadow;
+        }
+}

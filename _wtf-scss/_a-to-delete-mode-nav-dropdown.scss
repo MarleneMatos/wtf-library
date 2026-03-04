@@ -1,0 +1,37 @@
+.bd-mode-toggle {
+    z-index: 3000;
+
+    .dropdown-menu {
+        --wtf-dropdown-min-width: 5rem;
+        --wtf-dropdown-color: var(--wtf-primary);
+        --wtf-dropdown-bg: var(--wtf-body-bg);
+        --wtf-dropdown-link-active-bg: var(--wtf-primary);
+        --wtf-dropdown-link-active-color: var(--wtf-white);
+        --wtf-dropdown-link-color: var(--wtf-primary);
+
+        .dropdown-item.active,
+        .dropdown-item:active {
+            svg {
+                fill: var(--wtf-dropdown-link-active-color);
+                color: var(--wtf-dropdown-link-active-color);
+            }
+        }
+
+        .color {
+            border: 1px solid var(--wtf-dropdown-link-color);
+            color: var(--wtf-primary);
+            fill: var(--wtf-primary);
+            background-color: var(--wtf-primary);
+            border-radius: 50%;
+        }
+
+        svg {
+            color: var(--wtf-primary);
+            fill: var(--wtf-primary);
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+    }
+
+}

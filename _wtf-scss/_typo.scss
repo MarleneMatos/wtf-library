@@ -1,0 +1,125 @@
+.h1, h1{@include wtfH1;}
+.h2, h2{@include wtfH2;}
+.h3, h3{@include wtfH3;}
+.h4, h4{@include wtfH4;}
+.h5, h5{@include wtfH5;}
+.h6, h6{@include wtfH6;}
+.p, p{@include wtfp;}
+
+
+//icon heading
+.i-h {
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    margin-right: $custom-list-icon-margin;
+    content: "";
+    display: inline-block;
+    height: $section-title-icon-size;
+    width: $section-title-icon-size;
+
+    // Older browsers
+    background-image: $custom-title-icon-before;
+    background-size: cover;
+
+    //Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-image: var(--wtf-primary);
+      background-color: var(--wtf-primary);
+      -webkit-mask-image: $custom-title-icon-before;
+      -webkit-mask-size: cover;
+      mask-image: $custom-title-icon-before;
+      mask-size: cover;
+      //background-image: none;
+    }
+  }
+
+  &::after {
+    margin-left: $custom-list-icon-margin;
+    content: "";
+    display: inline-block;
+    height: $section-title-icon-size;
+    width: $section-title-icon-size;
+
+    // Older browsers
+    background-image: $custom-title-icon-after;
+    background-size: cover;
+
+    //Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-image: var(--wtf-primary);
+      background-color: var(--wtf-primary);
+      -webkit-mask-image: $custom-title-icon-after;
+      -webkit-mask-size: cover;
+      mask-image: $custom-title-icon-after;
+      mask-size: cover;
+      //background-image: none;
+    }
+  }
+
+}
+
+
+//linear-gradient heading
+.lg-h {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: $wtf-primary-gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+}
+
+//line heading
+.l-h {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $font-family-heading;
+  //color: var(--wtf-primary);
+  color: var(--wtf-body-color);
+  position: relative;
+  padding-bottom: 0.5rem;
+
+  &::after {
+    content: "";
+    //background-image: var(--wtf-primary);
+    background-color: var(--wtf-primary);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: $wtf-line-border-height;
+    width: $wtf-line-title-width;
+    text-align: center;
+  }
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+p,
+.p {
+
+  b {
+    font-weight: bold;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  &--i {
+    color: var(--wtf-primary);
+    font-weight: bold;
+  }
+}
+
+/*
+.text-bg-secondary {
+    color: var(--wtf-body-bg) !important;
+  }
+    */

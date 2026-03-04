@@ -1,0 +1,49 @@
+.line {
+  .vs {
+    &-desktop {
+      @include media-breakpoint-down(md) {
+        display: none !important;
+      }
+
+      @include wtfTheLine;
+
+      .vs {
+        &-header {
+          padding: 1rem 0rem;
+
+          p {
+            margin-bottom: 0 !important;
+          }
+
+        }
+
+        &-body {
+          padding: 1rem 0rem;
+
+          p {
+            margin-bottom: 0 !important;
+          }
+
+          &:not(:last-child) {
+            @include wtfTheLineBottom;
+          }
+        }
+      }
+    }
+
+    &-mobile {
+      @include media-breakpoint-up(md) {
+        display: none !important;
+      }
+
+      @include wtfTheLine;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+    }
+
+  }
+
+}

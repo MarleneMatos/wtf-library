@@ -1,0 +1,17 @@
+.error {
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    
+    p {
+        //font-family: $font-family-error;
+        //font-size: 10rem;
+        display: inline-block;
+        --wtf-brand-color: var(--wtf-primary);
+        color:  var(--wtf-primary);
+        font-weight: bold;
+        @include wtfError;
+    }
+    
+    
+}

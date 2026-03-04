@@ -1,0 +1,67 @@
+--wtf-fraction-error-font: 8;
+--wtf-fraction-slide-h1: 3;
+--wtf-fraction-slide-h2: 2;
+--wtf-fraction-xxl: 1.5;
+--wtf-fraction-xl: 1.25;
+--wtf-fraction-lg: 1;
+--wtf-fraction-md: 0.75;
+--wtf-fraction-sm: 0.5;
+--wtf-fraction-xs: 0.25;
+--wtf-body-font-size: 1.3rem;
+--wtf-body-font-weight: auto;
+--wtf-dropdown-min-width: 5rem;
+/*
+
+  //New - checkbox
+  --wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/checkmark.svg);
+
+  //New - common
+  --wtf-transition-animation-duration: .5s;
+  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
+  --wtf-out-animation-duration: .75s;*/
+--wtf-bg-image: var(--wtf-gradient), url(../../media/wtf-web-tech-focus-design-development-support-background.png);
+--wtf-hero-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
+--wtf-carousel-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
+--wtf-card-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
+/*Update across all themes*/
+--wtf-theme-border-thickness: 3px;
+--wtf-theme-border-radius: 3px;
+--wtf-theme-heading-width: 70px;
+--wtf-theme-heading-font: "Gidolinya", "sans-serif";
+--wtf-theme-hero-size: 100vh;
+--wtf-theme-icon-size: 3rem;
+--wtf-theme-checkbox-border-radius: 50%;
+--wtf-theme-heading-icon: url(../../assets/icons/icomoon-free490/SVG/flickr.svg);
+--wtf-border-width: var(--wtf-theme-border-thickness);
+--wtf-body-font-family: "Gidolinya","sans-serif";
+--wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
+--wtf-theme-btn-padding-x: 2rem;
+--wtf-theme-btn-padding-y: 0.5rem;
+--wtf-theme-btn-border-radius: 2rem;
+--wtf-checkbox-icon-unchecked: url(../../assets/icons/icomoon-free490/SVG/radio-unchecked.svg);
+--wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/radio-checked.svg);
+--wtf-transition-animation-duration: .5s;
+--wtf-in-animation-duration: var(--wtf-transition-animation-duration);
+--wtf-out-animation-duration: .75s;
+--wtf-gradient-text: linear-gradient(180deg, rgba(var(--wtf-primary-bg-subtle), 1), rgba(var(--wtf-primary-text-emphasis), 1));
+--wtf-gradient: linear-gradient(180deg, rgba(var(--wtf-black-rgb), 0.7), rgba(var(--wtf-black-rgb), 0.7));
+--wtf-brand-color: var(--wtf-emphasis-color);
+--wtf-navbar-brand-font-size: 1.5rem;
+
+
+/*
+$wtf-line-border-radius: 3px;
+$wtf-line-border-height: 3px; //how thick line will be
+$wtf-line-title-width: 70px;
+
+//variables
+//$wtf-line-card-flip-bg-image: url(/wp-content/uploads/cropped-wtf-logo-square-wbg.png);
+//$custom-title-icon-before: url(../../assets/icons/icomoon-free490/SVG/flickr.svg);
+$wtf-line-card-flip-bg-image: url(../../_wp-webtechfocus-v2/wp-content/uploads/wtf-logo.png);
+$wtf-line-card-flip-height: 52rem;
+$wtf-line-card-flip-image-height: 23rem;
+$wtf-line-card-flip-perspective: 150rem;
+$wtf-line-card-flip-front-bg-colour: $white;
+$wtf-line-card-flip-linear-gradient-colour-light: $wtf-colour-primary-light;
+$wtf-line-card-flip-linear-gradient-colour-dark: $wtf-colour-primary-dark;
+*/

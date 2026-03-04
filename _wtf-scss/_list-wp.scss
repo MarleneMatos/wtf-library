@@ -1,0 +1,19 @@
+.ul,
+ol {
+    @include wtfp;
+    color: var(--wtf-body-color);
+
+}
+
+.wp-block-list {
+    @include wtfp;
+    list-style: none;
+    color: var(--wtf-body-color);
+    position: relative;
+    margin-left: 1.5rem;
+
+    li {
+        color: var(--wtf-body-color);
+
+    }
+}

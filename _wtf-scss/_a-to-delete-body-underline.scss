@@ -1,0 +1,305 @@
+.underline {
+    /*
+    &.wtf {
+        --wtf-brand-color: var(--wtf-secondary);
+        --wtf-primary: var(--wtf-secondary);
+    }*/
+
+    .navbar {
+        --wtf-navbar-padding-y: 0;
+        --wtf-navbar-toggler-padding-x: 0;
+        --wtf-navbar-toggler-padding-y: 0;
+        --wtf-navbar-toggler-border-radius: 0;
+        --wtf-navbar-toggler-font-size: 0;
+        --wtf-navbar-hover-color: var(--wtf-primary);
+        --wtf-navbar-toggler-border-color: transparent;
+
+
+        .navbar-brand {
+            fill: var(--wtf-brand-color);
+            color: var(--wtf-brand-color);
+
+            svg {
+                fill: var(--wtf-brand-color);
+                color: var(--wtf-brand-color);
+            }
+        }
+
+        &.scrolled {
+            background-color: var(--wtf-body-bg);
+            box-shadow: $base-box-shadow;
+        }
+
+        .navbar-toggler {
+            --wtf-navbar-toggler-focus-width: 0;
+
+            border: 0;
+            //width: calc($iconic-nav-logo-size * $fraction-lg);
+            //height: calc($iconic-nav-logo-size * $fraction-lg);
+            font-size: 0;
+            line-height: 0;
+            //padding:0;
+            color: var(--wtf-primary);
+
+            @include media-breakpoint-up(sm) {
+                padding: 0;
+                //width: $iconic-nav-logo-size;
+                //height: $iconic-nav-logo-size;
+            }
+
+            &--icon {
+                //width: $iconic-nav-icon-size;
+                //height: $iconic-nav-icon-size;
+                color: var(--wtf-primary);
+                position: relative;
+
+                &,
+                &::before,
+                &::after {
+                    background-color: var(--wtf-primary);
+
+                    @include wtfTheLineMenuIcon;
+                }
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    transition: all .2s;
+                }
+
+                &::before {
+                    top: calc(-.7rem * $fraction-lg);
+
+                    @include media-breakpoint-up(sm) {
+                        top: -.7rem;
+                    }
+                }
+
+                &::after {
+                    top: calc(.7rem * $fraction-lg);
+
+                    @include media-breakpoint-up(sm) {
+                        top: .7rem;
+                    }
+                }
+            }
+
+            &:not(.collapsed) {
+
+                .navbar-toggler--icon {
+                    color: var(--wtf-primary);
+                    position: relative;
+
+                    & {
+                        background-color: transparent;
+                    }
+
+                    &::before {
+                        top: 0;
+                        transform: rotate(135deg);
+                    }
+
+                    &::after {
+                        top: 0;
+                        transform: rotate(-135deg);
+                    }
+                }
+
+            }
+
+            &.collapsed {
+                .navbar-toggler--icon {
+                    color: var(--wtf-primary);
+                    position: relative;
+
+                    &,
+                    &::before,
+                    &::after {
+                        background-color: var(--wtf-primary);
+
+                        @include wtfTheLineMenuIcon;
+                    }
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        transition: all .2s;
+                    }
+
+                    &::before {
+                        top: calc(-.7rem * $fraction-lg);
+
+                        @include media-breakpoint-up(sm) {
+                            top: -.7rem;
+                        }
+                    }
+
+                    &::after {
+                        top: calc(.7rem * $fraction-lg);
+
+                        @include media-breakpoint-up(sm) {
+                            top: .7rem;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .navbar-collapse.show {
+            background-color: var(--wtf-body-bg);
+        }
+
+        .nav {
+            &-link {
+                position: relative;
+                font-family: $font-family;
+
+                &:hover {
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        position: absolute;
+                        overflow: hidden;
+                        border-color: var(--wtf-primary);
+                        bottom: 0;
+                        left: 0;
+
+                        @include wtfTheLine;
+                    }
+
+                }
+
+                &.active {
+                    color: var(--wtf-primary);
+
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        position: absolute;
+                        overflow: hidden;
+                        border-color: var(--wtf-primary);
+                        bottom: 0;
+                        left: 0;
+
+                        @include wtfTheLine;
+                    }
+                }
+
+            }
+
+            .collapse {
+                .btn-toggle-nav {
+                    list-style: none;
+
+                    .collapse {
+                        &-link {
+                            position: relative;
+                            text-decoration: none;
+
+                            &:hover {
+                                &::after {
+                                    content: "";
+                                    width: 100%;
+                                    position: absolute;
+                                    overflow: hidden;
+                                    border-color: var(--wtf-primary);
+                                    bottom: 0;
+                                    left: 0;
+
+                                    @include wtfTheLine;
+                                }
+
+                            }
+
+                            &.active {
+                                color: var(--wtf-primary);
+
+                                &::after {
+                                    content: "";
+                                    width: 100%;
+                                    position: absolute;
+                                    overflow: hidden;
+                                    border-color: var(--wtf-primary);
+                                    bottom: 0;
+                                    left: 0;
+
+                                    @include wtfTheLine;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container a.navbar-brand svg {
+        height: $wtf-brand-height;
+        width: auto;
+    }
+
+    .container a.navbar-brand {
+        --wtf-navbar-brand-font-size: 0;
+    }
+
+    svg {
+        --wtf-brand-color: var(--wtf-primary);
+    }
+
+
+
+    //type
+    .hero-cover {
+
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6 {
+            color: var(--wtf-primary);
+            text-transform: uppercase;
+            text-align: center;
+            font-family: $font-family-heading;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $font-family-heading;
+        color: var(--wtf-primary);
+        position: relative;
+        padding-bottom: 0.5rem;
+
+        &::after {
+            content: "";
+            //background-image: var(--wtf-primary);
+            background-color: var(--wtf-primary);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            height: $wtf-line-border-height;
+            width: $wtf-line-title-width;
+            border-radius: $wtf-line-border-height;
+
+        }
+    }
+
+}

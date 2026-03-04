@@ -1,0 +1,372 @@
+body {
+  &.wtf {
+    font-family: $font-family-wtf;
+    
+/*
+    .btn {
+      svg {
+        fill: var(--wtf-btn-color);
+        width: var(--wtf-btn-font-size);
+        height: var(--wtf-btn-font-size);
+      }
+
+      &-primary {
+        --wtf-btn-color: var(--wtf-white);
+        --wtf-heading-color: var(--wtf-white);
+        --wtf-btn-bg: var(--wtf-primary);
+        --wtf-btn-border-color: var(--wtf-primary);
+        --wtf-btn-hover-color: var(--wtf-white);
+        --wtf-btn-hover-bg: var(--wtf-primary);
+        --wtf-btn-hover-border-color: var(--wtf-primary);
+        --wtf-btn-active-color: var(--wtf-white);
+        --wtf-btn-active-bg: var(--wtf-primary);
+        --wtf-btn-active-border-color: var(--wtf-primary);
+        --wtf-btn-disabled-color: var(--wtf-white);
+        --wtf-btn-disabled-bg: var(--wtf-primary);
+        --wtf-btn-disabled-border-color: var(--wtf-primary);
+        --wtf-btn-border-width: 0;
+
+        @include wtfBtn;
+
+        @include wtfBtnAnimation;
+
+      }
+    }*/
+
+    .bd-mode-toggle {
+      z-index: 3000;
+
+      .btn {
+
+
+        --wtf-btn-color: var(--wtf-white);
+        //--wtf-btn-bg: var(--wtf-primary);
+        --wtf-btn-border-radius: 50%;
+        --wtf-btn-border-width: 0;
+        --wtf-btn-padding-x: 0;
+        --wtf-btn-padding-y: 0;
+        --wtf-btn-border-color: transparent;
+        fill: var(--wtf-body-bg);
+        color: var(--wtf-body-bg);
+        box-shadow: $base-box-shadow;
+        
+        position: fixed;
+        margin-left: 0;
+        fill: var(--wtf-primary);
+        color: var(--wtf-primary);
+
+        width: calc($iconic-nav-logo-size * $fraction-lg);
+        height: calc($iconic-nav-logo-size * $fraction-lg);
+        bottom: calc($iconic-nav-icon-padding * $fraction-lg);
+        right: calc($iconic-nav-icon-padding * $fraction-lg);
+
+        @include media-breakpoint-up(sm) {
+          --wtf-btn-padding-x: 0.5rem;
+          --wtf-btn-padding-y: 0.5rem;
+          --wtf-btn-border-radius: 0.5rem;
+          bottom: $iconic-nav-icon-padding;
+          right: $iconic-nav-icon-padding;
+          height: $iconic-nav-logo-size;
+          width: $iconic-nav-logo-size;
+        }
+
+        svg {
+          color: var(--wtf-primary);
+          fill: var(--wtf-primary);
+          width: calc($wtf-menu-icon-width * $fraction-lg);
+          height: calc($wtf-menu-icon-width * $fraction-lg);
+          display: inline-block;
+        
+          @include media-breakpoint-up(sm) {
+            width: $wtf-menu-icon-width;
+            height: $wtf-menu-icon-width;
+          }
+        }
+
+        &.btn-bd {
+          background-color: var(--wtf-body-bg);
+          box-shadow: $base-box-shadow;
+          //background-image: var(--wtf-primary);
+          //background-color: var(--wtf-primary);
+        }
+
+        &.show,
+        &:active,
+        &.active {
+          background-color: var(--wtf-body-bg);
+        }
+      }
+
+      .dropdown-menu {
+        --wtf-dropdown-min-width: 5rem;
+        --wtf-dropdown-color: var(--wtf-primary);
+        --wtf-dropdown-bg: var(--wtf-body-bg);
+        --wtf-dropdown-link-active-bg: var(--wtf-primary);
+        --wtf-dropdown-link-active-color: var(--wtf-white);
+        --wtf-dropdown-link-color: var(--wtf-primary);
+
+        .dropdown-item.active,
+        .dropdown-item:active {
+          svg {
+            fill: var(--wtf-dropdown-link-active-color);
+            color: var(--wtf-dropdown-link-active-color);
+          }
+        }
+
+        .color {
+          border: 1px solid var(--wtf-dropdown-link-color);
+          color: var(--wtf-primary);
+          fill: var(--wtf-primary);
+          background-color: var(--wtf-primary);
+          border-radius: 50%;
+        }
+
+        svg {
+          color: var(--wtf-primary);
+          fill: var(--wtf-primary);
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+      }
+
+
+    }
+  }
+
+  &.mm {
+    font-family: $font-family-wtf;
+    letter-spacing: 0.1rem;
+    --wtf-body-font-size: 1.2rem;
+    --wtf-border-color: var(--wtf-primary);
+
+    .btn {
+
+      svg {
+        fill: var(--wtf-btn-color);
+        width: var(--wtf-btn-font-size);
+        height: var(--wtf-btn-font-size);
+      }
+
+      &-outline-primary {
+        --wtf-btn-color: var(--wtf-primary);
+        --wtf-btn-border-color: var(--wtf-primary);
+        --wtf-btn-disabled-bg: var(--wtf-primary);
+        --wtf-btn-disabled-border-color: var(--wtf-primary);
+        --wtf-btn-hover-color:  var(--wtf-body-bg);
+        --wtf-btn-active-color:  var(--wtf-body-bg);
+        --wtf-btn-border-width: 3px; //as per line
+        @include mmBtn;
+
+        @include wtfBtnOutlineAnimation;
+      }
+
+      &-primary {
+        --wtf-heading-color:  var(--wtf-body-bg);
+        --wtf-btn-color:  var(--wtf-body-bg);
+        --wtf-heading-color:  var(--wtf-body-bg);
+        --wtf-btn-bg: var(--wtf-primary);
+        --wtf-btn-border-color: var(--wtf-primary);
+        --wtf-btn-hover-color:  var(--wtf-body-bg);
+        --wtf-btn-hover-bg: var(--wtf-primary);
+        --wtf-btn-hover-border-color: var(--wtf-primary);
+        --wtf-btn-active-color:  var(--wtf-body-bg);
+        --wtf-btn-active-bg: var(--wtf-primary);
+        --wtf-btn-active-border-color: var(--wtf-primary);
+        --wtf-btn-disabled-color:  var(--wtf-body-bg);
+        --wtf-btn-disabled-bg: var(--wtf-primary);
+        --wtf-btn-disabled-border-color: var(--wtf-primary);
+        position: relative;
+        @include mmBtn;
+
+        @include wtfBtnAnimation;
+
+      }
+
+      &-brand {
+        z-index: 3000;
+        position: fixed;
+        //padding-top: $iconic-nav-icon-padding;
+        //padding-bottom: $iconic-nav-icon-padding;
+        top: calc($iconic-nav-icon-padding * $fraction-lg);
+        left: calc($iconic-nav-icon-padding * $fraction-lg);
+        
+
+        @include media-breakpoint-up(sm) {
+          top: $iconic-nav-icon-padding;
+          left: $iconic-nav-icon-padding;
+        }
+
+        img,
+        svg {
+          width: calc($iconic-nav-logo-size * $fraction-lg);
+          height: calc($iconic-nav-logo-size * $fraction-lg);
+          background-color:  var(--wtf-body-bg);
+          border-radius: 50%;
+          box-shadow: $base-box-shadow;
+          fill: var(--wtf-primary);
+
+          @include media-breakpoint-up(sm) {
+            width: $iconic-nav-logo-size;
+            height: $iconic-nav-logo-size;
+            // background-color: var(--wtf-body-bg);
+            // border-radius: 50%;
+          }
+        }
+      }
+
+      &-iconic { // used in socials
+        --wtf-heading-color: var(--wtf-body-bg);
+        --wtf-btn-color: var(--wtf-body-bg);
+        --wtf-heading-color: var(--wtf-body-bg);
+        --wtf-btn-bg: var(--wtf-primary);
+        --wtf-btn-border-color: var(--wtf-primary);
+        --wtf-btn-hover-color: var(--wtf-body-bg);
+        --wtf-btn-hover-bg: var(--wtf-primary);
+        --wtf-btn-hover-border-color: var(--wtf-primary);
+        --wtf-btn-active-color: var(--wtf-body-bg);
+        --wtf-btn-active-bg: var(--wtf-primary);
+        --wtf-btn-active-border-color: var(--wtf-primary);
+        --wtf-btn-disabled-color: var(--wtf-body-bg);
+        --wtf-btn-disabled-bg: var(--wtf-primary);
+        --wtf-btn-disabled-border-color: var(--wtf-primary);
+        position: relative;
+        --wtf-btn-border-radius: 50%;
+        --wtf-btn-border-width: 0;
+        --wtf-btn-padding-x: 0;
+        --wtf-btn-padding-y: 0;
+        box-shadow: $base-box-shadow;
+        width: calc($iconic-nav-logo-size * $fraction-lg);
+        height: calc($iconic-nav-logo-size * $fraction-lg);
+
+        @include media-breakpoint-up(sm) {
+          //bottom: $iconic-nav-icon-padding;
+          //left: $iconic-nav-icon-padding;
+          height: $iconic-nav-logo-size;
+          width: $iconic-nav-logo-size;
+        }
+
+        svg {
+          fill: var(--wtf-body-bg);
+          color: var(--wtf-body-bg);
+          width: calc($wtf-menu-icon-width * $fraction-lg);
+          height: calc($wtf-menu-icon-width * $fraction-lg);
+          display: inline-block;
+        
+          @include media-breakpoint-up(sm) {
+            width: $wtf-menu-icon-width;
+            height: $wtf-menu-icon-width;
+          }
+        }
+        span {
+          display: none;
+      }
+
+        @include wtfBtnAnimation;
+
+      }
+    }
+
+    .bd-mode-toggle {
+      z-index: 3000;
+
+      .btn {
+        --wtf-btn-color:  var(--wtf-body-bg);
+        //--wtf-btn-bg: var(--wtf-primary);
+        --wtf-btn-border-radius: 50%;
+        --wtf-btn-border-width: 0;
+        --wtf-btn-padding-x: 0;
+        --wtf-btn-padding-y: 0;
+        --wtf-btn-border-color: transparent;
+        position: fixed;
+        margin-left: 0;
+        
+        background-image: var(--wtf-primary);
+        background-color: var(--wtf-primary);
+        box-shadow: $base-box-shadow;
+
+        width: calc($iconic-nav-logo-size * $fraction-lg);
+        height: calc($iconic-nav-logo-size * $fraction-lg);
+        bottom: calc($iconic-nav-icon-padding * $fraction-lg);
+        right: calc($iconic-nav-icon-padding * $fraction-lg);
+
+        //@include wtfTheLineMenuIcon;
+
+        @include media-breakpoint-up(sm) {
+          bottom: $iconic-nav-icon-padding;
+          right: $iconic-nav-icon-padding;
+          height: $iconic-nav-logo-size;
+          width: $iconic-nav-logo-size;
+        }
+
+        svg {
+          fill:  var(--wtf-body-bg);
+          color:  var(--wtf-body-bg);
+          width: calc($wtf-menu-icon-width * $fraction-lg);
+          height: calc($wtf-menu-icon-width * $fraction-lg);
+          display: inline-block;
+        
+          @include media-breakpoint-up(sm) {
+            width: $wtf-menu-icon-width;
+            height: $wtf-menu-icon-width;
+          }
+        }
+
+        &.show,
+        &:hover,
+        &:active,
+        &.active {
+          background-color: var(--wtf-primary-text-emphasis);
+        }
+
+        &::after {
+          display: none;
+          margin-left: 0;
+          vertical-align: 0;
+          content: "";
+          border-top: 0 solid;
+          border-right: 0 solid transparent;
+          border-bottom: 0;
+          border-left: 0 solid transparent;
+        }
+
+      }
+
+
+      .dropdown-menu {
+        --wtf-dropdown-min-width: 5rem;
+        --wtf-dropdown-color: var(--wtf-primary);
+        --wtf-dropdown-bg: var(--wtf-body-bg);
+        --wtf-dropdown-link-active-bg: var(--wtf-primary);
+        --wtf-dropdown-link-active-color:  var(--wtf-body-bg);
+        --wtf-dropdown-link-color: var(--wtf-primary);
+
+        .dropdown-item.active,
+        .dropdown-item:active {
+          svg {
+            fill: var(--wtf-dropdown-link-active-color);
+            color: var(--wtf-dropdown-link-active-color);
+          }
+        }
+
+        .color {
+          border: 1px solid var(--wtf-dropdown-link-color);
+          color: var(--wtf-primary);
+          fill: var(--wtf-primary);
+          background-color: var(--wtf-primary);
+          border-radius: 50%;
+        }
+
+        svg {
+          color: var(--wtf-primary);
+          fill: var(--wtf-primary);
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+      }
+
+
+    }
+  }
+}

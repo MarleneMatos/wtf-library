@@ -1,0 +1,90 @@
+
+.filter {
+  position: relative;
+  //margin-left: 4rem;
+/*
+  @media (max-width: $tablet) {
+      margin-left: 0rem;
+      margin-bottom: 1.5rem;
+  }*/
+
+  .btn-filter {
+      background-color: $secondary;
+      color: $white;
+      border: 0;
+      @include btn-box-shadow;
+      display: block;
+      text-align: center;
+      //@include azo-sans-medium;
+      font-size: 1.6rem;
+      padding: 1.5rem 3rem;
+      width: fit-content;
+      width: -moz-fit-content;
+      position: relative;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:active {
+          box-shadow: none;
+      }
+
+      &::after {
+          content: "\f0b0";
+          margin-left: 0.5rem;
+         //@include font-awesome;
+          vertical-align: middle;
+      }
+  }
+
+  .filterby {
+      background-color: $primary;
+      list-style: none;
+      display: none;
+      position: absolute;
+      top: 5.2rem;
+      z-index: 2;
+      padding: 1rem;
+      width: 26.5rem;
+
+      &.open {
+          display: block;
+      }
+
+      .filterbycat {
+          input {
+
+              &[type=checkbox] {
+                  display: none;
+              }
+
+              &[type=checkbox]:checked ~ .filterSelectBox::after {
+                  opacity: 1;
+              }
+
+              &[type=checkbox]:checked ~ .filterSelectBox {
+                  background-color: $primary;
+              }
+          }
+
+          .filterSelectBox {
+              @include smallCheckBoxCalculator;
+              @include inlineCheckBoxCalculator;
+              margin-right: 0.5rem;
+
+              &::after {
+                  @include smallCheckBoxCalculatorAfter;
+              }
+          }
+
+          .filterbylist {
+              display: inline-block;
+              padding: 0.5rem 0rem;
+              color: $gray-600;
+              font-size: 1.3rem;
+              line-height: 2rem;
+              //@include azo-sans-medium;
+          }
+      }
+  }
+}

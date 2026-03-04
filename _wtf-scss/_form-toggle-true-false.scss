@@ -1,0 +1,74 @@
+.toggleTrueFalse {
+  display: inline-block;
+  margin: -1rem 0rem;
+
+  label {
+      width: 7.2rem;
+      height: 3.04rem;
+      background: $white;
+      position: relative;
+      border-radius: 5rem;
+      border: 1px solid $primary;
+      margin: 10px;
+      left: 0;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      display: block;
+
+      .checkCircle {
+          display: block;
+          height: 3.04rem;
+          width: 3.04rem;
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          background: $primary;
+          //background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+          //background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+          border-radius: 3rem;
+          -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+      }
+  }
+
+
+  input {
+      &[type=checkbox] {
+          display: none;
+      }
+
+      &[type=checkbox]:checked + label {
+          background-color: $primary;
+      }
+
+      &[type=checkbox]:checked ~ label .checkCircle {
+          left: 57%;
+          border: .4rem solid $primary;
+          background: $white;
+          //top: -0.4rem;
+      }
+  }
+}
+
+.toggle {
+  text-align: end;
+}
+.toggleP2 {
+  text-align: end;
+  margin-top:1rem;
+}
+
+
+.toggleText {
+  color: $black;
+  //@include azo-sans-regular;
+  //font-size: 2.2rem;
+  //line-height: 2.9rem;
+  text-transform: uppercase;
+  vertical-align: top;
+  display: inline-block;
+}

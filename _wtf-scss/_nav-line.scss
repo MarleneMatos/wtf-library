@@ -1,0 +1,17 @@
+.afnavone,
+.mfnavone{
+
+    .nav {
+            @include wtfTheLineNavLink;
+    }
+
+    /*
+
+    @include media-breakpoint-up(sm) {
+            top: $iconic-nav-icon-padding;
+            right: $iconic-nav-icon-padding;
+            height: $iconic-nav-logo-size;
+            width: $iconic-nav-logo-size;
+        }*/
+
+}

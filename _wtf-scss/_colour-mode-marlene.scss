@@ -1,0 +1,53 @@
+[data-bs-theme="marlene"] {
+  //replace with
+  --wtf-brand-color: #00A19A;
+  --wtf-body-color: #34343b;
+  --wtf-body-color-rgb: #{to-rgb(#34343b)} !important;
+
+  --wtf-primary: #00A19A;
+  --wtf-primary-rgb: #{to-rgb(#00A19A)};
+  --wtf-secondary:#00A19A;
+  --wtf-secondary-rgb: #{to-rgb(#00A19A)};
+  --wtf-heading-color: #00A19A;
+  --wtf-link-color: #00A19A;
+  --wtf-link-color-rgb: #{to-rgb(#00A19A)};
+  --wtf-primary-text-emphasis: rgb(#{to-rgb($wtf-colour-blue-dark)});
+  --wtf-primary-bg-subtle: rgb(#{to-rgb($wtf-colour-blue-light)});
+
+  .accordion {
+    --wtf-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(#{to-rgb(#00A19A)}, 0.25);
+  }
+
+  .btn-outline-primary {
+    --wtf-btn-border-color: #00A19A;
+    --wtf-btn-active-bg: #00A19A;
+    --wtf-btn-hover-bg: #00A19A;
+    --wtf-btn-hover-border-color: #00A19A;
+    --wtf-btn-disabled-color: #00A19A;
+    --wtf-btn-active-border-color: #00A19A;
+    --wtf-btn-active-color: #fff;
+    --wtf-btn-hover-color: #fff;
+    --wtf-btn-focus-shadow-rgb: #{to-rgb(#00A19A)};
+
+    &:hover{
+      --wtf-heading-color: #fff;
+    }
+  }
+
+  .lg-h{
+    background-image: $wtf-blue-gradient;
+  }
+
+  //--wtf-body-bg: #00A19A;
+  //--wtf-body-bg-rgb: #{to-rgb(#00A19A)};
+  /*
+    .form-control {
+      --wtf-border-color: #00A19A;
+      --wtf-body-color:#00A19A;
+      --wtf-body-color-rgb: #{to-rgb(#00A19A)};
+  
+      &::placeholder{
+        color: #00A19A;
+      }
+    }*/
+}

@@ -1,0 +1,230 @@
+  [data-bs-theme="gradient"] {
+    --wtf-navbar-brand-color: url(#gradient);
+    --wtf-brand-color: url(#gradient);
+    --wtf-primary: linear-gradient(89.7deg, rgba(223, 0, 0, 1) 2.7%, rgba(214, 91, 0, 1) 15.1%, rgba(233, 245, 0, 1) 29.5%, rgba(23, 255, 17, 1) 45.8%, rgba(29, 255, 255, 1) 61.5%, rgba(5, 17, 255, 1) 76.4%, rgba(202, 0, 253, 1) 92.4%);
+    //--wtf-primary: url(#gradient);
+
+    svg {
+      --wtf-primary: url(#gradient);
+    }
+
+    .btn-iconic {
+      background-image: var(--wtf-primary);
+      background-color: none;
+
+      svg {
+        fill: var(--wtf-black);
+        color: var(--wtf-black);
+      }
+    }
+
+    .btn-iconic--brand img {
+      background-color: var(--wtf-black);
+    }
+
+    .navbar.nav-iconic .navbar-toggler--icon,
+    .navbar.nav-iconic .navbar-toggler--icon::before,
+    .navbar.nav-iconic .navbar-toggler--icon::after {
+      background-color: var(--wtf-black);
+    }
+
+    .bg-primary-emphasis {
+      background-color: var(--wtf-black);
+    }
+
+    .btn {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .btn-primary {
+      --wtf-btn-border-color: transparent;
+      --wtf-btn-active-border-color: var(--wtf-black);
+      --wtf-btn-hover-border-color: var(--wtf-black);
+      --wtf-btn-border-width: 0;
+      background-image: var(--wtf-primary);
+      background-color: none;
+      //color: var(--wtf-body-color);
+      font-weight: bold;
+
+
+    }
+
+
+    .btn-secondary {
+      --wtf-btn-border-color: transparent;
+      --wtf-btn-active-border-color: var(--wtf-black);
+      --wtf-btn-hover-border-color: var(--wtf-black);
+      --wtf-btn-border-width: 0;
+      background-image: var(--wtf-primary);
+      background-color: none;
+      //color: var(--wtf-body-color);
+      font-weight: bold;
+
+    }
+
+    .lg-h {
+      background-image: var(--wtf-primary);
+    }
+
+    .badge {
+
+      &.text-bg-primary,
+      &.text-bg-secondary {
+        background-image: var(--wtf-primary);
+        background-color: none;
+      }
+    }
+    .error p {
+      text-transform: uppercase;
+        text-align: center;
+        background-image: var(--wtf-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .line {
+
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6 {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .2rem;
+        color: var(--wtf-body-color);
+        position: relative;
+        padding-bottom: 0.5rem;
+
+        &::after {
+          content: "";
+          background-image: var(--wtf-primary);
+          background-color: none;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+          height: $wtf-line-border-height;
+          width: $wtf-line-title-width;
+          border-radius: $wtf-line-border-height;
+
+        }
+      }
+
+    }
+
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+      color: var(--wtf-white);
+      text-decoration: none;
+      background-image: var(--wtf-primary);
+      background-color: none;
+    }
+
+    .bd-mode-toggle .dropdown-menu svg {
+      color: var(--wtf-white);
+      fill: var(--wtf-white);
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+
+
+    .line {
+    &.navbar {
+        .navbar-toggler {
+
+            &--icon {
+
+                &,
+                &::before,
+                &::after {
+                    background-image: var(--wtf-primary);
+                }
+            }
+
+            &:not(.collapsed) {
+
+                .navbar-toggler--icon {
+
+                    & {
+                        background-color: transparent;
+                        background-image: unset;
+                    }
+                }
+
+            }
+
+            &.collapsed {
+                .navbar-toggler--icon {
+
+                    &,
+                    &::before,
+                    &::after {
+                        background-image: var(--wtf-primary);
+                    }
+
+                }
+            }
+        }
+
+        .navbar-collapse.show {
+            background-color: var(--wtf-body-bg);
+        }
+
+        .nav {
+            &-link {
+
+                &:hover {
+                    &::after {
+                        background-image: var(--wtf-primary);
+                    }
+
+                }
+
+                &.active {
+
+                    &::after {
+                        background-image: var(--wtf-primary);
+
+                    }
+                }
+
+            }
+
+            .collapse {
+                .btn-toggle-nav {
+                    list-style: none;
+
+                    .collapse {
+                        &-link {
+
+                            &:hover {
+                                &::after {
+                                    background-image: var(--wtf-primary);
+                                }
+
+                            }
+
+                            &.active {
+
+                                &::after {
+                                    background-image: var(--wtf-primary);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+  }

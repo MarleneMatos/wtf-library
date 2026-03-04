@@ -1,20 +1,33 @@
-const { src, dest, watch, series } = require('gulp')
+const { src, dest, watch, series, parallel } = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const purgecss = require('gulp-purgecss')
+const babel = require('gulp-babel')
+const concat = require('gulp-concat')
 
+// SCSS TASK
 function buildWtfWtfStyles() {
-    return src('./scss/*.scss')
+    return src('./_scss/*.scss')
         .pipe(sass().on('error', sass.logError))
-        /*
-        .pipe(purgecss({
-            content: ['./_wp-webtechfocus/wp-content/themes/wtf-webtechfocus/*.php', './wtf-php/*.php', './*.php' ]
-        }))*/
-        .pipe(dest('./_css/'))
+        .pipe(dest('./css/'))
 }
 
+// JS TASK
+function buildWtfWtfScripts() {
+    return src('./_js/**/*.js')
+        .pipe(babel({
+            presets: ['@babel/preset-env']
+        }))
+        .pipe(concat('main.js'))
+        .pipe(dest('./js/'))
+}
+
+// WATCH TASK
 function watchTask() {
-    watch(['./scss/*.scss', './scss/**/*.scss'], buildWtfWtfStyles)
-    }
+    watch('./_scss/**/*.scss', buildWtfWtfStyles)
+    watch('./_js/**/*.js', buildWtfWtfScripts)
+}
 
-exports.default = series( buildWtfWtfStyles, watchTask)
-
+exports.default = series(
+    parallel(buildWtfWtfStyles, buildWtfWtfScripts),
+    watchTask
+)

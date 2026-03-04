@@ -1,0 +1,171 @@
+//the line heading
+/*
+.bg-primary,
+.bg-black {
+  --wtf-heading-color: #fff !important;
+  --wtf-body-color: #fff !important;
+  --wtf-body-color-rgb: #{to-rgb(#ffffff)} !important;
+  --wtf-white: #fff !important;
+  --wtf-white-rgb: #{to-rgb(#ffffff)} !important;
+  --wtf-emphasis-color: #fff !important;
+
+  p {
+    color: #fff !important;
+  }
+
+  .line-h {
+    color: var(--wtf-white);
+
+    &--divider {
+      border-color: var(--wtf-white);
+    }
+  }
+
+  svg {
+    --wtf-brand-color: var(--wtf-white);
+    --wtf-primary: var(--wtf-white);
+  }
+
+}*/
+.wtf {
+  .bg {
+
+    &-black,
+    &-primary,
+    &-secondary,
+    &-primary-emphasis {
+
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6 {
+        color: var(--wtf-body-color);
+
+        &::after {
+          background-color: var(--wtf-white);
+        }
+      }
+    }
+  }
+}
+
+.bg {
+
+  &-black,
+  &-primary,
+  &-secondary,
+  &-primary-emphasis {
+    --wtf-heading-color: #fff !important;
+    --wtf-body-color: #fff !important;
+    --wtf-body-color-rgb: #{to-rgb(#ffffff)} !important;
+    --wtf-white: #fff !important;
+    --wtf-white-rgb: #{to-rgb(#ffffff)} !important;
+    --wtf-emphasis-color: #fff !important;
+
+    p {
+      color: #fff !important;
+    }
+
+    span {
+      color: #fff !important;
+
+      &.wpcf7-not-valid-tip {
+        color: var(--wtf-danger);
+      }
+    }
+
+    .line-h {
+      color: var(--wtf-body-color);
+
+      &--divider {
+        border-color: var(--wtf-body-color);
+      }
+    }
+
+    .i-h {
+      color: var(--wtf-body-color);
+      --wtf-primary: var(--wtf-body-color);
+    }
+
+    svg {
+      --wtf-brand-color: var(--wtf-body-color);
+      --wtf-primary: var(--wtf-body-color);
+    }
+
+  }
+
+  &-primary-emphasis {
+    background-color: var(--wtf-primary-text-emphasis);
+  }
+
+  &-primary-subtle {
+    background-color: var(--wtf-primary-bg-subtle);
+  }
+
+
+  &-skew {
+    @include wtfSkewY;
+  }
+
+  &-polygon {
+    @include bannerPolygon;
+  }
+
+  &-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+
+    &--content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-image {
+    background-image: var(--wtf-bg-image);
+
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+
+  &-image-bg {
+    background-image: linear-gradient(105deg, rgba(var(--wtf-primary), 0.8) 0%, rgba(var(--wtf-secondary), 0.7) 60%, transparent 60%), var(--wtf-bg-image);
+
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+
+  &-image-angle {
+    background-image: linear-gradient(105deg, rgba($white, 0.9) 0%, rgba($white, 0.9) 60%, transparent 60%), var(--wtf-bg-image);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+      background-image: linear-gradient(to right,
+          rgba($white, .9) 0%,
+          rgba($white, .9) 100%), var(--wtf-bg-image);
+    }
+  }
+}
+
+#polygon {
+  section {
+    padding: $section-padding-mobile;
+
+    @include media-breakpoint-up(md) {
+      padding: $section-padding;
+    }
+  }
+}

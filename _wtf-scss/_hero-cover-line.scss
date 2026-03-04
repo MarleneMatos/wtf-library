@@ -1,0 +1,21 @@
+.line {
+
+  .hero-cover {
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+      color: var(--wtf-heading-color);
+      text-transform: uppercase;
+      text-align: center;
+      font-family: $font-family-heading;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+}

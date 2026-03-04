@@ -1,0 +1,335 @@
+.buttonsArea1 {
+    text-align: right;
+    margin: 1rem 0;
+}
+
+.savingsChapter {
+
+    input {
+
+        &[type=checkbox] {
+            display: none;
+        }
+
+        &[type=checkbox]:checked~.category .chapterSelectBox {
+            background-color: $white;
+        }
+
+        &[type=checkbox]:checked~.category .chapterSelectBox::after {
+            opacity: 1;
+        }
+    }
+
+    .savingsSection {
+        background-color: $primary;
+        border: 1px solid $primary;
+        border-radius: 0.5rem;
+        //box-shadow: 1px 1px rgba($color-primary-black, 0.16);
+        @include savingsBox-outer-shadow;
+        transition: all .2s;
+        /*
+      @media (max-width:$phablet) {
+          margin: 1rem 0;
+      }*/
+
+        &:hover {
+            transform: translateY(-0.5rem);
+            //@include savingsBox-outer-shadow-hover;
+        }
+
+        &.selected {
+            border: 1px solid $secondary;
+        }
+
+        .savingsProducts {
+            background-color: $white;
+            //box-shadow: 1px 1px rgba($color-primary-black, 0.16);
+            @include savingsBox-inner-shadow;
+            border-radius: 0.5rem;
+            position: relative;
+            min-height: 17.5rem;
+
+            .chapterSection {
+                margin: 1rem;
+                width: 100%;
+            }
+
+            .chapterSelectBox {
+                height: 3.5rem;
+                width: 3.5rem;
+                // box-shadow: 1px 1px rgba($color-primary-black, 0.16);
+                border: 4px $primary solid;
+                border-radius: 0.5rem;
+                background-color: $white;
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                /*
+              @media (max-width:$mobile) {
+                  margin: 0rem 0rem 0rem 0;
+              }
+
+              @media (max-width:330px) {
+                  margin: 0rem 0rem 0rem 0;
+              }*/
+
+                &::after {
+                    //content: url("/Media/Design/chapter-white-tick.svg");
+                    //
+                    display: block;
+                    //height: 2.2rem;
+                    //width: 2.9rem;
+                    width: 2.9rem;
+                    height: 2.9rem;
+                    opacity: 0;
+                    transition: opacity .2s;
+                    //margin: 0.65rem 0.3rem;
+                    margin: 0.1rem;
+
+                    // Older browsers
+                    content: "";
+                    background-image: $custom-checkbox-icon-checked;
+                    background-size: cover;
+
+                    //Newer browsers - masks
+                    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                        background-color: $primary;
+                        -webkit-mask-image: $custom-checkbox-icon-checked;
+                        -webkit-mask-size: cover;
+                        mask-image: $custom-checkbox-icon-checked;
+                        mask-size: cover;
+                        background-image: none;
+                    }
+                }
+            }
+        }
+
+        .savingsTotal {
+            margin: 1rem;
+        }
+    }
+
+    .chapterNumber {
+        color: $secondary;
+        //@include azo-sans-regular;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .chapterName {
+        //@include azo-sans-regular;
+        color: $primary;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .chapterSeparator {
+        background-color: $secondary;
+        height: 0.1rem;
+        width: 4rem;
+        display: block;
+        margin: 1rem 0rem;
+    }
+
+    .productName {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        color: $primary;
+    }
+
+    .productPrescribingLink {
+        display: inline-block;
+
+        .prescribingLink {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            color: $secondary;
+            text-decoration: underline;
+            margin: 0rem;
+            padding: 0rem;
+            float: right;
+
+            &::after {
+                //content: "\f35d";
+                content: ">";
+                color: $secondary;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                margin-left: 0.5rem;
+                //@include font-awesome;
+                display: inline-block;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .potentialSavings {
+        //@include azo-sans-regular;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: $primary;
+        text-transform: uppercase;
+    }
+
+    .chapterSaving {
+        //@include azo-sans-medium;
+        font-size: 2rem;
+        line-height: 2.9rem;
+        color: $primary;
+    }
+}
+
+
+/*
+.savingsChapter {
+
+  input {
+
+      &[type=checkbox] {
+          display: none;
+      }
+
+      &[type=checkbox]:checked ~ .category .chapterSelectBox {
+          background-color: $primary;
+      }
+
+      &[type=checkbox]:checked ~ .category .chapterSelectBox::after {
+          opacity: 1;
+      }
+  }
+
+  .savingsProducts {
+      background-color: $color-white;
+      //box-shadow: 1px 1px rgba($color-primary-black, 0.16);
+      @include nav-box-shadow;
+      border-radius: 0.5rem;
+      position: relative;
+      //height: 15rem;
+      .chapterSection {
+          margin: 1rem;
+          width: 100%;
+      }
+
+      .chapterSelectBox {
+          height: 3.5rem;
+          width: 3.5rem;
+          // box-shadow: 1px 1px rgba($color-primary-black, 0.16);
+          border: 2px $primary solid;
+          border-radius: 0.5rem;
+          background-color: $primary;
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+
+          @media (max-width:$mobile) {
+              margin: 0rem 0rem 0rem 0;
+          }
+
+          @media (max-width:330px) {
+              margin: 0rem 0rem 0rem 0;
+          }
+
+          &::after {
+              content: url("/Media/Design/chapter-white-tick.svg");
+              display: block;
+              height: 2.2rem;
+              width: 2.9rem;
+              opacity: 0;
+              transition: opacity .2s;
+              margin: 0.65rem 0.3rem;
+          }
+      }
+  }
+
+  .savingsSection {
+      background-color: $primary;
+      border: 1px solid $color-secondary-bright-blue;
+      border-radius: 0.5rem;
+      //box-shadow: 1px 1px rgba($color-primary-black, 0.16);
+      @include nav-box-shadow;
+
+      @media (max-width:$phablet) {
+          margin: 1rem 0;
+      }
+
+
+
+      .savingsTotal {
+          margin: 1rem;
+      }
+  }
+
+  .chapterNumber {
+      color: $secondary;
+      @include azo-sans-regular;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+  }
+
+  .chapterName {
+      @include azo-sans-regular;
+      color: $color-secondary-bright-blue;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+  }
+
+  .chapterSeparator {
+      background-color: $color-secondary-cyan;
+      height: 0.1rem;
+      width: 4rem;
+      display: block;
+      margin: 1rem 0rem;
+  }
+
+  .productName {
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      color: $primary;
+  }
+
+  .productPrescribingLink {
+      display: inline-block;
+
+      .prescribingLink {
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          color: $secondary;
+          text-decoration: underline;
+          margin: 0rem;
+          padding: 0rem;
+
+          &::after {
+              content: "\f35d";
+              color: $secondary;
+              font-size: 1.2rem;
+              line-height: 1.5rem;
+              margin-left: 0.5rem;
+              @include font-awesome;
+              text-decoration: none;
+          }
+      }
+  }
+
+  .potentialSavings {
+      @include azo-sans-regular;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      color: $primary;
+      text-transform: uppercase;
+  }
+
+  .chapterSaving {
+      @include azo-sans-medium;
+      font-size: 2rem;
+      line-height: 2.9rem;
+      color: $primary;
+  }
+}*/

@@ -1,0 +1,31 @@
+.list {
+    &.iconic {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+
+            &::before {
+                content: "";
+                display: inline-block;
+                height: 0.8rem;
+                width: 0.8rem;
+                margin-right: .7rem;
+
+                // Older browsers
+                background-image: $custom-list-icon-before;
+                background-size: cover;
+
+                //Newer browsers - masks
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: $primary;
+                    -webkit-mask-image: $custom-list-icon-before;
+                    -webkit-mask-size: cover;
+                    mask-image: $custom-list-icon-before;
+                    mask-size: cover;
+                    background-image: none;
+                }
+            }
+        }
+    }
+}

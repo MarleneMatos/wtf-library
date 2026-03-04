@@ -1,0 +1,106 @@
+.wtf-gallery {
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        .wtf-gallery {
+            &--btn {
+                display: block;
+                transition-duration: $wtf-transition-animation-duration;
+
+                &.btn,
+                .btn {
+                    border-radius: 50%;
+                    padding: 1rem;
+                }
+
+            }
+            &--img {
+                --wtf-body-color: var(--wtf-primary);
+                transition-duration: $wtf-transition-animation-duration;
+                background-color: var(--wtf-primary);
+                opacity: .5;
+                overflow: hidden;
+
+            }
+
+            &--skewY {
+                opacity: 0;
+                transition-duration: $wtf-transition-animation-duration;
+            }
+        }
+    }
+
+    &--h {
+        display: block;
+        transition-duration: $wtf-transition-animation-duration;
+        font-weight: bold;
+        
+        padding: 0 1.5rem;
+        opacity: 1;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &--img {
+        background-color: var(--wtf-body-bg);
+        width: 100%;
+        transition-duration: $wtf-transition-animation-duration;
+        max-width: 100%;
+        display: block;
+        overflow: hidden;
+
+
+    }
+
+    &--btn {
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition-duration: $wtf-transition-animation-duration;
+
+    }
+
+    /*
+    &__btn-single {
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+        line-height: 0;
+        cursor: pointer;
+
+        .wtf-gallery__h {
+            position: absolute;
+            display: block;
+            bottom: 5%;
+            left: 5%;
+            font-weight: bold;
+            font-size: 2.6rem;
+            transition-duration: $wtf-transition-animation-duration;
+            color: #000000;
+            background: rgba(255, 255, 255, 0.5);
+            line-height: 3.6rem;
+            padding: 0 1.5rem;
+        }
+
+        &:hover {
+            .wtf-gallery__img {
+                transform: scale(1.2);
+                transition-duration: $wtf-transition-animation-duration;
+                //filter: grayscale(50%);
+                //opacity: .7;
+                overflow: hidden;
+            }
+
+            .wtf-gallery__h {
+                color: #ffffff;
+                display: block;
+                transition-duration: $wtf-transition-animation-duration;
+                background: rgba(#e02826, 1);
+            }
+        }
+    }*/
+}

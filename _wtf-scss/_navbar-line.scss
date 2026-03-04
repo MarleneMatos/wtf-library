@@ -1,0 +1,179 @@
+.navbar {
+    &.line{
+        --wtf-navbar-padding-y: 0rem;
+        --wtf-navbar-toggler-padding-x: 0;
+        --wtf-navbar-toggler-padding-y: 0;
+        --wtf-navbar-toggler-border-radius: 0;
+        --wtf-navbar-toggler-font-size: 0;
+        --wtf-navbar-hover-color: var(--wtf-primary);
+        --wtf-navbar-toggler-border-color: transparent;
+
+        &.navbar-brand {
+            svg {
+                --wtf-brand-color: var(--wtf-primary);
+            }
+        }
+
+        &.scrolled {
+            background-color: var(--wtf-body-bg);
+            box-shadow: $base-box-shadow;
+        }
+
+        .navbar-toggler {
+            --wtf-navbar-toggler-focus-width: 0;
+
+            border: 0;
+            //width: calc($iconic-nav-logo-size * $fraction-lg);
+            //height: calc($iconic-nav-logo-size * $fraction-lg);
+            font-size: 0;
+            line-height: 0;
+            //padding:0;
+            color: var(--wtf-primary);
+
+            @include media-breakpoint-up(sm) {
+                padding: 0;
+                //width: $iconic-nav-logo-size;
+                //height: $iconic-nav-logo-size;
+            }
+
+            &--icon {
+                //width: $iconic-nav-icon-size;
+                //height: $iconic-nav-icon-size;
+                color: var(--wtf-primary);
+                position: relative;
+
+                &,
+                &::before,
+                &::after {
+                    background-color: var(--wtf-primary);
+
+                    @include wtfTheLineMenuIcon;
+                }
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    transition: all $wtf-transition-animation-duration;
+                }
+
+                &::before {
+                    top: calc($wtf-menu-icon-space-before* $fraction-lg);
+
+                    @include media-breakpoint-up(md) {
+                        top: $wtf-menu-icon-space-before;
+                    }
+                }
+
+                &::after {
+                    top: calc($wtf-menu-icon-space-before * $fraction-lg);
+
+                    @include media-breakpoint-up(md) {
+                        top: $wtf-menu-icon-space-before;
+                    }
+                }
+            }
+
+            &:not(.collapsed) {
+
+                .navbar-toggler--icon {
+                    color: var(--wtf-primary);
+                    position: relative;
+
+                    & {
+                        background-color: transparent;
+                    }
+
+                    &::before {
+                        top: 0;
+                        transform: rotate(135deg);
+                    }
+
+                    &::after {
+                        top: 0;
+                        transform: rotate(-135deg);
+                    }
+                }
+
+            }
+
+            &.collapsed {
+                .navbar-toggler--icon {
+                    color: var(--wtf-primary);
+                    position: relative;
+
+                    &,
+                    &::before,
+                    &::after {
+                        background-color: var(--wtf-primary);
+
+                        @include wtfTheLineMenuIcon;
+                    }
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        transition: all $wtf-transition-animation-duration;
+                    }
+
+                    &::before {
+                        top: calc($wtf-menu-icon-space-before * $fraction-lg);
+
+                        @include media-breakpoint-up(md) {
+                            top: $wtf-menu-icon-space-before;
+                        }
+                    }
+
+                    &::after {
+                        top: calc($wtf-menu-icon-space-after * $fraction-lg);
+
+                        @include media-breakpoint-up(md) {
+                            top: $wtf-menu-icon-space-after;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .navbar-collapse.show {
+            background-color: var(--wtf-body-bg);
+        }
+
+        .nav {
+            @include wtfTheLineNavLink;
+
+            .collapse {
+                .btn-toggle-nav {
+                    list-style: none;
+
+                    .collapse {
+                        @include wtfTheLineNavLink;
+                    }
+                }
+            }
+        }
+    }
+
+    .container a.navbar-brand {
+        --wtf-navbar-brand-font-size: 0;
+
+        svg {
+            height: $wtf-brand-height;
+            width: auto;
+        }
+    }
+}
+
+/*
+.nav-line .nav-line .container a.navbar-brand {
+    --wtf-navbar-brand-font-size: 0;
+}
+
+
+svg {
+    --wtf-brand-color: var(--wtf-primary);
+}*/

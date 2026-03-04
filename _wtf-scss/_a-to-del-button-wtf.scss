@@ -1,0 +1,102 @@
+.btn-primary {
+    --wtf-btn-padding-x: 2rem;
+    --wtf-btn-border-radius: 2rem;
+    --wtf-btn-color: var(--wtf-white);
+    --wtf-btn-bg: var(--wtf-primary);
+    --wtf-btn-border-color: var(--wtf-primary);
+    --wtf-btn-hover-color: var(--wtf-white);
+    --wtf-btn-hover-bg: var(--wtf-primary);
+    --wtf-btn-hover-border-color: var(--wtf-primary);
+    --wtf-btn-active-color: var(--wtf-white);
+    --wtf-btn-active-bg: var(--wtf-primary);
+    --wtf-btn-active-border-color: var(--wtf-primary);
+    --wtf-btn-disabled-color: var(--wtf-white);
+    --wtf-btn-disabled-bg: var(--wtf-primary);
+    --wtf-btn-disabled-border-color: var(--wtf-primary);
+    --wtf-btn-border-width:0;
+
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: var(--wtf-btn-border-radius);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+        background-color: var(--wtf-primary);
+
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($black,.2);
+    }
+
+    @include media-breakpoint-up(md) {
+        --wtf-btn-padding-x: 3rem;
+        --wtf-btn-border-radius: 3rem;
+    }
+
+    svg{
+        fill: var(--wtf-btn-color);
+        width: var(--wtf-btn-font-size);
+        height: var(--wtf-btn-font-size);
+    }
+}
+
+.btn-animated { 
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: var(--wtf-btn-border-radius);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+        background-color: var(--wtf-primary);
+
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($black,.2);
+    }
+}

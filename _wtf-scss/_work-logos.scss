@@ -1,0 +1,45 @@
+.work {
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &-logos {
+        padding-top: $icon-margin;
+
+        &:not(:last-child) {
+            @include media-breakpoint-up(md) {
+                margin-right: $icon-margin;
+            }
+
+        }
+
+        img {
+            height: 2rem;
+
+            @include media-breakpoint-up(md) {
+                height: 2rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 3rem;
+            }
+        }
+
+        svg {
+            fill: $white;
+            height: 2rem;
+
+            @include media-breakpoint-up(md) {
+                height: 2rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 3rem;
+            }
+        }
+    }
+}

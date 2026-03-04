@@ -1,0 +1,115 @@
+// VAR | TEXT
+
+@font-face {
+  font-family: "Gidolinya";
+  src: url('../../assets/fonts/gidolinya/GidolinyaWebFontKit/Gidolinya-Regular.woff2') format('woff2'),
+    url('../../assets/fonts/gidolinya/GidolinyaWebFontKit/Gidolinya-Regular.woff') format('woff'),
+    url('../../assets/fonts/gidolinya/GidolinyaWebFontKit/Gidolinya-Regular.ttf') format('ttf'
+    );
+}
+
+body {
+  &.wtf {
+    --wtf-body-font-family: 'Gidolinya', Verdana, Arial, Helvetica, 'sans-serif';
+
+    #contactPage {
+      .contacts-cover {
+        display: block;
+
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+
+      }
+    }
+
+    #contactsBody {
+      display: none;
+      padding: 5rem 0;
+
+      @include media-breakpoint-down(md) {
+        padding: 2rem 1rem;
+      }
+
+      @include media-breakpoint-down(lg) {
+        display: block;
+      }
+    }
+
+    #about,
+    #services,
+    #contact {
+      .container {
+        padding: 5rem 0;
+
+        @include media-breakpoint-down(md) {
+          padding: 2rem 1rem;
+        }
+
+        .row:not(:last-child) {
+
+          padding: 0 0 5rem 0;
+
+          @include media-breakpoint-down(md) {
+            padding: 0 0 2rem 0rem;
+          }
+        }
+
+        .col-sm-24:not(:last-child),
+        .col-24:not(:last-child) {
+          //padding: 0 0 2rem 0;
+
+          @include media-breakpoint-down(md) {
+            padding: 0 0 1rem 0rem;
+          }
+        }
+      }
+
+    }
+
+    .container a.navbar-brand svg {
+      height: $wtf-brand-height;
+      width: auto;
+    }
+
+    .container a.navbar-brand {
+      --wtf-navbar-brand-font-size: 0;
+    }
+
+    svg {
+      --wtf-brand-color: var(--wtf-primary);
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      --wtf-btn-padding-x: 2rem;
+      --wtf-btn-border-radius: 2rem;
+      --wtf-btn-border-width: $wtf-line-border-height;
+
+      @include media-breakpoint-up(md) {
+        --wtf-btn-padding-x: 3rem;
+        --wtf-btn-border-radius: 3rem;
+      }
+
+      svg {
+        fill: var(--wtf-btn-color);
+        width: var(--wtf-btn-font-size);
+        height: var(--wtf-btn-font-size);
+      }
+    }
+
+    .footer {
+
+      .wtf,
+      a.wtf {
+        svg {
+          height: $wtf-brand-height;
+          width: auto;
+          --wtf-brand-color: var(--wtf-primary);
+          padding: 0 0.5rem 0 0;
+        }
+      }
+    }
+
+  }
+}

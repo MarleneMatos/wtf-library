@@ -1,0 +1,18 @@
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: $wtf-line-border-height solid;
+    border-radius: $wtf-line-border-radius;
+    //opacity: 0.1;
+    //border-color: var(--wtf-body-color);
+    border-color: transparent;
+}
+
+.wp-block-separator {
+    border: none;
+    border-radius: $wtf-line-border-radius;
+    border-top: $wtf-line-border-height solid;
+    //border-color: var(--wtf-body-color);
+    border-color: transparent;
+}

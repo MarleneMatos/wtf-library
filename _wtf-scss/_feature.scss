@@ -1,0 +1,115 @@
+.feature {
+    &-icon {
+        svg, img {
+            fill: var(--wtf-primary);
+            height: 1em;
+            width: 1em;
+            display: inline-block;
+
+        }
+
+        &--gradient {
+            padding: 0.5em;
+
+            svg, img  {
+                fill:  var(--wtf-white);
+                //fill: var(--wtf-body-bg);
+                height: 1em;
+                width: 1em;
+                display: inline-block;
+
+            }
+        }
+
+        &--border {
+            padding: 0.5em;
+            border: 3px solid var(--wtf-primary);
+
+            svg, img  {
+                fill: var(--wtf-primary);
+                height: 1em;
+                width: 1em;
+                display: inline-block;
+
+            }
+        }
+
+        &--grid {
+            svg, img  {
+                position: relative;
+                fill: var(--wtf-primary);
+                height: 1.75rem;
+                width: 1.75rem;
+                display: inline-block;
+                //background-image: linear-gradient(to bottom, $wtf-colour-primary-light, $wtf-colour-primary-dark);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                margin-right: 1rem;
+                flex-shrink: 0;
+            }
+
+        }
+
+        &--grid-bg {
+            svg, img  {
+                position: relative;
+                fill:  var(--wtf-white);
+                height: 2.25rem;
+                width: 2.25rem;
+                display: inline-block;
+                //background-image: linear-gradient(to bottom, $wtf-colour-primary-light, $wtf-colour-primary-dark);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                //margin-right: 1rem;
+                flex-shrink: 0;
+                padding: 0.5rem;
+            }
+        }
+        
+
+        //icon full width
+        &--fw {
+            position: relative;
+            text-align: center;
+            padding: 1rem;
+            
+            svg, img  {
+                fill: var(--wtf-primary);
+                height: 6rem;
+                max-width: 100%;
+                margin-bottom: 2rem;
+                display: inline-block;
+                background-image: linear-gradient(to bottom, $wtf-colour-primary-light, $wtf-colour-primary-dark);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+
+                @include media-breakpoint-down(md) {
+            //height: 4rem;
+            margin-bottom:1rem;
+          }
+            }
+        }
+
+    }
+
+    &-img-bg {
+        position: relative;
+        text-align: center;
+        background-color: rgba(var(--wtf-white), 0.8);
+
+
+        img,
+        svg, img  {
+            width: 100%;
+            fill: var(--wtf-primary);
+            height: 6rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+    }
+
+    
+}

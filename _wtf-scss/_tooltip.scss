@@ -1,0 +1,11 @@
+
+
+  .tooltip {
+    --wtf-tooltip-bg: var(--wtf-primary);
+      --wtf-tooltip-color: var(--wtf-white);
+
+    &.custom-tooltip {
+      --wtf-tooltip-bg: var(--wtf-primary);
+      --wtf-tooltip-color: var(--wtf-white);
+    }
+  }

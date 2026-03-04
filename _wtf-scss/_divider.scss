@@ -1,0 +1,67 @@
+.divider {
+    &--xl {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+
+        &-vr {
+            width: 1.5rem;
+            //height: 100vh;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+            flex-shrink: 0;
+        }
+    }
+
+    &--line {
+        //margin-top: 5px;
+        //margin-bottom: 20px;
+        height: $wtf-line-border-height;
+        border-bottom-width: $wtf-line-border-height;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        border-style: solid;
+        width: 100%;
+        margin: 0px auto;
+
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-color: var(--wtf-primary);
+        border-radius: $wtf-line-border-radius;
+    }
+}
+
+/*
+hr {
+    border-top: none;
+
+    .wp-block-separator {
+        @include wtfTheLineBottom;
+        border-color: var(--wtf-primary);
+    }
+}*/
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: $wtf-line-border-height solid;
+    border-radius: $wtf-line-border-radius;
+    opacity: 0.1;
+    border-color: var(--wtf-body-color);
+}
+
+.wp-block-separator {
+    border: none;
+    border-radius: $wtf-line-border-radius;
+    border-top: $wtf-line-border-height solid;
+    border-color: var(--wtf-body-color);
+}

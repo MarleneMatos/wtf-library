@@ -1,0 +1,45 @@
+.line {
+  --wtf-heading-color: var(--wtf-primary);
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $font-family-heading;
+    color: var(--wtf-heading-color);
+    position: relative;
+    padding-bottom: 0.5rem;
+    @include wtfTheLineTitle;
+    /*
+    &::after {
+      content: "";
+      //background-image: var(--wtf-primary);
+      background-color: var(--wtf-heading-color);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      height: $wtf-line-border-height;
+      width: $wtf-line-title-width;
+      border-radius: $wtf-line-border-height;
+    }
+      */
+  }
+
+
+  .wp-block-heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $font-family-heading;
+    color: var(--wtf-heading-color);
+    position: relative;
+    padding-bottom: 0.5rem;
+    @include wtfTheLineTitle;
+
+  }
+}
