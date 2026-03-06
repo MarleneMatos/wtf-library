@@ -1,0 +1,73 @@
+.h1,
+h1 {
+  font-size: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
+  color: var(--wtf-heading-color);
+}
+
+.h2,
+h2 {
+  font-size: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xl));
+  color: var(--wtf-heading-color);
+}
+
+.h3,
+h3 {
+  font-size: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-lg));
+  color: var(--wtf-heading-color);
+}
+
+.h4,
+h4 {
+  font-size: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-md));
+  color: var(--wtf-heading-color);
+}
+
+.h5,
+h5 {
+  font-size: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-sm));
+  color: var(--wtf-heading-color);
+}
+
+.h6,
+h6 {
+  font-size: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xs));
+  color: var(--wtf-heading-color);
+}
+
+.p,
+p {
+  font-size: var(--wtf-body-font-size);
+  font-family: var(--wtf-body-font-family);
+  color: var(--wtf-body-color);
+
+  strong {
+    font-weight: bold;
+  }
+
+  .p-i {
+    color: var(--wtf-body-color);
+    font-weight: bold;
+  }
+}
+
+.error {
+  position: relative;
+
+  p {
+    font-size: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-error-font));
+    line-height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-error-font));
+    color: var(--wtf-primary);
+    font-weight: bold;
+    margin-bottom: 0;
+
+    svg {
+      fill: var(--wtf-primary);
+      width: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-error-font));
+      height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-error-font));
+      text-align: center;
+      -webkit-transform: translateY(-10%);
+      -ms-transform: translateY(-10%);
+      transform: translateY(-10%);
+    }
+  }
+}

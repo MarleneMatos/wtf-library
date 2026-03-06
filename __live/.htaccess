@@ -19,8 +19,13 @@ Options -Indexes
 # --------------------------------------------------
 # 3) HSTS (enable ONLY after HTTPS confirmed)
 # --------------------------------------------------
+
+#<IfModule mod_headers.c>
+  #Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+#</IfModule>
+
 <IfModule mod_headers.c>
-  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+Header set Cache-Control "public, max-age=31536000, immutable"
 </IfModule>
 
 # --------------------------------------------------
@@ -89,11 +94,18 @@ RemoveHandler .php .php5 .phtml .phps .cgi .pl .py .jsp .asp .aspx
 # --------------------------------------------------
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
   RewriteCond %{HTTP_REFERER} !^$
-  #RewriteCond %{HTTP_REFERER} !^https?://(www\.)?webtechfocus\.com/ [NC]
-  #RewriteCond %{HTTP_REFERER} !^https?://(www\.)?marlenematos\.com/ [NC]
-  RewriteCond %{HTTP_REFERER} !^https?://([a-z0-9-]+\.)?marlenematos\.com/ [NC]
   RewriteCond %{HTTP_REFERER} !^https?://([a-z0-9-]+\.)?webtechfocus\.com/ [NC]
+  RewriteCond %{HTTP_REFERER} !^https?://([a-z0-9-]+\.)?marlenematos\.com/ [NC]
+
+  # Allowed Social Networks
+  RewriteCond %{HTTP_REFERER} !^https?://([a-z0-9-]+\.)?twitter\.com/ [NC]
+  RewriteCond %{HTTP_REFERER} !^https?://([a-z0-9-]+\.)?x\.com/ [NC]
+  RewriteCond %{HTTP_REFERER} !^https?://([a-z0-9-]+\.)?linkedin\.com/ [NC]
+  RewriteCond %{HTTP_REFERER} !^https?://([a-z0-9-]+\.)?facebook\.com/ [NC]
+
+
   RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F,NC,L]
 </IfModule>
 

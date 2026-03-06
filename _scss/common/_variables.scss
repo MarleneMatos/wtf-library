@@ -1,0 +1,801 @@
+$colours: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+// More colour other colors are from Bootstrap
+$linear-gradient-tleft: (
+  "orange-pink": linear-gradient(to left, $orange, $pink),
+  "orange-yellow": linear-gradient(to left, $orange, $yellow),
+  "orange-purple": linear-gradient(to left, $orange, $purple),
+  "orange-cyan": linear-gradient(to left, $orange, $cyan),
+  "orange-green": linear-gradient(to left, $orange, $green),
+  "orange-orange": linear-gradient(to left, $orange, $orange),
+  "pink-yellow": linear-gradient(to left, $pink, $yellow),
+  "pink-purple": linear-gradient(to left, $pink, $purple),
+  "pink-cyan": linear-gradient(to left, $pink, $cyan),
+  "pink-green": linear-gradient(to left, $pink, $green),
+  "pink-orange": linear-gradient(to left, $pink, $orange),
+  "yellow-pink": linear-gradient(to left, $yellow, $pink),
+  "yellow-purple": linear-gradient(to left, $yellow, $purple),
+  "yellow-cyan": linear-gradient(to left, $yellow, $cyan),
+  "yellow-green": linear-gradient(to left, $yellow, $green),
+  "yellow-orange": linear-gradient(to left, $yellow, $orange),
+  "purple-pink": linear-gradient(to left, $purple, $pink),
+  "purple-yellow": linear-gradient(to left, $purple, $yellow),
+  "purple-cyan": linear-gradient(to left, $purple, $cyan),
+  "purple-green": linear-gradient(to left, $purple, $green),
+  "purple-orange": linear-gradient(to left, $purple, $orange),
+  "cyan-pink": linear-gradient(to left, $cyan, $pink),
+  "cyan-yellow": linear-gradient(to left, $cyan, $yellow),
+  "cyan-purple": linear-gradient(to left, $cyan, $purple),
+  "cyan-green": linear-gradient(to left, $cyan, $green),
+  "cyan-orange": linear-gradient(to left, $cyan, $orange),
+  "green-pink": linear-gradient(to left, $green, $pink),
+  "green-yellow": linear-gradient(to left, $green, $yellow),
+  "green-purple": linear-gradient(to left, $green, $purple),
+  "green-cyan": linear-gradient(to left, $green, $cyan),
+  "green-orange": linear-gradient(to left, $green, $orange)) !default;
+
+$linear-gradient-90: (
+  "orange-pink": linear-gradient(90deg, $orange 0%, $pink 100%),
+  "orange-yellow": linear-gradient(90deg, $orange 0%, $yellow 100%),
+  "orange-purple": linear-gradient(90deg, $orange 0%, $purple 100%),
+  "orange-cyan": linear-gradient(90deg, $orange 0%, $cyan 100%),
+  "orange-green": linear-gradient(90deg, $orange 0%, $green 100%),
+  "orange-orange": linear-gradient(90deg, $orange 0%, $orange 100%),
+  "pink-pink": linear-gradient(90deg, $pink 0%, $pink 100%),
+  "pink-yellow": linear-gradient(90deg, $pink 0%, $yellow 100%),
+  "pink-purple": linear-gradient(90deg, $pink 0%, $purple 100%),
+  "pink-cyan": linear-gradient(90deg, $pink 0%, $cyan 100%),
+  "pink-green": linear-gradient(90deg, $pink 0%, $green 100%),
+  "pink-orange": linear-gradient(90deg, $pink 0%, $orange 100%),
+  "yellow-pink": linear-gradient(90deg, $yellow 0%, $pink 100%),
+  "yellow-yellow": linear-gradient(90deg, $yellow 0%, $yellow 100%),
+  "yellow-purple": linear-gradient(90deg, $yellow 0%, $purple 100%),
+  "yellow-cyan": linear-gradient(90deg, $yellow 0%, $cyan 100%),
+  "yellow-green": linear-gradient(90deg, $yellow 0%, $green 100%),
+  "yellow-orange": linear-gradient(90deg, $yellow 0%, $orange 100%),
+  "purple-pink": linear-gradient(90deg, $purple 0%, $pink 100%),
+  "purple-yellow": linear-gradient(90deg, $purple 0%, $yellow 100%),
+  "purple-purple": linear-gradient(90deg, $purple 0%, $purple 100%),
+  "purple-cyan": linear-gradient(90deg, $purple 0%, $cyan 100%),
+  "purple-green": linear-gradient(90deg, $purple 0%, $green 100%),
+  "purple-orange": linear-gradient(90deg, $purple 0%, $orange 100%),
+  "cyan-pink": linear-gradient(90deg, $cyan 0%, $pink 100%),
+  "cyan-yellow": linear-gradient(90deg, $cyan 0%, $yellow 100%),
+  "cyan-purple": linear-gradient(90deg, $cyan 0%, $purple 100%),
+  "cyan-cyan": linear-gradient(90deg, $cyan 0%, $cyan 100%),
+  "cyan-green": linear-gradient(90deg, $cyan 0%, $green 100%),
+  "cyan-orange": linear-gradient(90deg, $cyan 0%, $orange 100%),
+  "green-pink": linear-gradient(90deg, $green 0%, $pink 100%),
+  "green-yellow": linear-gradient(90deg, $green 0%, $yellow 100%),
+  "green-purple": linear-gradient(90deg, $green 0%, $purple 100%),
+  "green-cyan": linear-gradient(90deg, $green 0%, $cyan 100%),
+  "green-green": linear-gradient(90deg, $green 0%, $green 100%),
+  "green-orange": linear-gradient(90deg, $green 0%, $orange 100%)) !default;
+
+
+// scss-docs-start colors-map
+$conic-gradient: (
+  "orange-pink": ($orange, $pink),
+  "orange-yellow": ($orange, $yellow),
+  "orange-purple": ($orange, $purple),
+  "orange-cyan": ($orange, $cyan),
+  "orange-green": ($orange, $green),
+  "orange-orange": ($orange, $orange),
+  "pink-pink": ($pink, $pink),
+  "pink-yellow": ($pink, $yellow),
+  "pink-purple": ($pink, $purple),
+  "pink-cyan": ($pink, $cyan),
+  "pink-green": ($pink, $green),
+  "pink-orange": ($pink, $orange),
+  "yellow-pink": ($yellow, $pink),
+  "yellow-yellow": ($yellow, $yellow),
+  "yellow-purple": ($yellow, $purple),
+  "yellow-cyan": ($yellow, $cyan),
+  "yellow-green": ($yellow, $green),
+  "yellow-orange": ($yellow, $orange),
+  "purple-pink": ($purple, $pink),
+  "purple-yellow": ($purple, $yellow),
+  "purple-purple": ($purple, $purple),
+  "purple-cyan": ($purple, $cyan),
+  "purple-green": ($purple, $green),
+  "purple-orange": ($purple, $orange),
+  "cyan-pink": ($cyan, $pink),
+  "cyan-yellow": ($cyan, $yellow),
+  "cyan-purple": ($cyan, $purple),
+  "cyan-cyan": ($cyan, $cyan),
+  "cyan-green": ($cyan, $green),
+  "cyan-orange": ($cyan, $orange),
+  "green-pink": ($green, $pink),
+  "green-yellow": ($green, $yellow),
+  "green-purple": ($green, $purple),
+  "green-cyan": ($green, $cyan),
+  "green-green": ($green, $green),
+  "green-orange": ($green, $orange)) !default;
+
+
+$users: (
+  "client": linear-gradient(90deg, $orange 0%, $pink 100%),
+  "admin": linear-gradient(90deg, $orange 0%, $yellow 100%),
+  "team": linear-gradient(90deg, $orange 0%, $purple 100%)) !default;
+
+
+@function light-comp($colours) {
+  $complement: complement($colours
+  );
+$light-complement: lighten($complement, 30%);
+@return $light-complement;
+}
+
+@each $key, $val in $colours {
+  .wtf-color-#{$key} {
+    color: $val;
+  }
+
+  .wtf-bg-#{$key} {
+    background-color: $val;
+  }
+
+  @if ($val !=black and $val !=white) {
+
+    // light variations
+    @for $i from 1 through 9 {
+      .wtf-color-#{$key}-l#{$i} {
+        color: mix(white, $val, $i * 10);
+      }
+
+      .wtf-bg-#{$key}-l#{$i} {
+        background-color: mix(white, $val, $i * 10);
+      }
+    }
+
+    // dark variations
+    @for $i from 1 through 9 {
+      .wtf-color-#{$key}-d#{$i} {
+        color: mix(black, $val, $i * 10);
+      }
+
+      .wtf-bg-#{$key}-d#{$i} {
+        background-color: mix(black, $val, $i * 10);
+      }
+    }
+  }
+}
+
+
+// &:nth-child, &:active, &:visited, &:last-child etc
+/*
+$wtf-colour-primary-light: var(--wtf-primary-border-subtle);
+$wtf-colour-primary-dark: var(--wtf-primary-text-emphasis);
+
+$wtf-colour-secondary-light: var(--wtf-secondary-border-subtle);
+$wtf-colour-secondary-dark: var(--wtf-secondary-text-emphasis);
+*/
+$wtf-colour-primary-light: mix($white, $primary, 5 * 10);
+$wtf-colour-primary-dark: mix($black, $primary, 5 * 10);
+
+$wtf-colour-secondary-light: mix($white, $secondary, 5 * 10);
+$wtf-colour-secondary-dark: mix($black, $secondary, 5 * 10);
+
+$wtf-colour-blue-light: mix($white, $blue, 5 * 10);
+$wtf-colour-blue-dark: mix($black, $blue, 5 * 10);
+
+
+//$wtf-gradient: linear-gradient(to bottom, rgba($wtf-colour-primary-light, 1), rgba($wtf-colour-primary-dark, 1));
+$wtf-primary-gradient: linear-gradient(to bottom, rgba($wtf-colour-primary-light, 1), rgba($wtf-colour-primary-dark, 1));
+$wtf-blue-gradient: linear-gradient(to bottom, rgba($wtf-colour-blue-light, 1), rgba($wtf-colour-blue-dark, 1));
+$wtf-dark-gradient: linear-gradient(to bottom, rgba($black, 0.5), rgba($black, 0.8));
+$wtf-gradient: linear-gradient(89.7deg, rgba(223, 0, 0, 1) 2.7%, rgba(214, 91, 0, 1) 15.1%, rgba(233, 245, 0, 1) 29.5%, rgba(23, 255, 17, 1) 45.8%, rgba(29, 255, 255, 1) 61.5%, rgba(5, 17, 255, 1) 76.4%, rgba(202, 0, 253, 1) 92.4%);
+
+//hero
+$wtf-hero-primary-gradient: linear-gradient(to bottom, rgba($wtf-colour-primary-light, 0.8), rgba($wtf-colour-primary-dark, 0.8));
+$wtf-hero-blue-gradient: linear-gradient(to bottom, rgba($wtf-colour-blue-light, 0.8), rgba($wtf-colour-blue-dark, 0.8));
+$wtf-hero-primary-gradient-dark: linear-gradient(to bottom, rgba($black, 0.8), rgba($black, 0.8));
+$wtf-hero-gradient: linear-gradient(89.7deg, rgba(223, 0, 0, 0.8) 2.7%, rgba(214, 91, 0, 0.8) 15.1%, rgba(233, 245, 0, 0.8) 29.5%, rgba(23, 255, 17, 0.8) 45.8%, rgba(29, 255, 255, 0.8) 61.5%, rgba(5, 17, 255, 0.8) 76.4%, rgba(202, 0, 253, 0.8) 92.4%);
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
+
+//Brand
+$wtf-brand-height: 1.5rem;
+
+//$wtf-btn-animation-duration: .5s;
+$wtf-in-animation-duration: .5s;
+$wtf-out-animation-duration: .75s;
+$wtf-transition-animation-duration: .5s;
+
+//Navbar Iconic used in Marlene Matos
+$wtf-menu-icon-width: 2.5rem;
+$wtf-menu-icon-space-before: -.7rem;
+$wtf-menu-icon-space-after: .7rem;
+$iconic-nav-icon-size: 3rem;
+$iconic-nav-font-size: calc($iconic-nav-icon-size / 2);
+$iconic-nav-icon-padding: calc($iconic-nav-font-size / 2);
+$iconic-nav-logo-size: calc($iconic-nav-icon-size + ($iconic-nav-icon-padding * 2));
+
+/*
+//wtf line components
+$wtf-line-border-radius: 3px;
+$wtf-line-border-height: 3px; //how thick line will be
+$wtf-line-title-width: 70px;
+//$iconic-nav-icon-size-svg: 2.5rem;
+
+
+
+
+//@include wtfBtn;
+@mixin wtfBtn {
+  --wtf-btn-padding-x: 2rem;
+  --wtf-btn-border-radius: 2rem;
+
+  @include media-breakpoint-up(md) {
+    --wtf-btn-padding-x: 3rem;
+    --wtf-btn-border-radius: 3rem;
+  }
+
+}
+
+//@include mmBtn;
+@mixin mmBtn {
+  --wtf-btn-border-width: 3px; //as per line
+  --wtf-btn-padding-x: 2rem;
+  --wtf-btn-padding-y: 1rem;
+  --wtf-btn-border-radius: 2rem;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    --wtf-btn-padding-x: 3rem;
+    --wtf-btn-border-radius: 3rem;
+    --wtf-btn-padding-y: 1.5rem;
+  }
+}
+
+// @include wtfBtnAnimation;
+@mixin wtfBtnAnimation {
+  animation: moveInBottom $wtf-in-animation-duration ease-out $wtf-out-animation-duration;
+  animation-fill-mode: backwards;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--wtf-btn-border-radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all $wtf-transition-animation-duration;
+    background-color: var(--wtf-primary);
+
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($black, .2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($black, .2);
+  }
+}
+
+// @include wtfBtnOutlineAnimation;
+@mixin wtfBtnOutlineAnimation {
+  animation: moveInBottom $wtf-in-animation-duration ease-out $wtf-out-animation-duration;
+  animation-fill-mode: backwards;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--wtf-btn-border-radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all $wtf-transition-animation-duration;
+    background-color: transparent;
+
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($black, .2);
+
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+      background-color: var(--wtf-primary);
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($black, .2);
+  }
+}
+
+
+
+// @include wtfTheLineMenuIcon;
+@mixin wtfTheLineMenuIcon {
+  width: calc($wtf-menu-icon-width * $fraction-lg);
+  height: $wtf-line-border-height;
+  //border-bottom-width: $wtf-line-border-height;
+  border-radius: $wtf-line-border-radius !important;
+  display: inline-block;
+
+  @include media-breakpoint-up(sm) {
+    width: $wtf-menu-icon-width;
+  }
+}
+
+// @include wtfTheLine;
+@mixin wtfTheLine {
+  height: $wtf-line-border-height;
+  border-bottom-width: $wtf-line-border-height;
+  border-radius: $wtf-line-border-radius;
+
+
+  border-style: solid;
+  margin: 0px auto;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+
+}
+*/
+
+
+
+// Slides Padding
+$base-padding: 2rem;
+
+// spacing
+$btn-base-padding: 0.75rem !default;
+$btn-base-margin: 0.75rem !default;
+
+// borders
+$btn-base-border-thickness: 1px !default;
+$btn-base-border-radius: 2rem !default;
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
+$footer-box-shadow: 1px -3px 5px rgba(0, 0, 0, 0.1) !default;
+
+// fraction for sreen Sizes
+/*
+Extra small xs <576px
+Small sm ≥576px
+Medium md ≥768px
+Large lg ≥992px
+Extra large xl ≥1200px
+Extra extra large xxl ≥1400px
+    */
+$fraction-slide-h1: 3;
+$fraction-slide-h2: 2;
+$fraction-h1: 1.75;
+$fraction-xxl: 1.25;
+$fraction-xl: 1;
+$fraction-lg: 0.75;
+$fraction-md: 0.5;
+$fraction-sm: 0.25;
+$fraction-xs: 0;
+
+/*Components variables*/
+
+$section-padding: 10rem 0rem;
+$section-padding-mobile: 10rem 0rem;
+
+$col-padding: 1rem;
+$col-padding-mobile: 0.5rem;
+
+$icon-margin: 0.7rem;
+$icon-margin-mobile: 0.7rem;
+
+
+
+
+
+$slide-padding: (
+  "xs": calc($base-padding + ($base-padding * $fraction-xs)),
+  "sm": calc($base-padding + ($base-padding * $fraction-sm)),
+  "md": calc($base-padding + ($base-padding * $fraction-md)),
+  "lg": calc($base-padding + ($base-padding * $fraction-lg)),
+  "xl": calc($base-padding + ($base-padding * $fraction-xl)),
+  "xxl": calc($base-padding + ($base-padding * $fraction-xxl)),
+  ) !default;
+
+$template-padding: (
+  "xs": $base-padding,
+  "sm": calc($base-padding + ($base-padding * $fraction-sm)),
+  "md": calc($base-padding + ($base-padding * $fraction-md)),
+  "lg": calc($base-padding + ($base-padding * $fraction-lg)),
+  "xl": calc($base-padding + ($base-padding * $fraction-xl)),
+  "xxl": calc($base-padding + ($base-padding * $fraction-xxl)),
+  ) !default;
+
+//$section-padding: 100px;
+//$mobile-section-padding: calc($section-padding * $mobile-padding-fraction);
+// @include sectionPadding;
+
+@mixin sectionPadding {
+  padding: $slide-padding-xs;
+}
+
+
+
+$default-font-size: 1.6rem;
+
+$font-family-heading: 'Gidolinya',
+  Verdana,
+  Arial,
+  Helvetica,
+  'sans-serif';
+$font-family: Verdana,
+  Arial,
+  Helvetica,
+  'sans-serif';
+$font-family-error: 'Franklin Gothic Medium',
+  'Arial Narrow',
+  Arial,
+  sans-serif;
+
+$seenon-font-size: 1.2rem;
+$seenon-font-size-mobile: 1.2rem;
+$seenon-icon-size: 1rem;
+
+//$section-title-font-size: 2rem;
+//$section-title-font-size-mobile: 1.8rem;
+$section-title-icon-size: 1.5rem;
+
+
+// Mixin | TEXT
+
+
+// @include wtfH;
+@mixin wtfH {
+  &--white {
+    color: $white;
+  }
+
+  &--primary {
+    color: var(--wtf-primary
+    );
+}
+
+&--caps {
+  text-transform: uppercase;
+}
+}
+
+// ------ font sizes
+$base-font-size: 1rem;
+$p-font-size-fr: 0.3;
+$h6-font-size-fr: 0.25;
+$h5-font-size-fr: 0.5;
+$h4-font-size-fr: 0.75;
+$h3-font-size-fr: 1;
+$h2-font-size-fr: 1.25;
+$h1-font-size-fr: 1.5;
+$error-font-size-fr: 8;
+//$base-line-height: 1.25rem;
+//$base-letter-spacing: -0.24px;
+
+
+// @include wtfError;
+@mixin wtfError {
+  font-size: calc($base-font-size + ($base-font-size * $error-font-size-fr));
+
+  /*
+  line-height: $h6-line-height;
+  letter-spacing: $h6-letter-spacing;
+  */
+  svg {
+    --wtf-brand-color: var(--wtf-primary);
+    fill: var(--wtf-primary);
+    width: calc($base-font-size + ($base-font-size * $error-font-size-fr));
+    height: calc($base-font-size + ($base-font-size * $error-font-size-fr));
+
+    @include media-breakpoint-down(md) {
+      width: calc(($base-font-size + ($base-font-size * $error-font-size-fr))* $fraction-md);
+      height: calc(($base-font-size + ($base-font-size * $error-font-size-fr))* $fraction-md);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: calc(($base-font-size + ($base-font-size * $error-font-size-fr))* $fraction-md);
+  }
+}
+
+
+// @include wtfH1;
+@mixin wtfH1 {
+  font-size: calc($base-font-size + ($base-font-size * $h1-font-size-fr));
+
+  /*
+  line-height: $h2-line-height;
+  letter-spacing: $h2-letter-spacing;
+
+  justify-self: center;
+  text-align: center;
+  align-items: center;*/
+  @include media-breakpoint-down(md) {
+    font-size: calc(($base-font-size + ($base-font-size * $h1-font-size-fr))* $fraction-lg);
+  }
+
+}
+
+// @include wtfH2;
+@mixin wtfH2 {
+  font-size: calc($base-font-size + ($base-font-size * $h2-font-size-fr));
+
+  /*
+  line-height: $h2-line-height;
+  letter-spacing: $h2-letter-spacing;
+
+  justify-self: center;
+  text-align: center;
+  align-items: center;*/
+  @include media-breakpoint-down(md) {
+    font-size: calc(($base-font-size + ($base-font-size * $h2-font-size-fr))* $fraction-lg);
+  }
+
+}
+
+// @include wtfH3;
+@mixin wtfH3 {
+  font-size: calc($base-font-size + ($base-font-size * $h3-font-size-fr));
+
+  /*
+  line-height: $h3-line-height;
+  letter-spacing: $h3-letter-spacing;
+  justify-self: center;
+  text-align: center;
+  align-items: center;*/
+  @include media-breakpoint-down(md) {
+    font-size: calc(($base-font-size + ($base-font-size * $h3-font-size-fr))* $fraction-lg);
+  }
+
+}
+
+// @include wtfH4;
+@mixin wtfH4 {
+  font-size: calc($base-font-size + ($base-font-size * $h4-font-size-fr));
+  /*
+  line-height: $h4-line-height;
+  letter-spacing: $h4-letter-spacing;
+  justify-self: center;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  */
+
+  @include media-breakpoint-down(md) {
+    font-size: calc(($base-font-size + ($base-font-size * $h4-font-size-fr))* $fraction-lg);
+  }
+}
+
+// @include wtfH5;
+@mixin wtfH5 {
+  font-size: calc($base-font-size + ($base-font-size * $h5-font-size-fr));
+  /*
+  line-height: $h5-line-height;
+  letter-spacing: $h5-letter-spacing;
+  justify-self: center;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;*/
+
+  @include media-breakpoint-down(md) {
+    font-size: calc(($base-font-size + ($base-font-size * $h5-font-size-fr))* $fraction-lg);
+  }
+}
+
+// @include wtfH6;
+@mixin wtfH6 {
+  font-size: calc($base-font-size + ($base-font-size * $h6-font-size-fr));
+  /*
+  line-height: $h6-line-height;
+  letter-spacing: $h6-letter-spacing;*/
+
+  @include media-breakpoint-down(md) {
+    font-size: calc(($base-font-size + ($base-font-size * $h6-font-size-fr))* $fraction-lg);
+  }
+}
+
+
+@mixin wtfp {
+  font-size: calc($base-font-size + ($base-font-size * $p-font-size-fr));
+  /*
+  line-height: $h6-line-height;
+  letter-spacing: $h6-letter-spacing;*/
+
+  @include media-breakpoint-down(md) {
+    font-size: calc(($base-font-size + ($base-font-size * $p-font-size-fr))* $fraction-lg);
+  }
+}
+
+
+
+//ICONS - Titles
+$custom-title-icon-before: url(../../assets/icons/icomoon-free490/SVG/flickr.svg);
+$custom-title-icon-after: url(../../assets/icons/icomoon-free490/SVG/flickr.svg);
+//$custom-title-icon-before:url(assets/icons/icomoon-entypoPlus/SVG/chevron-thin-left.svg);
+//$custom-title-icon-after:url(assets/icons/icomoon-entypoPlus/SVG/chevron-thin-right.svg);
+
+// @include iconWorked;
+/*
+@mixin iconWorked {
+
+  &::before {
+    margin-right: $custom-list-icon-margin;
+    content: "";
+    display: inline-block;
+    height: $seenon-icon-size;
+    width: $seenon-icon-size;
+
+    // Older browsers
+    background-image: $custom-title-icon-before;
+    background-size: cover;
+
+    //Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: var(--wtf-primary);
+      -webkit-mask-image: $custom-title-icon-before;
+      -webkit-mask-size: cover;
+      mask-image: $custom-title-icon-before;
+      mask-size: cover;
+      background-image: none;
+    }
+  }
+
+  &::after {
+    margin-left: $custom-list-icon-margin;
+    content: "";
+    display: inline-block;
+    height: $seenon-icon-size;
+    width: $seenon-icon-size;
+
+    // Older browsers
+    background-image: $custom-title-icon-after;
+    background-size: cover;
+
+    //Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: var(--wtf-primary);
+      -webkit-mask-image: $custom-title-icon-after;
+      -webkit-mask-size: cover;
+      mask-image: $custom-title-icon-after;
+      mask-size: cover;
+      background-image: none;
+    }
+  }
+}
+*/
+//ICONS
+
+//CHECKBOXES - ICON
+$custom-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/checkmark.svg);
+
+//sidenav
+$custom-sidenav-collapsible-icon-before: url(../../assets/icons/icomoon-entypoPlus/SVG/chevron-right.svg);
+
+//ICONS - LIST
+
+//$custom-list-icon-before:url(assets/icons/icomoon-entypoPlus/SVG/chevron-right.svg);
+$custom-list-icon-before: url(../../assets/icons/icomoon-entypoPlus/SVG/flickr.svg);
+$custom-list-icon-margin: 0.7rem;
+
+/*
+$banner-polygon-linear-gradient-colour-light: $black;
+$banner-polygon-linear-gradient-colour-dark: $black;
+$banner-polygon-bg-image: url(assets/media/james-harrison-vpOeXr5wmR4-unsplash.jpg);
+*/
+// @include wtfPolygon;
+@mixin wtfPolygon {
+  height: 85vh;
+  background-image: $wtf-hero-primary-gradient, var(--wtf-bg-image);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+    background-image: $wtf-hero-primary-gradient, var(--wtf-bg-image);
+  }
+
+  @include media-breakpoint-up(sm) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+  }
+}
+
+@mixin bannerPolygon {
+  height: 85vh;
+  background-image: $wtf-hero-primary-gradient-dark, var(--wtf-bg-image);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+    background-image: $wtf-hero-primary-gradient-dark, var(--wtf-bg-image);
+  }
+
+  @include media-breakpoint-up(sm) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  }
+}
+
+// @include wtfBtnPolygon;
+@mixin wtfBtnPolygon {
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+// @include wtfSkewY;
+$wtf-skewY-deg: 7deg;
+
+@mixin wtfSkewY {
+  background-size: cover;
+  -webkit-transform: skewY(-$wtf-skewY-deg);
+  -ms-transform: skewY(-$wtf-skewY-deg);
+  transform: skewY(-$wtf-skewY-deg);
+
+  padding: $section-padding-mobile;
+
+  @include media-breakpoint-up(md) {
+    padding: $section-padding;
+  }
+
+  &>* {
+    -webkit-transform: skewY($wtf-skewY-deg);
+    -ms-transform: skewY($wtf-skewY-deg);
+    transform: skewY($wtf-skewY-deg);
+  }
+
+}
