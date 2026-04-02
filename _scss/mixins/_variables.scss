@@ -1,0 +1,295 @@
+@mixin wtfVariablesWtfTheme {
+  --wtf-fraction-error-font: 8;
+  --wtf-fraction-slide-h1: 3;
+  --wtf-fraction-slide-h2: 2;
+  --wtf-fraction-xxl: 1.5;
+  --wtf-fraction-xl: 1.25;
+  --wtf-fraction-lg: 1;
+  --wtf-fraction-md: 0.75;
+  --wtf-fraction-sm: 0.5;
+  --wtf-fraction-xs: 0.25;
+  --wtf-nav-link-font-size: 1.3rem;
+  //--wtf-navbar-brand-font-size: 1.5rem;
+  --wtf-theme-navbar-height: calc(var(--wtf-theme-icon-size) * 1.5);
+  --wtf-theme-brand-font-size: 1.5rem;
+  --wtf-theme-polygon-deg: 7deg;
+  //--wtf-btn-font-size: 1.3rem;
+  --wtf-body-font-size: 1.3rem;
+  --wtf-body-font-weight: auto;
+  --wtf-dropdown-min-width: 5rem;
+  --wtf-card-height: 5rem;
+  --wtf-border-color: rgba(var(--wtf-primary-rgb), .3);
+
+  --wtf-gradient-text: linear-gradient(180deg, rgba(var(--wtf-primary-rgb), 1), rgba(var(--wtf-secondary-rgb), 1));
+  --wtf-gradient: linear-gradient(180deg, rgba(var(--wtf-black-rgb), 0.7), rgba(var(--wtf-black-rgb), 0.7));
+
+  //Animations
+  --wtf-transition-animation-duration: .3s;
+  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
+  --wtf-out-animation-duration: .75s;
+}
+
+
+@mixin wtfVariablesWtfThemeImage {
+  --wtf-bg-image: url(http://localhost/wtf-library/wtf-theme-media/wtf-wtf/wtf-web-tech-focus-design-development-support-background-1.png);
+  --wtf-hero-bg-image: var(--wtf-gradient), var(--wtf-bg-image);
+  --wtf-carousel-bg-image: var(--wtf-gradient), var(--wtf-bg-image);
+  --wtf-card-bg-image: var(--wtf-gradient), var(--wtf-bg-image);
+
+}
+
+@mixin wtfVariablesWtfWtfIcons {
+  --wtf-theme-heading-icon: url(http://localhost/wtf-library/wtf-theme-assets/icons/icomoon-entypoPlus/SVG/flickr.svg);
+  --wtf-checkbox-icon-unchecked: url(http://localhost/wtf-library/wtf-theme-assets/icons/icomoon-free490/SVG/radio-unchecked.svg);
+  --wtf-checkbox-icon-checked: url(http://localhost/wtf-library/wtf-theme-assets/icons/icomoon-free490/SVG/radio-checked.svg);
+}
+
+@mixin wtfVariablesWtfMMIcons {
+  --wtf-theme-heading-icon: url(http://localhost/wtf-library/wtf-theme-assets/icons/icomoon-entypoPlus/SVG/flickr.svg);
+  --wtf-checkbox-icon-unchecked: url(http://localhost/wtf-library/wtf-theme-assets/icons/icomoon-free490/SVG/radio-unchecked.svg);
+  --wtf-checkbox-icon-checked: url(http://localhost/wtf-library/wtf-theme-assets/icons/icomoon-free490/SVG/radio-checked.svg);
+}
+
+@mixin wtfVariablesWtfThemeIcons {
+  --wtf-theme-heading-icon: url(http://localhost/wtf-library/wtf-theme-assets/icons/icomoon-free490/SVG/flickr2.svg);
+  --wtf-checkbox-icon-unchecked: url(http://localhost/wtf-library/wtf-theme-assets/icons/icomoon-free490/SVG/radio-unchecked.svg);
+  --wtf-checkbox-icon-checked: url(http://localhost/wtf-library/wtf-theme-assets/icons/icomoon-free490/SVG/checkmark.svg);
+}
+
+@mixin wtfVariablesFontWtfGidolinya {
+  @font-face {
+    font-family: "Gidolinya";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/gidolinya/GidolinyaWebFontKit/Gidolinya-Regular.woff2") format("woff2"), url("http://localhost/wtf-library/wtf-theme-assets/fonts/gidolinya/GidolinyaWebFontKit/Gidolinya-Regular.woff") format("woff"), url("http://localhost/wtf-library/wtf-theme-assets/fonts/gidolinya/GidolinyaWebFontKit/Gidolinya-Regular.ttf") format("truetype");
+  }
+
+  --wtf-theme-heading-font: "Gidolinya", "sans-serif";
+  --wtf-body-font-family: "Gidolinya", "sans-serif";
+}
+
+@mixin wtfVariablesFontWtfThemeRaleway {
+  @font-face {
+    font-family: "Raleway Regular";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway Black";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Black.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway BlackItalic";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-BlackItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway Bold";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway BoldItalic";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-BoldItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway ExtraBold";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ExtraBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway ExtraBoldItalic";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ExtraBoldItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway ExtraLight";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ExtraLight.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway ExtraLightItalic";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ExtraLightItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway Italic";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Italic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway Light";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Light.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway LightItalic";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-LightItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway MediumItalic";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-MediumItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway SemiBold";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-SemiBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway SemiBoldItalic";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-SemiBoldItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway Thin";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Thin.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Raleway ThinItalic";
+    src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ThinItalic.ttf") format("truetype");
+  }
+
+  --wtf-theme-heading-font: "Raleway SemiBold", "sans-serif";
+  --wtf-body-font-family: "Raleway Regular", "sans-serif";
+}
+
+
+
+//@include wtfVariablesWtfLine;
+@mixin wtfVariablesWtfLine {
+  @include wtfVariablesWtfTheme;
+  @include wtfVariablesWtfThemeImage;
+  @include wtfVariablesFontWtfThemeRaleway;
+  @include wtfVariablesWtfThemeIcons;
+
+  /*Update across all themes*/
+  --wtf-theme-border-thickness: 2px;
+  --wtf-theme-border-radius: 0px;
+  --wtf-theme-heading-width: 70px;
+  --wtf-theme-section-padding: 2rem;
+
+  --wtf-theme-hero-size: 80vh;
+  --wtf-theme-hero-secondary-size: 40vh;
+  --wtf-theme-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  --wtf-theme-icon-size: 3rem;
+  --wtf-theme-checkbox-border-radius: 50%;
+  --wtf-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-padding-x: 2rem;
+  --wtf-theme-btn-padding-y: 0.5rem;
+  --wtf-theme-btn-border-radius: 0;
+}
+
+
+//@include wtfVariablesWtfPolygon;
+@mixin wtfVariablesWtfPolygon {
+  @include wtfVariablesWtfTheme;
+  @include wtfVariablesWtfThemeImage;
+  @include wtfVariablesFontWtfThemeRaleway;
+  @include wtfVariablesWtfThemeIcons;
+
+  /*Update across all themes*/
+  --wtf-theme-border-thickness: 2px;
+  --wtf-theme-border-radius: 0px;
+  --wtf-theme-heading-width: 70px;
+  --wtf-theme-section-padding: 6rem;
+  --wtf-theme-hero-size: 85vh;
+  --wtf-theme-hero-secondary-size: 40vh;
+  --wtf-theme-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  --wtf-theme-icon-size: 3rem;
+  --wtf-theme-checkbox-border-radius: 50%;
+  --wtf-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-padding-x: 2rem;
+  --wtf-theme-btn-padding-y: 0.5rem;
+  --wtf-theme-btn-border-radius: 0;
+}
+
+//@include wtfVariablesWtfDot;
+@mixin wtfVariablesWtfDot {
+  @include wtfVariablesWtfTheme;
+  @include wtfVariablesWtfThemeImage;
+  @include wtfVariablesFontWtfThemeRaleway;
+  @include wtfVariablesWtfThemeIcons;
+  
+
+  /*Update across all themes*/
+  --wtf-theme-border-thickness: 2px;
+  --wtf-theme-border-radius: 2rem;
+  --wtf-theme-heading-width: 70px;
+  --wtf-theme-section-padding: 3rem;
+
+  --wtf-theme-hero-size: 85vh;
+  --wtf-theme-hero-secondary-size: 40vh;
+  --wtf-theme-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  --wtf-theme-icon-size: 3rem;
+  --wtf-theme-checkbox-border-radius: 50%;
+  --wtf-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-padding-x: 2rem;
+  --wtf-theme-btn-padding-y: 0.5rem;
+  --wtf-theme-btn-border-radius: 0;
+
+}
+
+
+
+//@include wtfVariablesWtfMM;
+@mixin wtfVariablesWtfMM {
+  @include wtfVariablesWtfTheme;
+  @include wtfVariablesWtfThemeImage;
+  @include wtfVariablesFontWtfGidolinya;
+  @include wtfVariablesWtfWtfIcons;
+
+  /*Update across all themes*/
+  --wtf-theme-border-thickness: 3px;
+  --wtf-theme-border-radius: 3px;
+  --wtf-theme-heading-width: 70px;
+  --wtf-theme-section-padding: 6rem;
+
+  --wtf-theme-hero-size: 100vh;
+  --wtf-theme-hero-secondary-size: 40vh;
+  --wtf-theme-box-shadow: 0 10px 15px rgba(0, 0, 0, .16);
+  --wtf-theme-icon-size: 3rem;
+  --wtf-theme-checkbox-border-radius: 50%;
+  --wtf-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-padding-x: 2rem;
+  --wtf-theme-btn-padding-y: 0.5rem;
+  --wtf-theme-btn-border-radius: 2rem;
+
+  --wtf-brand-color: var(--wtf-emphasis-color);
+
+}
+
+//@include wtfVariablesWtfWtf;
+@mixin wtfVariablesWtfWtf {
+  @include wtfVariablesWtfTheme;
+  @include wtfVariablesWtfThemeImage;
+  @include wtfVariablesFontWtfGidolinya;
+  @include wtfVariablesWtfThemeIcons;
+
+  //--wtf-gradient-text: linear-gradient(180deg, rgba(var(--wtf-primary-bg-subtle), 1), rgba(var(--wtf-primary-text-emphasis), 1));
+  //--wtf-gradient: linear-gradient(180deg, rgba(var(--wtf-black-rgb), 0.7), rgba(var(--wtf-black-rgb), 0.7));
+  --wtf-brand-color: var(--wtf-emphasis-color);
+  --wtf-theme-box-shadow: 0 10px 15px rgba(0, 0, 0, .16);
+
+  /*Update across all themes*/
+  --wtf-theme-border-thickness: 3px;
+  --wtf-theme-border-radius: 3px;
+  --wtf-theme-heading-width: 70px;
+  --wtf-theme-section-padding: 2rem;
+  --wtf-theme-hero-size: 100vh;
+  --wtf-theme-hero-secondary-size: 40vh;
+  --wtf-theme-icon-size: 2rem;
+  --wtf-theme-checkbox-border-radius: 50%;
+  //--wtf-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
+  --wtf-theme-btn-padding-x: 2rem;
+  --wtf-theme-btn-padding-y: 0.5rem;
+  --wtf-theme-btn-border-radius: 2rem;
+
+}

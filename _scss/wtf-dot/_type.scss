@@ -1,0 +1,109 @@
+@mixin wtfDotSupports {
+  content: "";
+  display: inline-block;
+  height: var(--wtf-theme-icon-size);
+  width: var(--wtf-theme-icon-size);
+
+  // Older browsers
+  background-image: var(--wtf-theme-heading-icon);
+  background-size: cover;
+
+  //Newer browsers - masks
+  @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+    background-image: var(--wtf-primary);
+    background-color: var(--wtf-primary);
+    -webkit-mask-image: var(--wtf-theme-heading-icon);
+    -webkit-mask-size: cover;
+    mask-image: var(--wtf-theme-heading-icon);
+    mask-size: cover;
+  }
+}
+
+@mixin wtfDotSupportsBodyBg {
+  content: "";
+  display: inline-block;
+  height: var(--wtf-theme-icon-size);
+  width: var(--wtf-theme-icon-size);
+
+  // Older browsers
+  background-image: var(--wtf-theme-heading-icon);
+  background-size: cover;
+
+  //Newer browsers - masks
+  @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+    background-image: var(--wtf-body-bg);
+    background-color: var(--wtf-body-bg);
+    -webkit-mask-image: var(--wtf-theme-heading-icon);
+    -webkit-mask-size: cover;
+    mask-image: var(--wtf-theme-heading-icon);
+    mask-size: cover;
+  }
+}
+
+.bg-black,
+.bg-primary,
+.bg-primary-emphasis {
+  h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  &.wtf {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-align: center;
+
+    &::after {
+      margin-left: var(--wtf-body-font-size);
+      @include wtfDotSupportsBodyBg;
+    }
+
+    &::before {
+      margin-right: var(--wtf-body-font-size);
+      @include wtfDotSupportsBodyBg;
+    }
+  }
+}
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  &.wtf {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-align: center;
+
+    &::after {
+      margin-left: var(--wtf-body-font-size);
+      @include wtfDotSupports;
+    }
+
+    &::before {
+      margin-right: var(--wtf-body-font-size);
+      @include wtfDotSupports;
+    }
+
+    &.brand {
+      text-transform: lowercase;
+    }
+  }
+}

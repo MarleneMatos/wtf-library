@@ -1,0 +1,156 @@
+//Mixins in other mixins
+@import "variables";
+@import "colour";
+@import "svg";
+@import "wtf-dot";
+@import "wtf-line";
+@import "wtf-polygon";
+//@import "html";
+
+//Mixins
+@import "accordion";
+@import "alert";
+@import "anchor";
+@import "badge";
+@import "bg";
+@import "border";
+@import "brand";
+@import "breadcrumb";
+@import "button-group";
+@import "buttons";
+@import "calendar";
+@import "card";
+@import "carousel";
+@import "close";
+@import "dropdown";
+@import "feature";
+@import "footer";
+@import "form";
+@import "header";
+@import "hero";
+@import "hr";
+@import "images";
+@import "library";
+@import "list-group";
+@import "modal";
+@import "nav";
+@import "navbar";
+@import "offcanvas";
+@import "pagination";
+@import "placeholders";
+@import "popover";
+@import "progress";
+@import "section";
+@import "spinners";
+@import "tables";
+@import "toasts";
+@import "tooltip";
+@import "type";
+
+
+//@include wtfTheme;
+@mixin wtfTheme {
+    @include wtfAccordionWtfTheme;
+    @include wtfAlertWtfTheme;
+    @include wtfAnchorWtfTheme;
+    @include wtfBadgeWtfTheme;
+    @include wtfBorderWtfTheme;
+    @include wtfBrandWtfTheme;
+    @include wtfBreadcrumbWtfTheme;
+    @include wtfBtnGroupWtfTheme;
+    @include wtfBtnWtfTheme;
+    @include wtfCalWtfTheme;
+    @include wtfCardWtfTheme;
+    //@include wtfCarouselWtfTheme;
+    @include wtfCloseWtfTheme;
+    @include wtfDropdownWtfTheme;
+    @include wtfFeatureWtfTheme;
+    @include wtfFooterWtfTheme;
+    @include wtfFormWtfTheme;
+    //@include wtfHeroWtfTheme;
+    @include wtfHrWtfTheme;
+    // @include wtfImageWtfTheme;
+    @include wtfLibraryWtfTheme;
+    @include wtfListGroupWtfTheme;
+    @include wtfModalWtfTheme;
+    @include wtfNavWtfTheme;
+    @include wtfNavbarWtfTheme;
+    @include wtfOffcanvasWtfTheme;
+    @include wtfPaginationWtfTheme;
+    @include wtfPlaceholderWtfTheme;
+    @include wtfPopoverWtfTheme;
+    @include wtfProgressWtfTheme;
+    @include wtfSectionWtfTheme;
+    @include wtfSpinnerWtfTheme;
+    @include wtfTableWtfTheme;
+    @include wtfToastWtfTheme;
+    @include wtfTooltipWtfTheme;
+    //@include wtfTypeWtfTheme;
+}
+
+
+//@include wtfThemeWtfLine;
+@mixin wtfThemeWtfLine {
+    @include wtfVariablesWtfLine;
+    @include wtfTheme;
+
+    @include wtfBgWtfLine;
+    @include wtfCarouselWtfLine;
+    @include wtfHeroWtfLine;
+    //@include wtfNavWtfLine;
+    //@include wtfNavbarWtfLine;
+    @include wtfTypeWtfLine;
+    @include wtfThemeColourWtfLine;
+}
+
+//@include wtfThemeWtfPolygon;
+@mixin wtfThemeWtfPolygon {
+    @include wtfVariablesWtfPolygon;
+    @include wtfTheme;
+
+    @include wtfBgWtfPolygon;
+    @include wtfCarouselWtfPolygon;
+    @include wtfHeroWtfPolygon;
+    @include wtfTypeWtfPolygon;
+    @include wtfThemeColourWtfPolygon;
+}
+
+//@include wtfThemeWtfDot;
+@mixin wtfThemeWtfDot {
+    @include wtfVariablesWtfDot;
+    @include wtfTheme;
+
+    @include wtfBgWtfDot;
+    @include wtfCarouselWtfDot;
+    @include wtfHeroWtfDot;
+    @include wtfTypeWtfDot;
+    @include wtfThemeColourWtfDot;
+}
+
+
+
+//@include wtfThemeWtfMM;
+@mixin wtfThemeWtfMM {
+    @include wtfVariablesWtfMM;
+    @include wtfTheme;
+
+    @include wtfBgWtfPolygon;
+    @include wtfCarouselWtfPolygon;
+    @include wtfHeroWtfPolygon;
+   // @include wtfNavbarWtfPolygon;
+    @include wtfTypeWtfDot;
+    @include wtfThemeColourWtfMM;
+}
+
+
+//@include wtfThemeWtfWtf;
+@mixin wtfThemeWtfWtf {
+    @include wtfVariablesWtfWtf;
+    @include wtfTheme;
+
+    @include wtfBgWtfLine;
+    @include wtfCarouselWtfDot;
+    @include wtfHeroWtfDot;
+    @include wtfTypeWtfLine;
+    @include wtfThemeColourWtfWtf;
+}

@@ -1,0 +1,84 @@
+// @include wtfPolygonFirst;
+@mixin wtfPolygonFirst {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
+
+// @include wtfBtnPolygon;
+@mixin wtfBtnPolygon {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+
+// @include wtfPolygonHero;
+@mixin wtfPolygonHero {
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    @include wtfPolygonFirst;
+    height: var(--wtf-theme-hero-size);
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+    background-image: var(--wtf-gradient), var(--wtf-bg-image);
+  }
+
+  @include media-breakpoint-up(sm) {
+    @include wtfPolygonFirst;
+
+  }
+}
+
+// @include wtfPolygonLast;
+@mixin wtfPolygonLast {
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 25%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 25%);
+}
+// @include wtfWtfPolygonBgLast;
+@mixin wtfWtfPolygonBgLast {
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    @include wtfPolygonLast;
+    height: var(--wtf-theme-hero-size);
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+    background-image: var(--wtf-gradient), var(--wtf-bg-image);
+  }
+
+  @include media-breakpoint-up(sm) {
+    @include wtfPolygonLast;
+
+  }
+}
+
+
+// @include wtfHWtfPolygon;
+@mixin wtfHWtfPolygon {
+  display: inline-block;
+    background-image: var(--wtf-gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+}
+
+
+// @include wtfSkewY;
+@mixin wtfSkewY {
+  background-size: cover;
+
+  -webkit-transform: skewY(calc(-1 * var(--wtf-theme-polygon-deg)));
+  -ms-transform: skewY(calc(-1 * var(--wtf-theme-polygon-deg)));
+  transform: skewY(calc(-1 * var(--wtf-theme-polygon-deg)));
+
+  & > * {
+    -webkit-transform: skewY(var(--wtf-theme-polygon-deg));
+    -ms-transform: skewY(var(--wtf-theme-polygon-deg));
+    transform: skewY(var(--wtf-theme-polygon-deg));
+  }
+}

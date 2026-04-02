@@ -1,0 +1,41 @@
+//@include wtfBadge;
+@mixin wtfBadge {
+  --wtf-badge-border-radius: var(--wtf-theme-btn-border-radius);
+
+  &.text-bg-primary {
+    color: var(--wtf-body-bg) !important;
+    background-image: var(--wtf-primary-rgb);
+
+    svg {
+      width: calc(var(--wtf-badge-font-size) * 1.5);
+      height: calc(var(--wtf-badge-font-size) * 1.5);
+    }
+  }
+
+  svg {
+    width: calc(var(--wtf-badge-font-size) * 1.5);
+    height: calc(var(--wtf-badge-font-size) * 1.5);
+  }
+}
+
+//@include wtfBadgeWtfTheme;
+@mixin wtfBadgeWtfTheme {
+  .badge {
+    @include wtfBadge;
+  }
+}
+
+// @include wtfBadgeWtfLine;
+@mixin wtfBadgeWtfLine {}
+
+// @include wtfBadgeWtfPolygon;
+@mixin wtfBadgeWtfPolygon {}
+
+// @include wtfBadgeWtfDot;
+@mixin wtfBadgeWtfDot {}
+
+// @include wtfBadgeWtfMM;
+@mixin wtfBadgeWtfMM {}
+
+// @include wtfBadgeWtfWtf;
+@mixin wtfBadgeWtfWtf {}

@@ -1,0 +1,77 @@
+//@include wtfBrandWtfTheme;
+@mixin wtfBrandWtfTheme {
+    /*
+    a {
+        &.navbar-brand {
+            --wtf-navbar-brand-font-size: 0;
+
+            svg {
+                height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xs));
+                width: auto;
+                fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                &:hover {
+                    fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                }
+            }
+        }
+
+
+
+        &.footer-brand {
+            svg {
+                height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xs));
+                width: auto;
+                fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                &:hover {
+                    fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                }
+
+            }
+
+        }
+
+        .hero,
+        .carousel {
+            svg {
+                height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
+                width: auto;
+                fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                &:hover {
+                    fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                }
+
+            }
+        }
+
+        .brand {
+            svg {
+                height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
+                width: auto;
+                fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                &:hover {
+                    fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                }
+
+            }
+        }
+    }*/
+}
+
+// @include wtfBrandWtfLine;
+@mixin wtfBrandWtfLine {}
+
+// @include wtfBrandWtfPolygon;
+@mixin wtfBrandWtfPolygon {}
+
+// @include wtfBrandWtfDot;
+@mixin wtfBrandWtfDot {}
+
+// @include wtfBrandWtfMM;
+@mixin wtfBrandWtfMM {}
+
+// @include wtfBrandWtfWtf;
+@mixin wtfBrandWtfWtf {}

@@ -1,0 +1,30 @@
+// @include wtfBorderWtfTheme;
+@mixin wtfBorderWtfTheme {
+
+    .border {
+        border: var(--wtf-theme-border-thickness) var(--wtf-border-style) var(--wtf-border-color) !important;
+    }
+
+    .border-bottom {
+        border-bottom: var(--wtf-theme-border-thickness) var(--wtf-border-style) var(--wtf-border-color) !important;
+    }
+
+    .border-top {
+        border-top: var(--wtf-theme-border-thickness) var(--wtf-border-style) var(--wtf-border-color) !important;
+    }
+}
+
+// @include wtfBorderWtfLine;
+@mixin wtfBorderWtfLine {}
+
+// @include wtfBorderWtfPolygon;
+@mixin wtfBorderWtfPolygon {}
+
+// @include wtfBorderWtfDot;
+@mixin wtfBorderWtfDot {}
+
+// @include wtfBorderWtfMM;
+@mixin wtfBorderWtfMM {}
+
+// @include wtfBorderWtfWtf;
+@mixin wtfBorderWtfWtf {}

@@ -1,0 +1,27 @@
+//@include wtfAlert;
+@mixin wtfAlert {
+font-size: var(--wtf-body-font-size);
+@include svgFontSize;
+}
+
+//@include wtfAlertWtfTheme;
+@mixin wtfAlertWtfTheme {
+.alert {
+  @include wtfAlert;
+}
+}
+
+// @include wtfAlertWtfLine;
+@mixin wtfAlertWtfLine {}
+
+// @include wtfAlertWtfPolygon;
+@mixin wtfAlertWtfPolygon {}
+
+// @include wtfAlertWtfDot;
+@mixin wtfAlertWtfDot {}
+
+// @include wtfAlertWtfMM;
+@mixin wtfAlertWtfMM {}
+
+// @include wtfAlertWtfWtf;
+@mixin wtfAlertWtfWtf {}

@@ -1,0 +1,47 @@
+// @include wtfCarouselWtfTheme;
+@mixin wtfCarouselWtfTheme {
+    .carousel {
+  &-item {
+    @include wtfHeroSize;
+    @include wtfHeroContent;
+  }
+}
+}
+
+// @include wtfCarouselWtfLine;
+@mixin wtfCarouselWtfLine {
+  .carousel {
+  &-item {
+    @include wtfHeroSize;
+    @include wtfLineBorderBottom;
+    @include wtfHeroContent;
+  }
+
+}
+}
+
+// @include wtfCarouselWtfPolygon;
+@mixin wtfCarouselWtfPolygon {
+    .carousel {
+  &-item {
+    @include wtfHeroSize;
+    @include wtfPolygonHero;
+  }
+}
+}
+
+// @include wtfCarouselWtfDot;
+@mixin wtfCarouselWtfDot {
+    .carousel {
+  &-item {
+    @include wtfHeroSize;
+    @include wtfHeroContent;
+  }
+}
+}
+
+// @include wtfCarouselWtfMM;
+@mixin wtfCarouselWtfMM {}
+
+// @include wtfCarouselWtfWtf;
+@mixin wtfCarouselWtfWtf {}

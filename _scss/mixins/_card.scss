@@ -1,0 +1,235 @@
+//@include wtfCardWtfTheme;
+@mixin wtfCardWtfTheme {
+
+  .card-img,
+  .card-img-top {
+    //border-top-left-radius: var(--wtf-theme-btn-border-radius);
+    border-top-left-radius: var(--wtf-theme-border-radius);
+    border-top-right-radius: var(--wtf-theme-border-radius);
+  }
+
+  .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: var(--wtf-theme-border-radius);
+
+    svg.brand {
+      fill: currentColor;
+      width: var(--wtf-theme-brand-font-size);
+      height: var(--wtf-theme-brand-font-size);
+      line-height: var(--wtf-theme-brand-font-size);
+    }
+
+    svg.wtfi {
+      fill: currentColor;
+      width: var(--wtf-theme-icon-size);
+      height: var(--wtf-theme-icon-size);
+      line-height: var(--wtf-theme-icon-size);
+    }
+
+  }
+
+  .card {
+    --wtf-card-border-width: var(--wtf-theme-border-thickness);
+    --wtf-card-border-color: rgba(var(--wtf-primary-rgb), .3);
+    --wtf-card-border-radius: var(--wtf-theme-border-radius);
+    /*
+    border: var(--wtf-theme-border-thickness) solid rgba(var(--wtf-primary-rgb), .3);
+    border-radius: var(--wtf-card-border-radius);
+
+    .card-header {
+      border-bottom: var(--wtf-theme-border-thickness) solid rgba(var(--wtf-primary-rgb), .3);
+
+      &:first-child {
+        border-radius: var(--wtf-card-border-radius) var(--wtf-card-border-radius) 0 0;
+      }
+    }
+
+    /*
+--wtf-card-border-color: rgba(var(--wtf-border-color), .2);
+
+    --wtf-card-spacer-y: 1rem;
+    --wtf-card-spacer-x: 1rem;
+    --wtf-card-title-spacer-y: 0.5rem;
+    --wtf-card-title-color: ;
+    --wtf-card-subtitle-color: ;
+    --wtf-card-border-width: var(--wtf-border-width);
+    --wtf-card-border-color: var(--wtf-border-color-translucent);
+    --wtf-card-border-radius: var(--wtf-border-radius);
+    --wtf-card-box-shadow: ;
+    --wtf-card-inner-border-radius: calc(var(--wtf-border-radius) - (var(--wtf-border-width)));
+    --wtf-card-cap-padding-y: 0.5rem;
+    --wtf-card-cap-padding-x: 1rem;
+    --wtf-card-cap-bg: rgba(var(--wtf-body-color-rgb), 0.03);
+    --wtf-card-cap-color: ;
+    --wtf-card-height: ;
+    --wtf-card-color: ;
+    --wtf-card-bg: var(--wtf-body-bg);
+    --wtf-card-img-overlay-padding: 1rem;
+    --wtf-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--wtf-card-height);
+    color: var(--wtf-body-color);
+    word-wrap: break-word;
+    background-color: var(--wtf-card-bg);
+    background-clip: border-box;
+    border: var(--wtf-card-border-width) solid var(--wtf-card-border-color);
+    border-radius: var(--wtf-card-border-radius);
+
+    border: var(--wtf-theme-border-thickness) solid rgba(var(--wtf-primary-rgb), .3);
+    border-radius: var(--wtf-theme-border-radius);
+
+    &-header{
+        border-bottom: var(--wtf-theme-border-thickness) solid rgba(var(--wtf-primary-rgb), .3);
+    }
+        */
+    //@include svgFontSize;
+    &-link{
+      --wtf-link-color-rgb: var(--wtf-primary-rgb);
+    }
+
+    &.service {
+      --wtf-card-border-width: 0;
+      height: auto;
+      -webkit-box-shadow: var(--wtf-theme-box-shadow);
+      -moz-box-shadow: var(--wtf-theme-box-shadow);
+      box-shadow: var(--wtf-theme-box-shadow);
+      position: relative;
+      //border: var(--wtf-theme-border-thickness) solid var(--wtf-primary);
+      margin-top: calc(var(--wtf-body-font-size) * 3);
+
+      svg {
+        --wtf-brand-color: var(--wtf-primary);
+        --wtf-emphasis-color-rgb: var(--wtf-primary-rgb);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: calc(var(--wtf-body-font-size) * 5);
+        height: calc(var(--wtf-body-font-size) * 6);
+        z-index: 4;
+        color: var(--wtf-primary);
+        fill: var(--wtf-primary);
+      }
+
+      .svg-bg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: calc(var(--wtf-body-font-size) * 6);
+        height: calc(var(--wtf-body-font-size) * 6);
+        background-color: var(--wtf-body-bg);
+        border-radius: 50%;
+        border: var(--wtf-theme-border-thickness) solid var(--wtf-primary);
+        z-index: 3;
+      }
+
+      .card-header {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        height: 23rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: var(--wtf-theme-border-radius);
+        border-top-right-radius: var(--wtf-theme-border-radius);
+        background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(var(--wtf-primary-rgb), 0.75)), to(rgba(var(--wtf-primary-rgb), 0.75))), var(--wtf-card-bg-image);
+        background-image: linear-gradient(to right bottom, rgba(var(--wtf-primary-rgb), 0.75), rgba(var(--wtf-primary-rgb), 0.75)), var(--wtf-card-bg-image);
+
+        .heading {
+          text-transform: uppercase;
+          text-align: right;
+          color: var(--wtf-body-bg);
+          position: absolute;
+          top: 12rem;
+          right: 2rem;
+          width: 75%;
+
+          &-span {
+            padding: 1rem 2rem;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(var(--wtf-primary-rgb), 0.85)), to(rgba(var(--wtf-primary-rgb), 0.85)));
+            background-image: linear-gradient(to right bottom, rgba(var(--wtf-primary-rgb), 0.85), rgba(var(--wtf-primary-rgb), 0.85));
+          }
+        }
+      }
+
+      .card-details {
+        padding: 1rem 2rem;
+
+        ul {
+          list-style: none;
+          width: 100%;
+          margin: 0 auto;
+          padding-left: 0 !important;
+          -webkit-padding-start: 0;
+          padding-inline-start: 0;
+
+          li {
+            text-align: center;
+            font-size: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xs));
+            padding: 0;
+          }
+        }
+      }
+
+      .card-body {
+        padding: 3rem 2rem 1.5rem 2rem;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+        background-color: var(--wtf-primary);
+        border-bottom-left-radius: var(--wtf-theme-border-radius);
+        border-bottom-right-radius: var(--wtf-theme-border-radius);
+        color: var(--wtf-body-bg) !important;
+      }
+    }
+
+    &.product {
+      --wtf-card-border-width: 0;
+      height: auto;
+      -webkit-box-shadow: var(--wtf-theme-box-shadow);
+      -moz-box-shadow: var(--wtf-theme-box-shadow);
+      box-shadow: var(--wtf-theme-box-shadow);
+      position: relative;
+      //border: var(--wtf-theme-border-thickness) solid var(--wtf-primary);
+      margin-top: calc(var(--wtf-body-font-size) * 3);
+
+    }
+
+    &-nav {
+      padding: var(--wtf-card-spacer-y) var(--wtf-card-spacer-x);
+      color: var(--wtf-card-color);
+      border-radius: var(--wtf-theme-border-radius);
+      background-color: rgba(var(--wtf-primary-rgb), .2);
+
+    }
+    &.feature {
+      
+    }
+  }
+}
+
+
+// @include wtfCardWtfLine;
+@mixin wtfCardWtfLine {}
+
+// @include wtfCardWtfPolygon;
+@mixin wtfCardWtfPolygon {}
+
+// @include wtfCardWtfDot;
+@mixin wtfCardWtfDot {}
+
+// @include wtfCardWtfMM;
+@mixin wtfCardWtfMM {}
+
+// @include wtfCardWtfWtf;
+@mixin wtfCardWtfWtf {}

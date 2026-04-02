@@ -1,0 +1,89 @@
+//@include wtfAnchorWtfTheme;
+@mixin wtfAnchorWtfTheme {
+    a {
+/*
+        &:not(.btn) {
+            --wtf-link-color: var(--wtf-primary);
+            --wtf-link-color-rgb: var(--wtf-primary-rgb);
+            --wtf-body-color: var(--wtf-primary);
+            --wtf-body-color-rgb: var(--wtf-primary-rgb);
+            //color: rgba(var(--wtf-link-color-rgb), var(--wtf-link-opacity, 1));
+            // color: rgba(var(--wtf-primary-rgb), var(--wtf-link-opacity, 1));
+            text-decoration: underline;
+        }*/
+
+        &.navbar-brand {
+            --wtf-navbar-brand-font-size: 0;
+
+            svg {
+                //height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xs));
+                height: var(--wtf-theme-icon-size);
+                width: auto;
+                fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                &:hover {
+                    fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                }
+            }
+        }
+
+
+
+        &.footer-brand {
+            svg {
+                //height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xs));
+                height: var(--wtf-theme-icon-size);
+                width: auto;
+                fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                &:hover {
+                    fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                }
+
+            }
+
+        }
+
+        .hero,
+        .carousel {
+            svg {
+                height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
+                width: auto;
+                fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                &:hover {
+                    fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                }
+
+            }
+        }
+
+        .brand {
+            svg {
+                height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
+                width: auto;
+                fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                &:hover {
+                    fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                }
+
+            }
+        }
+    }
+}
+
+// @include wtfAnchorWtfLine;
+@mixin wtfAnchorWtfLine {}
+
+// @include wtfAnchorWtfPolygon;
+@mixin wtfAnchorWtfPolygon {}
+
+// @include wtfAnchorWtfDot;
+@mixin wtfAnchorWtfDot {}
+
+// @include wtfAnchorWtfMM;
+@mixin wtfAnchorWtfMM {}
+
+// @include wtfAnchorWtfWtf;
+@mixin wtfAnchorWtfWtf {}

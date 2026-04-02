@@ -103,7 +103,7 @@ body {
       .wtf,
       a.wtf {
         svg {
-          height: $wtf-brand-height;
+          width: var(--wtf-btn-font-size);
           width: auto;
           --wtf-brand-color: var(--wtf-primary);
           padding: 0 0.5rem 0 0;

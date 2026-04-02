@@ -1,0 +1,220 @@
+// @include wtfNavbar;
+@mixin wtfNavbar {
+  z-index: 1044;
+
+  &-wtf {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+
+  /*
+  @media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+  */
+}
+/*
+//@include wtfNavSocial;
+@mixin wtfNavSocial {
+  &-social {
+    --wtf-nav-link-padding-x: 0.5rem;
+    --wtf-nav-link-padding-y: 0.5rem;
+    //--wtf-nav-link-font-weight: ;
+    --wtf-nav-link-color: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+    --wtf-nav-link-hover-color: rgba(var(--wtf-emphasis-color-rgb), 1);
+    --wtf-nav-link-disabled-color: rgba(var(--wtf-emphasis-color-rgb), 0.3);
+    //display: flex;
+    //flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+}*/
+
+
+
+
+
+
+
+
+
+
+/*
+.navbar {
+  z-index: 1044;
+  --wtf-navbar-brand-font-size: var(--wtf-theme-brand-font-size);
+  --wtf-navbar-padding-y: 0rem;
+  --wtf-emphasis-color: var(--wtf-primary);
+  --wtf-emphasis-color-rgb: var(--wtf-primary-rgb);
+  
+  // scss-docs-end navbar-css-vars
+
+  .navbar-toggler {
+    color: var(--wtf-emphasis-color);
+
+    svg {
+      width: var(--wtf-body-font-size);
+      height: var(--wtf-body-font-size);
+      fill: currentColor;
+    }
+  }
+
+  .nav-item,
+  .nav-link {
+    font-size: var(--wtf-body-font-size);
+
+    svg {
+      width: var(--wtf-body-font-size);
+      height: var(--wtf-body-font-size);
+      fill: currentColor;
+    }
+  }
+}
+
+
+// Navbar brand
+//
+// Used for brand, project, or site names.
+
+.navbar-brand {
+
+}
+
+
+.sidebar{}
+*/
+
+// @include wtfNavbarWtfTheme;
+/*
+@mixin wtfNavbarWtfTheme {
+  .header-wtf {
+    .navbar-wtf {
+      --wtf-emphasis-color: var(--wtf-white);
+      --wtf-emphasis-color-rgb: var(--wtf-white-rgb);
+      background-color: var(--wtf-primary);
+      padding-right: calc(var(--wtf-gutter-x) * 0.5);
+      padding-left: calc(var(--wtf-gutter-x) * 0.5);
+    }
+
+    .btn-nav {
+      --wtf-btn-bg: var(--wtf-white);
+      --wtf-btn-border-color: var(--wtf-white);
+      --wtf-btn-hover-bg: var(--wtf-white);
+      --wtf-btn-hover-border-color: var(--wtf-white);
+      --wtf-btn-active-bg: var(--wtf-white);
+      --wtf-btn-active-border-color: var(--wtf-white);
+      --wtf-btn-disabled-bg: var(--wtf-white);
+      --wtf-btn-disabled-border-color: var(--wtf-white);
+
+      --wtf-heading-color: var(--wtf-primary);
+      --wtf-btn-color: var(--wtf-primary);
+      --wtf-btn-hover-color: var(--wtf-primary);
+      --wtf-btn-active-color: var(--wtf-primary);
+      --wtf-btn-disabled-color: var(--wtf-primary);
+
+    }
+  }
+
+  .navbar {
+    @include wtfNavbar;
+    --wtf-navbar-brand-font-size: 1.5rem;
+    --wtf-navbar-padding-y: 0rem;
+    --wtf-navbar-padding-x: 0.5rem;
+    --wtf-emphasis-color: var(--wtf-white);
+    --wtf-emphasis-color-rgb: var(--wtf-white-rgb);
+    /*
+    --wtf-emphasis-color: var(--wtf-primary);
+    --wtf-emphasis-color-rgb: var(--wtf-primary-rgb);
+    */
+/*
+
+    .navbar-toggler {
+      color: var(--wtf-emphasis-color);
+      @include svgFontSize;
+
+    }
+
+    .nav-item {
+      @include wtfNavItem;
+    }
+
+    .nav-link {
+      @include wtfNavLink;
+
+    }
+
+    /*
+    &:hover {
+      --wtf-link-color: rgba(var(--wtf-emphasis-color-rgb), 1);
+    }*/
+/*
+  }
+
+
+
+}
+  */
+
+// @include wtfNavbarHeaderBg;
+@mixin wtfNavbarHeaderBg {
+  .header-bg {
+    .navbar-wtf {
+      --wtf-emphasis-color: var(--wtf-white);
+      --wtf-emphasis-color-rgb: var(--wtf-white-rgb);
+      background-color: var(--wtf-primary);
+      //padding-right: calc(var(--wtf-gutter-x) * 0.5);
+      //padding-left: calc(var(--wtf-gutter-x) * 0.5);
+    }
+  }
+}
+
+// @include wtfNavbarWtfTheme;
+@mixin wtfNavbarWtfTheme {
+  .navbar {
+    &-wtf {
+      --wtf-navbar-brand-font-size: 1.5rem;
+      --wtf-navbar-padding-y: 0rem;
+      --wtf-navbar-padding-x: 0.5rem;
+      /*
+      --wtf-emphasis-color: var(--wtf-white);
+      --wtf-emphasis-color-rgb: var(--wtf-white-rgb);*/
+
+      --wtf-navbar-color: rgba(var(--wtf-emphasis-color-rgb), 1);
+    --wtf-navbar-hover-color: rgba(var(--wtf-emphasis-color-rgb), 0.8);
+    --wtf-navbar-disabled-color: rgba(var(--wtf-emphasis-color-rgb), 0.3);
+    --wtf-navbar-active-color: rgba(var(--wtf-emphasis-color-rgb), 1);
+    --wtf-navbar-brand-color: rgba(var(--wtf-emphasis-color-rgb), 1);
+    --wtf-navbar-brand-hover-color: rgba(var(--wtf-emphasis-color-rgb), 0.8);
+
+      z-index: 1044;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: var(--wtf-theme-navbar-height);
+    }
+  }
+
+  @include wtfNavbarHeaderBg;
+}
+
+// @include wtfNavbarWtfPolygon;
+@mixin wtfNavbarWtfPolygon {}
+
+// @include wtfNavbarWtfDot;
+@mixin wtfNavbarWtfDot {}
+
+// @include wtfNavbarWtfMM;
+@mixin wtfNavbarWtfMM {}
+
+// @include wtfNavbarWtfWtf;
+@mixin wtfNavbarWtfWtf {}

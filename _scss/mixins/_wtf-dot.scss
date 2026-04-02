@@ -1,0 +1,62 @@
+@mixin wtfDotSupportsPrimary {
+  content: "";
+  display: inline-block;
+  height: calc(var(--wtf-theme-heading-size) * 0.75);
+  width: calc(var(--wtf-theme-heading-size) * 0.75);
+
+  // Older browsers
+  background-image: var(--wtf-theme-heading-icon);
+  background-size: cover;
+
+  //Newer browsers - masks
+  @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+    background-image: var(--wtf-primary);
+    background-color: var(--wtf-primary);
+    -webkit-mask-image: var(--wtf-theme-heading-icon);
+    -webkit-mask-size: cover;
+    mask-image: var(--wtf-theme-heading-icon);
+    mask-size: cover;
+  }
+}
+
+@mixin wtfDotSupportsWhite {
+  content: "";
+  display: inline-block;
+  height: calc(var(--wtf-theme-heading-size) * 0.75);
+  width: calc(var(--wtf-theme-heading-size) * 0.75);
+
+  // Older browsers
+  background-image: var(--wtf-theme-heading-icon);
+  background-size: cover;
+
+  //Newer browsers - masks
+  @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+    background-image: var(--wtf-white);
+    background-color: var(--wtf-white);
+    -webkit-mask-image: var(--wtf-theme-heading-icon);
+    -webkit-mask-size: cover;
+    mask-image: var(--wtf-theme-heading-icon);
+    mask-size: cover;
+  }
+}
+
+@mixin wtfDotSupportsBodyBg {
+  content: "";
+  display: inline-block;
+  height: calc(var(--wtf-theme-heading-size) * 0.75);
+  width: calc(var(--wtf-theme-heading-size) * 0.75);
+
+  // Older browsers
+  background-image: var(--wtf-theme-heading-icon);
+  background-size: cover;
+
+  //Newer browsers - masks
+  @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+    background-image: var(--wtf-body-bg);
+    background-color: var(--wtf-body-bg);
+    -webkit-mask-image: var(--wtf-theme-heading-icon);
+    -webkit-mask-size: cover;
+    mask-image: var(--wtf-theme-heading-icon);
+    mask-size: cover;
+  }
+}

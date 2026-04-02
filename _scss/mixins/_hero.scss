@@ -1,0 +1,60 @@
+//@include wtfHeroSize;
+@mixin wtfHeroSize {
+  height: var(--wtf-theme-hero-size);
+  
+}
+
+//@include wtfHero;
+@mixin wtfHero {
+  @include wtfHeroSize;
+  position: relative;
+  background-image: var(--wtf-gradient), var(--wtf-hero-bg-image);
+  background-size: cover;
+  background-position: top;
+  
+}
+
+//@include wtfHeroContent;
+@mixin wtfHeroContent {
+  .content {
+    &-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+}
+
+
+//@include wtfHeroWtfDot;
+@mixin wtfHeroWtfDot {
+    .hero {
+  @include wtfHero;
+  @include wtfHeroContent;
+}
+}
+
+//@include wtfHeroWtfLine;
+@mixin wtfHeroWtfLine {
+  .hero {
+  @include wtfHero;
+  @include wtfHeroContent;
+  @include wtfLineBorderBottom;
+}
+
+
+}
+
+//@include wtfHeroWtfPolygon;
+@mixin wtfHeroWtfPolygon {
+  .hero {
+  @include wtfHero;
+  @include wtfHeroContent;
+  @include wtfPolygonHero;
+}
+
+}

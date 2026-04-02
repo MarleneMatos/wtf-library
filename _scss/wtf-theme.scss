@@ -8,9 +8,10 @@
 // 2. Include any default variable overrides here
 
 $blue: #131879;
-$teal: #00A19A; 
+$teal: #00A19A;
+$secondary: #ffffff;
 
-$grid-columns:12;
+$grid-columns: 12;
 $prefix: "wtf-";
 
 
@@ -45,263 +46,47 @@ $prefix: "wtf-";
 // 8. Add additional custom code here
 @import "bootstrap-5.3.8/bootstrap";
 
-.wtf-wtf{
---wtf-fraction-error-font: 8;
-  --wtf-fraction-slide-h1: 3;
-  --wtf-fraction-slide-h2: 2;
-  --wtf-fraction-xxl: 1.5;
-  --wtf-fraction-xl: 1.25;
-  --wtf-fraction-lg: 1;
-  --wtf-fraction-md: 0.75;
-  --wtf-fraction-sm: 0.5;
-  --wtf-fraction-xs: 0.25;
-  --wtf-body-font-size: 1.3rem;
-  --wtf-body-font-weight: auto;
-  --wtf-dropdown-min-width: 5rem;
-  /*
+//wtf Theme 
+@import "mixins/mixins";
+@import "wtf-theme/wtf";
 
-  //New - checkbox
-  --wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/checkmark.svg);
-
-  //New - common
-  --wtf-transition-animation-duration: .5s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;*/
-  --wtf-bg-image: var(--wtf-gradient), url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-hero-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-carousel-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-card-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  /*Update across all themes*/
-  --wtf-theme-border-thickness: 3px;
-  --wtf-theme-border-radius: 3px;
-  --wtf-theme-heading-width: 70px;
-  --wtf-theme-heading-font: "Gidolinya", "sans-serif";
-  --wtf-theme-hero-size: 100vh;
-  --wtf-theme-icon-size: 3rem;
-  --wtf-theme-checkbox-border-radius: 50%;
-  --wtf-theme-heading-icon: url(https://library.webtechfocus.com/icons/icomoon-entypoPlus/SVG/dot-single.svg);
-  --wtf-border-width: var(--wtf-theme-border-thickness);
-  --wtf-body-font-family: "Gidolinya", "sans-serif";
-  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
-  --wtf-theme-btn-padding-x: 2rem;
-  --wtf-theme-btn-padding-y: 0.5rem;
-  --wtf-theme-btn-border-radius: 2rem;
-  --wtf-checkbox-icon-unchecked: url(../../assets/icons/icomoon-free490/SVG/radio-unchecked.svg);
-  --wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/radio-checked.svg);
-  --wtf-transition-animation-duration: .3s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;
-  --wtf-gradient-text: linear-gradient(180deg, rgba(var(--wtf-primary-bg-subtle), 1), rgba(var(--wtf-primary-text-emphasis), 1));
-  --wtf-gradient: linear-gradient(180deg, rgba(var(--wtf-black-rgb), 0.7), rgba(var(--wtf-black-rgb), 0.7));
-  --wtf-brand-color: var(--wtf-emphasis-color);
-  --wtf-navbar-brand-font-size: 1.5rem;
-
-@import "common/common";
-@import "the-wtf/the-wtf";
+.wtf-line {
+  @include wtfThemeWtfLine;
 }
-.wtf-line{
-
-    --wtf-fraction-error-font: 8;
-  --wtf-fraction-slide-h1: 3;
-  --wtf-fraction-slide-h2: 2;
-  --wtf-fraction-xxl: 1.5;
-  --wtf-fraction-xl: 1.25;
-  --wtf-fraction-lg: 1;
-  --wtf-fraction-md: 0.75;
-  --wtf-fraction-sm: 0.5;
-  --wtf-fraction-xs: 0.25;
-  --wtf-body-font-size: 1.3rem;
-  --wtf-body-font-weight: auto;
-  --wtf-dropdown-min-width: 5rem;
-  /*
-
-  //New - checkbox
-  --wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/checkmark.svg);
-
-  //New - common
-  --wtf-transition-animation-duration: .5s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;*/
-  --wtf-bg-image: var(--wtf-gradient), url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-hero-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-carousel-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-card-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  /*Update across all themes*/
-  --wtf-theme-border-thickness: 2px;
-  --wtf-theme-border-radius: 0px;
-  --wtf-theme-heading-width: 70px;
-  --wtf-theme-heading-font: "Raleway SemiBold", "sans-serif";
-  --wtf-theme-hero-size: 80vh;
-  --wtf-theme-hero-secondary-size: 40vh;
-  --wtf-theme-icon-size: 3rem;
-  --wtf-theme-checkbox-border-radius: 50%;
-  --wtf-theme-heading-icon: url(https://library.webtechfocus.com/icons/icomoon-entypoPlus/SVG/dot-single.svg);
-  --wtf-border-width: var(--wtf-theme-border-thickness);
-  --wtf-body-font-family: "Raleway Regular", "sans-serif";
-  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
-  --wtf-theme-btn-padding-x: 2rem;
-  --wtf-theme-btn-padding-y: 0.5rem;
-  --wtf-theme-btn-border-radius: 0;
-  --wtf-checkbox-icon-unchecked: url(../../assets/icons/icomoon-free490/SVG/checkbox-unchecked.svg);
-  --wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/checkbox-checked.svg);
-  --wtf-transition-animation-duration: .2s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;
-
-  @import "common/common";
-  @import "the-line/the-line";
+.wtf-polygon {
+  @include wtfThemeWtfPolygon;
 }
-.wtf-polygon{
-     --wtf-fraction-error-font: 8;
-  --wtf-fraction-slide-h1: 3;
-  --wtf-fraction-slide-h2: 2;
-  --wtf-fraction-xxl: 1.5;
-  --wtf-fraction-xl: 1.25;
-  --wtf-fraction-lg: 1;
-  --wtf-fraction-md: 0.75;
-  --wtf-fraction-sm: 0.5;
-  --wtf-fraction-xs: 0.25;
-  --wtf-body-font-size: 1.3rem;
-  --wtf-body-font-weight: auto;
-  --wtf-dropdown-min-width: 5rem;
-  /*
-
-  //New - checkbox
-  --wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/checkmark.svg);
-
-  //New - common
-  --wtf-transition-animation-duration: .5s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;*/
-  --wtf-bg-image: var(--wtf-gradient), url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-hero-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-carousel-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-card-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  /*Update across all themes*/
-  --wtf-theme-border-thickness: 0px;
-  --wtf-theme-border-radius: 0px;
-  --wtf-theme-heading-width: 70px;
-  --wtf-theme-heading-font: "Raleway SemiBold", "sans-serif";
-  --wtf-theme-hero-size: 85vh;
-  --wtf-theme-hero-secondary-size: 40vh;
-  --wtf-theme-icon-size: 3rem;
-  --wtf-theme-checkbox-border-radius: 50%;
-  --wtf-theme-checkbox-icon-checked: url(https://library.webtechfocus.com/icons/icomoon-entypoPlus/SVG/check.svg);
-  --wtf-theme-heading-icon: url(https://library.webtechfocus.com/icons/icomoon-entypoPlus/SVG/dot-single.svg);
-  --wtf-border-width: var(--wtf-theme-border-thickness);
-  --wtf-body-font-family: "Raleway Regular", "sans-serif";
-  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
-  --wtf-theme-btn-padding-x: 2rem;
-  --wtf-theme-btn-padding-y: 0.5rem;
-  --wtf-theme-btn-border-radius: 0;
-  --wtf-transition-animation-duration: .5s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;
-
-  @import "common/common";
-  @import "the-polygon/the-polygon";
+.wtf-dot {
+  @include wtfThemeWtfDot;
 }
-.wtf-dot{
-     --wtf-fraction-error-font: 8;
-  --wtf-fraction-slide-h1: 3;
-  --wtf-fraction-slide-h2: 2;
-  --wtf-fraction-xxl: 1.5;
-  --wtf-fraction-xl: 1.25;
-  --wtf-fraction-lg: 1;
-  --wtf-fraction-md: 0.75;
-  --wtf-fraction-sm: 0.5;
-  --wtf-fraction-xs: 0.25;
-  --wtf-body-font-size: 1.3rem;
-  --wtf-body-font-weight: auto;
-  --wtf-dropdown-min-width: 5rem;
-  /*
-
-  //New - checkbox
-  --wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/checkmark.svg);
-
-  //New - common
-  --wtf-transition-animation-duration: .5s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;*/
-  --wtf-bg-image: var(--wtf-gradient), url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-hero-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-carousel-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-card-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  /*Update across all themes*/
-  --wtf-theme-border-thickness: 2px;
-  --wtf-theme-border-radius: 2rem;
-  --wtf-theme-heading-width: 70px;
-  --wtf-theme-heading-font: "Raleway SemiBold", "sans-serif";
-  --wtf-theme-hero-size: 85vh;
-  --wtf-theme-hero-secondary-size: 40vh;
-  --wtf-theme-icon-size: 3rem;
-  --wtf-theme-checkbox-border-radius: 50%;
-  --wtf-theme-heading-icon: url(https://library.webtechfocus.com/icons/icomoon-entypoPlus/SVG/dot-single.svg);
-  --wtf-border-width: var(--wtf-theme-border-thickness);
-  --wtf-body-font-family: "Raleway Regular", "sans-serif";
-  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
-  --wtf-theme-btn-padding-x: 2rem;
-  --wtf-theme-btn-padding-y: 0.5rem;
-  --wtf-theme-btn-border-radius: 0;
-  --wtf-checkbox-icon-unchecked: url(../../assets/icons/icomoon-free490/SVG/radio-unchecked.svg);
-  --wtf-checkbox-icon-checked: url(https://library.webtechfocus.com/icons/icomoon-entypoPlus/SVG/check.svg);
-  --wtf-transition-animation-duration: .5s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;
-
-    @import "common/common";
-@import "the-dot/the-dot";
+.wtf-mm {
+  @include wtfThemeWtfMM;
 }
-.wtf-mm{
-    --wtf-fraction-error-font: 8;
-  --wtf-fraction-slide-h1: 3;
-  --wtf-fraction-slide-h2: 2;
-  --wtf-fraction-xxl: 1.5;
-  --wtf-fraction-xl: 1.25;
-  --wtf-fraction-lg: 1;
-  --wtf-fraction-md: 0.75;
-  --wtf-fraction-sm: 0.5;
-  --wtf-fraction-xs: 0.25;
-  --wtf-body-font-size: 1.3rem;
-  --wtf-body-font-weight: auto;
-  --wtf-dropdown-min-width: 5rem;
-  /*
-
-  //New - checkbox
-  --wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/checkmark.svg);
-
-  //New - common
-  --wtf-transition-animation-duration: .5s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;*/
-  --wtf-bg-image: var(--wtf-gradient), url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-hero-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-carousel-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  --wtf-card-bg-image: url(../../media/wtf-web-tech-focus-design-development-support-background.png);
-  /*Update across all themes*/
-  --wtf-theme-border-thickness: 3px;
-  --wtf-theme-border-radius: 3px;
-  --wtf-theme-heading-width: 70px;
-  --wtf-theme-heading-font: "Gidolinya", "sans-serif";
-  --wtf-theme-hero-size: 100vh;
-  --wtf-theme-icon-size: 3rem;
-  --wtf-theme-checkbox-border-radius: 50%;
-  --wtf-theme-heading-icon: url(https://library.webtechfocus.com/icons/icomoon-entypoPlus/SVG/dot-single.svg);
-  --wtf-border-width: var(--wtf-theme-border-thickness);
-  --wtf-body-font-family: "Gidolinya", "sans-serif";
-  --wtf-theme-btn-border-width: var(--wtf-theme-border-thickness);
-  --wtf-theme-btn-padding-x: 2rem;
-  --wtf-theme-btn-padding-y: 0.5rem;
-  --wtf-theme-btn-border-radius: 2rem;
-  --wtf-checkbox-icon-unchecked: url(../../assets/icons/icomoon-free490/SVG/radio-unchecked.svg);
-  --wtf-checkbox-icon-checked: url(../../assets/icons/icomoon-free490/SVG/radio-checked.svg);
-  --wtf-transition-animation-duration: .3s;
-  --wtf-in-animation-duration: var(--wtf-transition-animation-duration);
-  --wtf-out-animation-duration: .75s;
-  --wtf-gradient-text: linear-gradient(180deg, rgba(var(--wtf-primary-bg-subtle), 1), rgba(var(--wtf-primary-text-emphasis), 1));
-  --wtf-gradient: linear-gradient(180deg, rgba(var(--wtf-black-rgb), 0.7), rgba(var(--wtf-black-rgb), 0.7));
-  --wtf-brand-color: var(--wtf-emphasis-color);
-  --wtf-navbar-brand-font-size: 1.5rem;
-    @import "common/common";
-@import "the-mm/the-mm";
+.wtf-wtf {
+  @include wtfThemeWtfWtf;
 }
+
+//coming soon
+/*
+.wtf-halo {
+ @include wtfThemeWtfWtf;
+}
+ .wtf-cover {
+ @include wtfThemeWtfWtf;
+}
+ .wtf-iconic {
+ @include wtfThemeWtfWtf;
+}
+.wtf-air {
+ @include wtfThemeWtfWtf;
+}
+ .wtf-water {
+ @include wtfThemeWtfWtf;
+}
+  .wtf-fire {
+ @include wtfThemeWtfWtf;
+}
+  .wtf-earth{
+ @include wtfThemeWtfWtf;
+}
+ */

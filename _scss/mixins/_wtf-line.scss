@@ -1,0 +1,83 @@
+// @include wtfBorderLine;
+@mixin wtfBorderLine {
+  border: var(--wtf-theme-border-thickness) solid var(--wtf-primary);
+  border-radius: var(--wtf-theme-border-radius);
+}
+
+// @include wtfLineBorderBottom;
+@mixin wtfLineBorderBottom {
+  border-bottom: var(--wtf-theme-border-thickness) solid var(--wtf-heading-color);
+border-radius: var(--wtf-theme-border-radius);
+}
+
+/*
+
+// @include wtfLineNavLink;
+@mixin wtfLineNavLink {
+  &-link {
+    position: relative;
+    font-family: var(--wtf-body-font-family);
+    //@include wtfp;
+
+    &:hover {
+      &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: $wtf-line-border-height;
+        border-radius: $wtf-line-border-radius !important;
+        background-color: var(--wtf-heading-color);
+        margin-bottom: 5px;
+      }
+
+    }
+
+    &.active {
+      color: var(--wtf-primary);
+
+      &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: $wtf-line-border-height;
+        border-radius: $wtf-line-border-radius !important;
+        background-color: var(--wtf-heading-color);
+
+      }
+    }
+
+  }
+
+}
+
+// @include wtfLine;
+@mixin wtfLine {
+  border: $wtf-line-border-height solid var(--wtf-heading-color);
+  border-radius: $wtf-line-border-radius;
+
+}
+
+// @include wtfLineBottom;
+@mixin wtfLineBottom {
+  border-bottom: $wtf-line-border-height solid var(--wtf-heading-color);
+
+}
+
+
+//@include wtfLineMenuIcon;
+@mixin wtfLineMenuIcon {
+  width: calc($wtf-menu-icon-width * $fraction-lg);
+  height: $wtf-line-border-height;
+  //border-bottom-width: $wtf-line-border-height;
+  border-radius: $wtf-line-border-radius !important;
+  display: inline-block;
+
+  @include media-breakpoint-up(sm) {
+    width: $wtf-menu-icon-width;
+  }
+}
+  */

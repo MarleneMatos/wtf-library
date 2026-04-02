@@ -1,0 +1,96 @@
+############################################
+# STATIC ASSET SECURITY + PERFORMANCE
+############################################
+
+# --------------------------------------------------
+# 1) Disable directory listing
+# --------------------------------------------------
+Options -Indexes -ExecCGI
+
+# --------------------------------------------------
+# 2) Allow all visitors (required for public assets)
+# --------------------------------------------------
+Require all granted
+
+# --------------------------------------------------
+# 3) Force HTTPS
+# --------------------------------------------------
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# --------------------------------------------------
+# 4) Security headers
+# --------------------------------------------------
+<IfModule mod_headers.c>
+
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+</IfModule>
+
+# --------------------------------------------------
+# 5) Disable server-side scripts
+# --------------------------------------------------
+<FilesMatch "\.(php|php5|phtml|phps|cgi|pl|py|jsp|asp|aspx)$">
+Require all denied
+</FilesMatch>
+
+RemoveHandler .php .php5 .phtml .phps .cgi .pl .py .jsp .asp .aspx
+
+# --------------------------------------------------
+# 6) CORS (required for fonts and SVG sometimes)
+# --------------------------------------------------
+<IfModule mod_headers.c>
+
+<FilesMatch "\.(ttf|otf|eot|woff|woff2|svg)$">
+Header always set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+</IfModule>
+
+# --------------------------------------------------
+# 7) Cache headers
+# --------------------------------------------------
+<IfModule mod_headers.c>
+Header set Cache-Control "public, max-age=31536000, immutable"
+</IfModule>
+
+# --------------------------------------------------
+# 8) Expiration rules
+# --------------------------------------------------
+<IfModule mod_expires.c>
+
+ExpiresActive On
+
+# Images
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+
+# CSS
+ExpiresByType text/css "access plus 1 month"
+
+# JavaScript
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType text/javascript "access plus 1 month"
+
+# Fonts
+ExpiresByType application/font-woff2 "access plus 1 year"
+
+</IfModule>
+
+# --------------------------------------------------
+# 9) Prevent MIME sniffing
+# --------------------------------------------------
+<IfModule mod_headers.c>
+<FilesMatch "\.(js|css|png|jpg|jpeg|gif|svg|woff|woff2)$">
+Header always set X-Content-Type-Options "nosniff"
+</FilesMatch>
+</IfModule>
