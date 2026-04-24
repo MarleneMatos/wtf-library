@@ -1,0 +1,1 @@
+<p>A simple text with a <a href="#" class="">text link</a>, <i>italic text</i>, <b>bold text as well</b> for demo <sup>1</sup>.</p>

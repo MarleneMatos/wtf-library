@@ -1,0 +1,17 @@
+// @include wtfModalWtfTheme;
+@mixin wtfModalWtfTheme {}
+
+// @include wtfModalWtfLine;
+@mixin wtfModalWtfLine {@include wtfModalWtfTheme;}
+
+// @include wtfModalWtfPolygon;
+@mixin wtfModalWtfPolygon {@include wtfModalWtfTheme;}
+
+// @include wtfModalWtfDot;
+@mixin wtfModalWtfDot {@include wtfModalWtfTheme;}
+
+// @include wtfModalWtfMM;
+@mixin wtfModalWtfMM {@include wtfModalWtfTheme;}
+
+// @include wtfModalWtfWtf;
+@mixin wtfModalWtfWtf {@include wtfModalWtfTheme;}

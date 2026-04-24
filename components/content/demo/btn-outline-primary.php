@@ -1,0 +1,1 @@
+<a class="btn btn-outline-primary" href="#">Primary outline</a>

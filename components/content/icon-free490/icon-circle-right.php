@@ -1,0 +1,1 @@
+<use xlink:href="../../../wtf-library/wtf-theme-assets/icons/icomoon-free490/sprite.svg#icon-circle-right"></use>

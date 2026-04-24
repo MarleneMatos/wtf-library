@@ -1,0 +1,43 @@
+.wtf-line {
+  @include wtfThemeWtfLine;
+}
+.wtf-polygon {
+  @include wtfThemeWtfPolygon;
+}
+.wtf-dot {
+  @include wtfThemeWtfDot;
+}
+.wtf-mm {
+  @include wtfThemeWtfMM;
+}
+.wtf-wtf {
+  @include wtfThemeWtfWtf;
+}
+
+//coming soon
+/*
+.wtf-iconic {
+ @include wtfThemeWtfWtf;
+}
+.wtf-halo {
+ @include wtfThemeWtfWtf;
+}
+ .wtf-cover {
+ @include wtfThemeWtfWtf;
+}
+ .wtf-iconic {
+ @include wtfThemeWtfWtf;
+}
+.wtf-air {
+ @include wtfThemeWtfWtf;
+}
+ .wtf-water {
+ @include wtfThemeWtfWtf;
+}
+  .wtf-fire {
+ @include wtfThemeWtfWtf;
+}
+  .wtf-earth{
+ @include wtfThemeWtfWtf;
+}
+ */

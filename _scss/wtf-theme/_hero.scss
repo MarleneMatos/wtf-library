@@ -1,0 +1,112 @@
+//@include wtfHeroSize;
+@mixin wtfHeroSize {
+  height: var(--wtf-theme-hero-size);
+  
+}
+
+//@include wtfHero;
+@mixin wtfHero {
+  @include wtfHeroSize;
+  position: relative;
+  background-image: var(--wtf-gradient), var(--wtf-hero-bg-image);
+  background-size: cover;
+  background-position: top;
+  
+}
+
+//@include wtfHeroContent;
+@mixin wtfHeroContent {
+  .content {
+    &-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    &-bottom{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+
+    }
+  }
+
+  .location-wtf {
+
+    @include svgIconFontSize;
+
+    font-size: calc(var(--wtf-theme-icon-size) * 0.75);
+    line-height: var(--wtf-theme-icon-size);
+    padding: calc(var(--wtf-theme-icon-size) * 0.75) 0rem;
+
+  }
+}
+
+//@include wtfHerowtfHero;
+@mixin wtfHerowtfHero {
+  .bg-primary{
+    &.hero{
+.location-wtf {
+  color: var(--wtf-white);
+}
+    }
+  }
+
+}
+
+
+//@include wtfHeroWtfDot;
+@mixin wtfHeroWtfDot {
+  @include wtfHerowtfHero;
+    .hero {
+  @include wtfHero;
+  @include wtfHeroContent;
+}
+}
+
+//@include wtfHeroWtfLine;
+@mixin wtfHeroWtfLine {
+  @include wtfHerowtfHero;
+  .hero {
+  @include wtfHero;
+  @include wtfHeroContent;
+  @include wtfLineBorderBottom;
+}
+}
+
+//@include wtfHeroWtfPolygon;
+@mixin wtfHeroWtfPolygon {
+  @include wtfHerowtfHero;
+  .hero {
+  @include wtfHero;
+  @include wtfHeroContent;
+  @include wtfPolygonHero;
+}
+}
+
+//@include wtfHeroWtfMM;
+@mixin wtfHeroWtfMM {
+  @include wtfHerowtfHero;
+  .hero {
+  @include wtfHero;
+  @include wtfHeroContent;
+  @include wtfPolygonHero;
+}
+}
+
+//@include wtfHeroWtfWtf;
+@mixin wtfHeroWtfWtf {
+  @include wtfHerowtfHero;
+  .hero {
+  @include wtfHero;
+  @include wtfHeroContent;
+  //@include wtfLineBorderBottom;
+}
+}

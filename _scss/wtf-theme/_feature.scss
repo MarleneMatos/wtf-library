@@ -1,0 +1,104 @@
+//@include wtfFeatureWtfTheme;
+@mixin wtfFeatureWtfTheme {
+    .bg-primary{
+        .feature {
+            &-icon {
+                width: 4rem;
+                height: 4rem;
+                border-radius: var(--wtf-theme-border-radius);
+                color: var(--wtf-white);
+                
+                 &-large {
+                text-align: center;
+                padding: 1rem;
+
+                svg,
+                img {
+                    fill: var(--wtf-white);
+                    height: 6rem;
+                    width: 6rem;
+                    //max-width: 100%;
+                    margin-bottom: 2rem;
+                    display: inline-block;
+                    background-image: var(--wtf-gradient-text);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 1rem;
+                    }
+                }
+
+            }
+            }
+        }
+    }
+
+    .icon-square {
+        width: 3rem;
+        height: 3rem;
+        border-radius: var(--wtf-theme-border-radius);
+        @include svgFeatureIconSize;
+    }
+
+    .feature {
+        &-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: var(--wtf-theme-border-radius);
+            color: var(--wtf-primary);
+
+            @include svgFeatureIconSize;
+
+            &-small {
+                width: 3rem;
+                height: 3rem;
+
+                @include svgFeatureIconSize;
+            }
+
+            &-large {
+                text-align: center;
+                padding: 1rem;
+
+                svg,
+                img {
+                    fill: var(--wtf-primary);
+                    height: 6rem;
+                    width: 6rem;
+                    //max-width: 100%;
+                    margin-bottom: 2rem;
+                    display: inline-block;
+                    background-image: var(--wtf-gradient-text);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 1rem;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+// @include wtfFeatureWtfLine;
+@mixin wtfFeatureWtfLine {
+    @include wtfFeatureWtfTheme;
+}
+
+// @include wtfFeatureWtfPolygon;
+@mixin wtfFeatureWtfPolygon {@include wtfFeatureWtfTheme;}
+
+// @include wtfFeatureWtfDot;
+@mixin wtfFeatureWtfDot {@include wtfFeatureWtfTheme;}
+
+// @include wtfFeatureWtfMM;
+@mixin wtfFeatureWtfMM {@include wtfFeatureWtfTheme;}
+
+// @include wtfFeatureWtfWtf;
+@mixin wtfFeatureWtfWtf {@include wtfFeatureWtfTheme;}

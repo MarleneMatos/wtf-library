@@ -4,11 +4,10 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
 
     if ($(window).scrollTop() > 50) {
-      $('#wtfHeader').addClass('header-bg');
-      $('#wtfFooter').addClass('footer-bg');
+      $('#wtfHeader').addClass('header-wtf');
+      
     } else {
-      $('#wtfHeader').removeClass('header-bg');
-      $('#wtfFooter').removeClass('footer-bg');
+      $('#wtfHeader').removeClass('header-wtf');
     }
 
   });

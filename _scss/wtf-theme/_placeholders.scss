@@ -1,0 +1,27 @@
+// @include wtfPlaceholderWtfTheme;
+@mixin wtfPlaceholderWtfTheme {}
+
+// @include wtfPlaceholderWtfLine;
+@mixin wtfPlaceholderWtfLine {
+    @include wtfPlaceholderWtfTheme;
+}
+
+// @include wtfPlaceholderWtfPolygon;
+@mixin wtfPlaceholderWtfPolygon {
+    @include wtfPlaceholderWtfTheme;
+}
+
+// @include wtfPlaceholderWtfDot;
+@mixin wtfPlaceholderWtfDot {
+    @include wtfPlaceholderWtfTheme;
+}
+
+// @include wtfPlaceholderWtfMM;
+@mixin wtfPlaceholderWtfMM {
+    @include wtfPlaceholderWtfTheme;
+}
+
+// @include wtfPlaceholderWtfWtf;
+@mixin wtfPlaceholderWtfWtf {
+    @include wtfPlaceholderWtfTheme;
+}

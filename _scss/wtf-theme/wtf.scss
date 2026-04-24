@@ -1,2 +1,270 @@
+
+
+
+
+//Mixins in other mixins
+@import "variables";
+@import "colour";
+@import "svg";
+@import "wtf-dot";
+@import "wtf-line";
+@import "wtf-polygon";
+//@import "html";
+
+//Common
 @import "animations";
 @import "html";
+@import "font";
+
+//Mixins
+@import "accordion";
+@import "alert";
+@import "anchor";
+@import "badge";
+@import "bg";
+@import "border";
+@import "brand";
+@import "breadcrumb";
+@import "button-group";
+@import "buttons";
+@import "calendar";
+@import "card";
+@import "carousel";
+@import "close";
+@import "dropdown";
+@import "feature";
+@import "footer";
+@import "form";
+@import "hero";
+@import "hr";
+@import "images";
+@import "library";
+@import "list-group";
+@import "modal";
+@import "nav";
+@import "navbar";
+@import "offcanvas";
+@import "pagination";
+@import "placeholders";
+@import "popover";
+@import "progress";
+@import "section";
+@import "spinners";
+@import "tables";
+@import "toasts";
+@import "tooltip";
+@import "type";
+
+
+//@include wtfThemeWtfLine;
+@mixin wtfThemeWtfLine {
+    @include wtfVariablesWtfLine;
+    @include wtfThemeColourWtfLine;
+    @include wtfAccordionWtfLine;
+    @include wtfAlertWtfLine;
+    @include wtfAnchorWtfLine;
+    @include wtfBadgeWtfLine;
+    @include wtfBorderWtfLine;
+    @include wtfBrandWtfLine;
+    @include wtfBreadcrumbWtfLine;
+    @include wtfBtnGroupWtfLine;
+    @include wtfBtnWtfLine;
+    @include wtfCalWtfLine;
+    @include wtfCardWtfLine;
+    @include wtfCarouselWtfLine;
+    @include wtfCloseWtfLine;
+    @include wtfDropdownWtfLine;
+    @include wtfFeatureWtfLine;
+    @include wtfFooterWtfLine;
+    @include wtfFormWtfLine;
+    @include wtfHeroWtfLine;
+    @include wtfHrWtfLine;
+     @include wtfImageWtfLine;
+    @include wtfLibraryWtfLine;
+    @include wtfListGroupWtfLine;
+    @include wtfModalWtfLine;
+    @include wtfNavWtfLine;
+    @include wtfNavbarWtfLine;
+    @include wtfOffcanvasWtfLine;
+    @include wtfPaginationWtfLine;
+    @include wtfPlaceholderWtfLine;
+    @include wtfPopoverWtfLine;
+    @include wtfProgressWtfLine;
+    @include wtfSectionWtfLine;
+    @include wtfSpinnerWtfLine;
+    @include wtfTableWtfLine;
+    @include wtfToastWtfLine;
+    @include wtfTooltipWtfLine;
+    @include wtfTypeWtfLine;
+}
+
+//@include wtfThemeWtfPolygon;
+@mixin wtfThemeWtfPolygon {
+    @include wtfVariablesWtfPolygon;
+    @include wtfThemeColourWtfPolygon;
+   @include wtfAccordionWtfPolygon;
+    @include wtfAlertWtfPolygon;
+    @include wtfAnchorWtfPolygon;
+    @include wtfBadgeWtfPolygon;
+    @include wtfBorderWtfPolygon;
+    @include wtfBrandWtfPolygon;
+    @include wtfBreadcrumbWtfPolygon;
+    @include wtfBtnGroupWtfPolygon;
+    @include wtfBtnWtfPolygon;
+    @include wtfCalWtfPolygon;
+    @include wtfCardWtfPolygon;
+    @include wtfCarouselWtfPolygon;
+    @include wtfCloseWtfPolygon;
+    @include wtfDropdownWtfPolygon;
+    @include wtfFeatureWtfPolygon;
+    @include wtfFooterWtfPolygon;
+    @include wtfFormWtfPolygon;
+    @include wtfHeroWtfPolygon;
+    @include wtfHrWtfPolygon;
+     @include wtfImageWtfPolygon;
+    @include wtfLibraryWtfPolygon;
+    @include wtfListGroupWtfPolygon;
+    @include wtfModalWtfPolygon;
+    @include wtfNavWtfPolygon;
+    @include wtfNavbarWtfPolygon;
+    @include wtfOffcanvasWtfPolygon;
+    @include wtfPaginationWtfPolygon;
+    @include wtfPlaceholderWtfPolygon;
+    @include wtfPopoverWtfPolygon;
+    @include wtfProgressWtfPolygon;
+    @include wtfSectionWtfPolygon;
+    @include wtfSpinnerWtfPolygon;
+    @include wtfTableWtfPolygon;
+    @include wtfToastWtfPolygon;
+    @include wtfTooltipWtfPolygon;
+    @include wtfTypeWtfPolygon;
+}
+
+//@include wtfThemeWtfDot;
+@mixin wtfThemeWtfDot {
+    @include wtfVariablesWtfDot;
+    @include wtfThemeColourWtfDot;
+    @include wtfAccordionWtfDot;
+    @include wtfAlertWtfDot;
+    @include wtfAnchorWtfDot;
+    @include wtfBadgeWtfDot;
+    @include wtfBorderWtfDot;
+    @include wtfBrandWtfDot;
+    @include wtfBreadcrumbWtfDot;
+    @include wtfBtnGroupWtfDot;
+    @include wtfBtnWtfDot;
+    @include wtfCalWtfDot;
+    @include wtfCardWtfDot;
+    @include wtfCarouselWtfDot;
+    @include wtfCloseWtfDot;
+    @include wtfDropdownWtfDot;
+    @include wtfFeatureWtfDot;
+    @include wtfFooterWtfDot;
+    @include wtfFormWtfDot;
+    @include wtfHeroWtfDot;
+    @include wtfHrWtfDot;
+     @include wtfImageWtfDot;
+    @include wtfLibraryWtfDot;
+    @include wtfListGroupWtfDot;
+    @include wtfModalWtfDot;
+    @include wtfNavWtfDot;
+    @include wtfNavbarWtfDot;
+    @include wtfOffcanvasWtfDot;
+    @include wtfPaginationWtfDot;
+    @include wtfPlaceholderWtfDot;
+    @include wtfPopoverWtfDot;
+    @include wtfProgressWtfDot;
+    @include wtfSectionWtfDot;
+    @include wtfSpinnerWtfDot;
+    @include wtfTableWtfDot;
+    @include wtfToastWtfDot;
+    @include wtfTooltipWtfDot;
+    @include wtfTypeWtfDot;
+}
+
+
+
+//@include wtfThemeWtfMM;
+@mixin wtfThemeWtfMM {
+    @include wtfVariablesWtfMM;
+    @include wtfThemeColourWtfMM;
+    @include wtfAccordionWtfMM;
+    @include wtfAlertWtfMM;
+    @include wtfAnchorWtfMM;
+    @include wtfBadgeWtfMM;
+    @include wtfBorderWtfMM;
+    @include wtfBrandWtfMM;
+    @include wtfBreadcrumbWtfMM;
+    @include wtfBtnGroupWtfMM;
+    @include wtfBtnWtfMM;
+    @include wtfCalWtfMM;
+    @include wtfCardWtfMM;
+    @include wtfCarouselWtfMM;
+    @include wtfCloseWtfMM;
+    @include wtfDropdownWtfMM;
+    @include wtfFeatureWtfMM;
+    @include wtfFooterWtfMM;
+    @include wtfFormWtfMM;
+    @include wtfHeroWtfMM;
+    @include wtfHrWtfMM;
+     @include wtfImageWtfMM;
+    @include wtfLibraryWtfMM;
+    @include wtfListGroupWtfMM;
+    @include wtfModalWtfMM;
+    @include wtfNavWtfMM;
+    @include wtfNavbarWtfMM;
+    @include wtfOffcanvasWtfMM;
+    @include wtfPaginationWtfMM;
+    @include wtfPlaceholderWtfMM;
+    @include wtfPopoverWtfMM;
+    @include wtfProgressWtfMM;
+    @include wtfSectionWtfMM;
+    @include wtfSpinnerWtfMM;
+    @include wtfTableWtfMM;
+    @include wtfToastWtfMM;
+    @include wtfTooltipWtfMM;
+    @include wtfTypeWtfMM;
+}
+
+
+//@include wtfThemeWtfWtf;
+@mixin wtfThemeWtfWtf {
+    @include wtfVariablesWtfWtf;
+    @include wtfThemeColourWtfWtf;
+    @include wtfAccordionWtfWtf;
+    @include wtfAlertWtfWtf;
+    @include wtfAnchorWtfWtf;
+    @include wtfBadgeWtfWtf;
+    @include wtfBorderWtfWtf;
+    @include wtfBrandWtfWtf;
+    @include wtfBreadcrumbWtfWtf;
+    @include wtfBtnGroupWtfWtf;
+    @include wtfBtnWtfWtf;
+    @include wtfCalWtfWtf;
+    @include wtfCardWtfWtf;
+    @include wtfCarouselWtfWtf;
+    @include wtfCloseWtfWtf;
+    @include wtfDropdownWtfWtf;
+    @include wtfFeatureWtfWtf;
+    @include wtfFooterWtfWtf;
+    @include wtfFormWtfWtf;
+    @include wtfHeroWtfWtf;
+    @include wtfHrWtfWtf;
+    @include wtfImageWtfWtf;
+    @include wtfLibraryWtfWtf;
+    @include wtfListGroupWtfWtf;
+    @include wtfModalWtfWtf;
+    @include wtfNavWtfWtf;
+    @include wtfNavbarWtfWtf;
+    @include wtfOffcanvasWtfWtf;
+    @include wtfPaginationWtfWtf;
+    @include wtfPlaceholderWtfWtf;
+    @include wtfPopoverWtfWtf;
+    @include wtfProgressWtfWtf;
+    @include wtfSectionWtfWtf;
+    @include wtfSpinnerWtfWtf;
+    @include wtfTableWtfWtf;
+    @include wtfToastWtfWtf;
+    @include wtfTooltipWtfWtf;
+    @include wtfTypeWtfWtf;
+}

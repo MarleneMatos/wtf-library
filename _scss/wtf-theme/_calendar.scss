@@ -1,0 +1,38 @@
+//@include wtfCalWtfTheme;
+@mixin wtfCalWtfTheme {
+.cal-month, .cal-days, .cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.cal{
+  button{
+    --wtf-btn-box-shadow:none;
+  }
+}
+}
+
+// @include wtfCalWtfLine;
+@mixin wtfCalWtfLine {
+  @include wtfCalWtfTheme;
+}
+
+// @include wtfCalWtfPolygon;
+@mixin wtfCalWtfPolygon {
+  @include wtfCalWtfTheme;
+}
+
+// @include wtfCalWtfDot;
+@mixin wtfCalWtfDot {
+  @include wtfCalWtfTheme;
+}
+
+// @include wtfCalWtfMM;
+@mixin wtfCalWtfMM {
+  @include wtfCalWtfTheme;
+}
+
+// @include wtfCalWtfWtf;
+@mixin wtfCalWtfWtf {
+  @include wtfCalWtfTheme;
+}

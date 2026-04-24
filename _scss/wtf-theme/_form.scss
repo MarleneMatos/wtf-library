@@ -1,0 +1,152 @@
+//@include wtfFormWtfTheme;
+@mixin wtfFormWtfTheme {
+    .input-group-text {
+        background-color: rgba(var(--wtf-primary-rgb), .1);
+        border: var(--wtf-theme-border-thickness) solid var(--wtf-border-color);
+        border-radius: var(--wtf-theme-btn-border-radius);
+    }
+
+    .form {
+
+        &-control {
+            border-radius: var(--wtf-theme-btn-border-radius);
+            border: var(--wtf-theme-border-thickness) solid var(--wtf-border-color);
+
+        }
+
+        &-select {
+            border-radius: var(--wtf-theme-btn-border-radius);
+            border: var(--wtf-theme-border-thickness) solid var(--wtf-border-color);
+        }
+
+        &-check-input {
+            border: var(--wtf-theme-border-thickness) solid var(--wtf-border-color);
+
+            &:checked {
+                background-color: rgb(var(--wtf-primary-rgb));
+                border-color: rgb(var(--wtf-primary-rgb));
+            }
+        }
+
+        &-login {
+            input[type="email"] {
+                margin-bottom: -1px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            input[type="password"] {
+                margin-bottom: 10px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+
+        &-contact {
+            input[type="text"] {
+                margin-bottom: -1px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            input[type="email"] {
+                margin-bottom: -1px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+            }
+
+            textarea {
+                margin-bottom: 10px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                height: 4rem;
+            }
+        }
+
+        .wtf-select {
+            input {
+
+                &[type=checkbox] {
+                    display: none;
+                }
+
+                &[type=checkbox]:checked~.product .wtf-select-bg {
+                    background-color: var(--wtf-white);
+                }
+
+                &[type=checkbox]:checked~.product .wtf-select-bg::after {
+                    opacity: 1;
+                }
+            }
+
+            .wtf-select-bg {
+                height: 3.5rem;
+                width: 3.5rem;
+                // box-shadow: 1px 1px rgba($color-primary-black, 0.16);
+                border: 3px var(--wtf-primary) solid;
+                border-radius: var(--wtf-theme-border-radius);
+                background-color: var(--wtf-white);
+                position: absolute;
+                right: 0rem;
+                top: 0rem;
+                /*
+              @media (max-width:$mobile) {
+                  margin: 0rem 0rem 0rem 0;
+              }
+
+              @media (max-width:330px) {
+                  margin: 0rem 0rem 0rem 0;
+              }*/
+
+                &::after {
+                    //content: url("/Media/Design/chapter-white-tick.svg");
+                    //
+                    display: block;
+                    //height: 2.2rem;
+                    //width: 2.9rem;
+                    width: 2.9rem;
+                    height: 2.9rem;
+                    opacity: 0;
+                    transition: opacity .2s;
+                    //margin: 0.65rem 0.3rem;
+                    margin: 0.1rem;
+
+                    // Older browsers
+                    content: "";
+                    background-image: var(--wtf-checkbox-icon-checked);
+                    background-size: cover;
+
+                    //Newer browsers - masks
+                    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                        background-color: var(--wtf-primary);
+                        -webkit-mask-image: var(--wtf-checkbox-icon-checked);
+                        -webkit-mask-size: cover;
+                        mask-image: var(--wtf-checkbox-icon-checked);
+                        mask-size: cover;
+                        background-image: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// @include wtfFormWtfLine;
+@mixin wtfFormWtfLine {
+    @include wtfFormWtfTheme;
+}
+
+// @include wtfFormWtfPolygon;
+@mixin wtfFormWtfPolygon {@include wtfFormWtfTheme;}
+
+// @include wtfFormWtfDot;
+@mixin wtfFormWtfDot {@include wtfFormWtfTheme;}
+
+// @include wtfFormWtfMM;
+@mixin wtfFormWtfMM {@include wtfFormWtfTheme;}
+
+// @include wtfFormWtfWtf;
+@mixin wtfFormWtfWtf {@include wtfFormWtfTheme;}

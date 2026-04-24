@@ -24,40 +24,40 @@
   --wtf-gray-700: #495057;
   --wtf-gray-800: #343a40;
   --wtf-gray-900: #212529;
-  --wtf-primary: #00A19A;
-  --wtf-secondary: #6c757d;
+  --wtf-primary: #000;
+  --wtf-secondary: #fff;
   --wtf-success: #198754;
   --wtf-info: #0dcaf0;
   --wtf-warning: #ffc107;
   --wtf-danger: #dc3545;
   --wtf-light: #f8f9fa;
   --wtf-dark: #212529;
-  --wtf-primary-rgb: 0, 161, 154;
-  --wtf-secondary-rgb: 108, 117, 125;
+  --wtf-primary-rgb: 0, 0, 0;
+  --wtf-secondary-rgb: 255, 255, 255;
   --wtf-success-rgb: 25, 135, 84;
   --wtf-info-rgb: 13, 202, 240;
   --wtf-warning-rgb: 255, 193, 7;
   --wtf-danger-rgb: 220, 53, 69;
   --wtf-light-rgb: 248, 249, 250;
   --wtf-dark-rgb: 33, 37, 41;
-  --wtf-primary-text-emphasis: rgb(0, 64.4, 61.6);
-  --wtf-secondary-text-emphasis: rgb(43.2, 46.8, 50);
+  --wtf-primary-text-emphasis: black;
+  --wtf-secondary-text-emphasis: #666666;
   --wtf-success-text-emphasis: rgb(10, 54, 33.6);
   --wtf-info-text-emphasis: rgb(5.2, 80.8, 96);
   --wtf-warning-text-emphasis: rgb(102, 77.2, 2.8);
   --wtf-danger-text-emphasis: rgb(88, 21.2, 27.6);
   --wtf-light-text-emphasis: #495057;
   --wtf-dark-text-emphasis: #495057;
-  --wtf-primary-bg-subtle: rgb(204, 236.2, 234.8);
-  --wtf-secondary-bg-subtle: rgb(225.6, 227.4, 229);
+  --wtf-primary-bg-subtle: #cccccc;
+  --wtf-secondary-bg-subtle: white;
   --wtf-success-bg-subtle: rgb(209, 231, 220.8);
   --wtf-info-bg-subtle: rgb(206.6, 244.4, 252);
   --wtf-warning-bg-subtle: rgb(255, 242.6, 205.4);
   --wtf-danger-bg-subtle: rgb(248, 214.6, 217.8);
   --wtf-light-bg-subtle: rgb(251.5, 252, 252.5);
   --wtf-dark-bg-subtle: #ced4da;
-  --wtf-primary-border-subtle: rgb(153, 217.4, 214.6);
-  --wtf-secondary-border-subtle: rgb(196.2, 199.8, 203);
+  --wtf-primary-border-subtle: #999999;
+  --wtf-secondary-border-subtle: white;
   --wtf-success-border-subtle: rgb(163, 207, 186.6);
   --wtf-info-border-subtle: rgb(158.2, 233.8, 249);
   --wtf-warning-border-subtle: rgb(255, 230.2, 155.8);
@@ -73,28 +73,28 @@
   --wtf-body-font-size: 1rem;
   --wtf-body-font-weight: 400;
   --wtf-body-line-height: 1.5;
-  --wtf-body-color: #212529;
-  --wtf-body-color-rgb: 33, 37, 41;
+  --wtf-body-color: #000;
+  --wtf-body-color-rgb: 0, 0, 0;
   --wtf-body-bg: #fff;
   --wtf-body-bg-rgb: 255, 255, 255;
   --wtf-emphasis-color: #000;
   --wtf-emphasis-color-rgb: 0, 0, 0;
-  --wtf-secondary-color: rgba(33, 37, 41, 0.75);
-  --wtf-secondary-color-rgb: 33, 37, 41;
+  --wtf-secondary-color: rgba(0, 0, 0, 0.75);
+  --wtf-secondary-color-rgb: 0, 0, 0;
   --wtf-secondary-bg: #e9ecef;
   --wtf-secondary-bg-rgb: 233, 236, 239;
-  --wtf-tertiary-color: rgba(33, 37, 41, 0.5);
-  --wtf-tertiary-color-rgb: 33, 37, 41;
+  --wtf-tertiary-color: rgba(0, 0, 0, 0.5);
+  --wtf-tertiary-color-rgb: 0, 0, 0;
   --wtf-tertiary-bg: #f8f9fa;
   --wtf-tertiary-bg-rgb: 248, 249, 250;
   --wtf-heading-color: inherit;
-  --wtf-link-color: #00A19A;
-  --wtf-link-color-rgb: 0, 161, 154;
+  --wtf-link-color: #000;
+  --wtf-link-color-rgb: 0, 0, 0;
   --wtf-link-decoration: underline;
-  --wtf-link-hover-color: rgb(0, 128.8, 123.2);
-  --wtf-link-hover-color-rgb: 0, 129, 123;
+  --wtf-link-hover-color: black;
+  --wtf-link-hover-color-rgb: 0, 0, 0;
   --wtf-code-color: #d63384;
-  --wtf-highlight-color: #212529;
+  --wtf-highlight-color: #000;
   --wtf-highlight-bg: rgb(255, 242.6, 205.4);
   --wtf-border-width: 1px;
   --wtf-border-style: solid;
@@ -113,7 +113,7 @@
   --wtf-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --wtf-focus-ring-width: 0.25rem;
   --wtf-focus-ring-opacity: 0.25;
-  --wtf-focus-ring-color: rgba(0, 161, 154, 0.25);
+  --wtf-focus-ring-color: rgba(0, 0, 0, 0.25);
   --wtf-form-valid-color: #198754;
   --wtf-form-valid-border-color: #198754;
   --wtf-form-invalid-color: #dc3545;
@@ -136,24 +136,24 @@
   --wtf-tertiary-color-rgb: 222, 226, 230;
   --wtf-tertiary-bg: rgb(42.5, 47.5, 52.5);
   --wtf-tertiary-bg-rgb: 43, 48, 53;
-  --wtf-primary-text-emphasis: rgb(102, 198.6, 194.4);
-  --wtf-secondary-text-emphasis: rgb(166.8, 172.2, 177);
+  --wtf-primary-text-emphasis: #666666;
+  --wtf-secondary-text-emphasis: white;
   --wtf-success-text-emphasis: rgb(117, 183, 152.4);
   --wtf-info-text-emphasis: rgb(109.8, 223.2, 246);
   --wtf-warning-text-emphasis: rgb(255, 217.8, 106.2);
   --wtf-danger-text-emphasis: rgb(234, 133.8, 143.4);
   --wtf-light-text-emphasis: #f8f9fa;
   --wtf-dark-text-emphasis: #dee2e6;
-  --wtf-primary-bg-subtle: rgb(0, 32.2, 30.8);
-  --wtf-secondary-bg-subtle: rgb(21.6, 23.4, 25);
+  --wtf-primary-bg-subtle: black;
+  --wtf-secondary-bg-subtle: #333333;
   --wtf-success-bg-subtle: rgb(5, 27, 16.8);
   --wtf-info-bg-subtle: rgb(2.6, 40.4, 48);
   --wtf-warning-bg-subtle: rgb(51, 38.6, 1.4);
   --wtf-danger-bg-subtle: rgb(44, 10.6, 13.8);
   --wtf-light-bg-subtle: #343a40;
   --wtf-dark-bg-subtle: #1a1d20;
-  --wtf-primary-border-subtle: rgb(0, 96.6, 92.4);
-  --wtf-secondary-border-subtle: rgb(64.8, 70.2, 75);
+  --wtf-primary-border-subtle: black;
+  --wtf-secondary-border-subtle: #999999;
   --wtf-success-border-subtle: rgb(15, 81, 50.4);
   --wtf-info-border-subtle: rgb(7.8, 121.2, 144);
   --wtf-warning-border-subtle: rgb(153, 115.8, 4.2);
@@ -161,10 +161,10 @@
   --wtf-light-border-subtle: #495057;
   --wtf-dark-border-subtle: #343a40;
   --wtf-heading-color: inherit;
-  --wtf-link-color: rgb(102, 198.6, 194.4);
-  --wtf-link-hover-color: rgb(132.6, 209.88, 206.52);
-  --wtf-link-color-rgb: 102, 199, 194;
-  --wtf-link-hover-color-rgb: 133, 210, 207;
+  --wtf-link-color: #666666;
+  --wtf-link-hover-color: rgb(132.6, 132.6, 132.6);
+  --wtf-link-color-rgb: 102, 102, 102;
+  --wtf-link-hover-color-rgb: 133, 133, 133;
   --wtf-code-color: rgb(230.4, 132.6, 181.2);
   --wtf-highlight-color: #dee2e6;
   --wtf-highlight-bg: rgb(102, 77.2, 2.8);
@@ -1854,12 +1854,12 @@ progress {
 }
 
 .text-bg-primary {
-  color: #000 !important;
+  color: #fff !important;
   background-color: RGBA(var(--wtf-primary-rgb), var(--wtf-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
-  color: #fff !important;
+  color: #000 !important;
   background-color: RGBA(var(--wtf-secondary-rgb), var(--wtf-bg-opacity, 1)) !important;
 }
 
@@ -1898,8 +1898,8 @@ progress {
   text-decoration-color: RGBA(var(--wtf-primary-rgb), var(--wtf-link-underline-opacity, 1)) !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: RGBA(51, 180, 174, var(--wtf-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(51, 180, 174, var(--wtf-link-underline-opacity, 1)) !important;
+  color: RGBA(0, 0, 0, var(--wtf-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(0, 0, 0, var(--wtf-link-underline-opacity, 1)) !important;
 }
 
 .link-secondary {
@@ -1907,8 +1907,8 @@ progress {
   text-decoration-color: RGBA(var(--wtf-secondary-rgb), var(--wtf-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(86, 94, 100, var(--wtf-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(86, 94, 100, var(--wtf-link-underline-opacity, 1)) !important;
+  color: RGBA(255, 255, 255, var(--wtf-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(255, 255, 255, var(--wtf-link-underline-opacity, 1)) !important;
 }
 
 .link-success {
@@ -6985,40 +6985,40 @@ progress {
   --wtf-gray-700: #495057;
   --wtf-gray-800: #343a40;
   --wtf-gray-900: #212529;
-  --wtf-primary: #00A19A;
-  --wtf-secondary: #6c757d;
+  --wtf-primary: #000;
+  --wtf-secondary: #fff;
   --wtf-success: #198754;
   --wtf-info: #0dcaf0;
   --wtf-warning: #ffc107;
   --wtf-danger: #dc3545;
   --wtf-light: #f8f9fa;
   --wtf-dark: #212529;
-  --wtf-primary-rgb: 0, 161, 154;
-  --wtf-secondary-rgb: 108, 117, 125;
+  --wtf-primary-rgb: 0, 0, 0;
+  --wtf-secondary-rgb: 255, 255, 255;
   --wtf-success-rgb: 25, 135, 84;
   --wtf-info-rgb: 13, 202, 240;
   --wtf-warning-rgb: 255, 193, 7;
   --wtf-danger-rgb: 220, 53, 69;
   --wtf-light-rgb: 248, 249, 250;
   --wtf-dark-rgb: 33, 37, 41;
-  --wtf-primary-text-emphasis: rgb(0, 64.4, 61.6);
-  --wtf-secondary-text-emphasis: rgb(43.2, 46.8, 50);
+  --wtf-primary-text-emphasis: black;
+  --wtf-secondary-text-emphasis: #666666;
   --wtf-success-text-emphasis: rgb(10, 54, 33.6);
   --wtf-info-text-emphasis: rgb(5.2, 80.8, 96);
   --wtf-warning-text-emphasis: rgb(102, 77.2, 2.8);
   --wtf-danger-text-emphasis: rgb(88, 21.2, 27.6);
   --wtf-light-text-emphasis: #495057;
   --wtf-dark-text-emphasis: #495057;
-  --wtf-primary-bg-subtle: rgb(204, 236.2, 234.8);
-  --wtf-secondary-bg-subtle: rgb(225.6, 227.4, 229);
+  --wtf-primary-bg-subtle: #cccccc;
+  --wtf-secondary-bg-subtle: white;
   --wtf-success-bg-subtle: rgb(209, 231, 220.8);
   --wtf-info-bg-subtle: rgb(206.6, 244.4, 252);
   --wtf-warning-bg-subtle: rgb(255, 242.6, 205.4);
   --wtf-danger-bg-subtle: rgb(248, 214.6, 217.8);
   --wtf-light-bg-subtle: rgb(251.5, 252, 252.5);
   --wtf-dark-bg-subtle: #ced4da;
-  --wtf-primary-border-subtle: rgb(153, 217.4, 214.6);
-  --wtf-secondary-border-subtle: rgb(196.2, 199.8, 203);
+  --wtf-primary-border-subtle: #999999;
+  --wtf-secondary-border-subtle: white;
   --wtf-success-border-subtle: rgb(163, 207, 186.6);
   --wtf-info-border-subtle: rgb(158.2, 233.8, 249);
   --wtf-warning-border-subtle: rgb(255, 230.2, 155.8);
@@ -7034,28 +7034,28 @@ progress {
   --wtf-body-font-size: 1rem;
   --wtf-body-font-weight: 400;
   --wtf-body-line-height: 1.5;
-  --wtf-body-color: #212529;
-  --wtf-body-color-rgb: 33, 37, 41;
+  --wtf-body-color: #000;
+  --wtf-body-color-rgb: 0, 0, 0;
   --wtf-body-bg: #fff;
   --wtf-body-bg-rgb: 255, 255, 255;
   --wtf-emphasis-color: #000;
   --wtf-emphasis-color-rgb: 0, 0, 0;
-  --wtf-secondary-color: rgba(33, 37, 41, 0.75);
-  --wtf-secondary-color-rgb: 33, 37, 41;
+  --wtf-secondary-color: rgba(0, 0, 0, 0.75);
+  --wtf-secondary-color-rgb: 0, 0, 0;
   --wtf-secondary-bg: #e9ecef;
   --wtf-secondary-bg-rgb: 233, 236, 239;
-  --wtf-tertiary-color: rgba(33, 37, 41, 0.5);
-  --wtf-tertiary-color-rgb: 33, 37, 41;
+  --wtf-tertiary-color: rgba(0, 0, 0, 0.5);
+  --wtf-tertiary-color-rgb: 0, 0, 0;
   --wtf-tertiary-bg: #f8f9fa;
   --wtf-tertiary-bg-rgb: 248, 249, 250;
   --wtf-heading-color: inherit;
-  --wtf-link-color: #00A19A;
-  --wtf-link-color-rgb: 0, 161, 154;
+  --wtf-link-color: #000;
+  --wtf-link-color-rgb: 0, 0, 0;
   --wtf-link-decoration: underline;
-  --wtf-link-hover-color: rgb(0, 128.8, 123.2);
-  --wtf-link-hover-color-rgb: 0, 129, 123;
+  --wtf-link-hover-color: black;
+  --wtf-link-hover-color-rgb: 0, 0, 0;
   --wtf-code-color: #d63384;
-  --wtf-highlight-color: #212529;
+  --wtf-highlight-color: #000;
   --wtf-highlight-bg: rgb(255, 242.6, 205.4);
   --wtf-border-width: 1px;
   --wtf-border-style: solid;
@@ -7074,7 +7074,7 @@ progress {
   --wtf-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --wtf-focus-ring-width: 0.25rem;
   --wtf-focus-ring-opacity: 0.25;
-  --wtf-focus-ring-color: rgba(0, 161, 154, 0.25);
+  --wtf-focus-ring-color: rgba(0, 0, 0, 0.25);
   --wtf-form-valid-color: #198754;
   --wtf-form-valid-border-color: #198754;
   --wtf-form-invalid-color: #dc3545;
@@ -7097,24 +7097,24 @@ progress {
   --wtf-tertiary-color-rgb: 222, 226, 230;
   --wtf-tertiary-bg: rgb(42.5, 47.5, 52.5);
   --wtf-tertiary-bg-rgb: 43, 48, 53;
-  --wtf-primary-text-emphasis: rgb(102, 198.6, 194.4);
-  --wtf-secondary-text-emphasis: rgb(166.8, 172.2, 177);
+  --wtf-primary-text-emphasis: #666666;
+  --wtf-secondary-text-emphasis: white;
   --wtf-success-text-emphasis: rgb(117, 183, 152.4);
   --wtf-info-text-emphasis: rgb(109.8, 223.2, 246);
   --wtf-warning-text-emphasis: rgb(255, 217.8, 106.2);
   --wtf-danger-text-emphasis: rgb(234, 133.8, 143.4);
   --wtf-light-text-emphasis: #f8f9fa;
   --wtf-dark-text-emphasis: #dee2e6;
-  --wtf-primary-bg-subtle: rgb(0, 32.2, 30.8);
-  --wtf-secondary-bg-subtle: rgb(21.6, 23.4, 25);
+  --wtf-primary-bg-subtle: black;
+  --wtf-secondary-bg-subtle: #333333;
   --wtf-success-bg-subtle: rgb(5, 27, 16.8);
   --wtf-info-bg-subtle: rgb(2.6, 40.4, 48);
   --wtf-warning-bg-subtle: rgb(51, 38.6, 1.4);
   --wtf-danger-bg-subtle: rgb(44, 10.6, 13.8);
   --wtf-light-bg-subtle: #343a40;
   --wtf-dark-bg-subtle: #1a1d20;
-  --wtf-primary-border-subtle: rgb(0, 96.6, 92.4);
-  --wtf-secondary-border-subtle: rgb(64.8, 70.2, 75);
+  --wtf-primary-border-subtle: black;
+  --wtf-secondary-border-subtle: #999999;
   --wtf-success-border-subtle: rgb(15, 81, 50.4);
   --wtf-info-border-subtle: rgb(7.8, 121.2, 144);
   --wtf-warning-border-subtle: rgb(153, 115.8, 4.2);
@@ -7122,10 +7122,10 @@ progress {
   --wtf-light-border-subtle: #495057;
   --wtf-dark-border-subtle: #343a40;
   --wtf-heading-color: inherit;
-  --wtf-link-color: rgb(102, 198.6, 194.4);
-  --wtf-link-hover-color: rgb(132.6, 209.88, 206.52);
-  --wtf-link-color-rgb: 102, 199, 194;
-  --wtf-link-hover-color-rgb: 133, 210, 207;
+  --wtf-link-color: #666666;
+  --wtf-link-hover-color: rgb(132.6, 132.6, 132.6);
+  --wtf-link-color-rgb: 102, 102, 102;
+  --wtf-link-hover-color-rgb: 133, 133, 133;
   --wtf-code-color: rgb(230.4, 132.6, 181.2);
   --wtf-highlight-color: #dee2e6;
   --wtf-highlight-bg: rgb(102, 77.2, 2.8);
@@ -8890,13 +8890,13 @@ progress {
 
 .table-primary {
   --wtf-table-color: #000;
-  --wtf-table-bg: rgb(204, 236.2, 234.8);
-  --wtf-table-border-color: rgb(163.2, 188.96, 187.84);
-  --wtf-table-striped-bg: rgb(193.8, 224.39, 223.06);
+  --wtf-table-bg: #cccccc;
+  --wtf-table-border-color: rgb(163.2, 163.2, 163.2);
+  --wtf-table-striped-bg: rgb(193.8, 193.8, 193.8);
   --wtf-table-striped-color: #000;
-  --wtf-table-active-bg: rgb(183.6, 212.58, 211.32);
+  --wtf-table-active-bg: rgb(183.6, 183.6, 183.6);
   --wtf-table-active-color: #000;
-  --wtf-table-hover-bg: rgb(188.7, 218.485, 217.19);
+  --wtf-table-hover-bg: rgb(188.7, 188.7, 188.7);
   --wtf-table-hover-color: #000;
   color: var(--wtf-table-color);
   border-color: var(--wtf-table-border-color);
@@ -8904,13 +8904,13 @@ progress {
 
 .table-secondary {
   --wtf-table-color: #000;
-  --wtf-table-bg: rgb(225.6, 227.4, 229);
-  --wtf-table-border-color: rgb(180.48, 181.92, 183.2);
-  --wtf-table-striped-bg: rgb(214.32, 216.03, 217.55);
+  --wtf-table-bg: white;
+  --wtf-table-border-color: #cccccc;
+  --wtf-table-striped-bg: rgb(242.25, 242.25, 242.25);
   --wtf-table-striped-color: #000;
-  --wtf-table-active-bg: rgb(203.04, 204.66, 206.1);
+  --wtf-table-active-bg: rgb(229.5, 229.5, 229.5);
   --wtf-table-active-color: #000;
-  --wtf-table-hover-bg: rgb(208.68, 210.345, 211.825);
+  --wtf-table-hover-bg: rgb(235.875, 235.875, 235.875);
   --wtf-table-hover-color: #000;
   color: var(--wtf-table-color);
   border-color: var(--wtf-table-border-color);
@@ -9094,9 +9094,9 @@ progress {
 .form-control:focus {
   color: var(--wtf-body-color);
   background-color: var(--wtf-body-bg);
-  border-color: rgb(127.5, 208, 204.5);
+  border-color: rgb(127.5, 127.5, 127.5);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   min-width: 85px;
@@ -9239,9 +9239,9 @@ textarea.form-control-lg {
   }
 }
 .form-select:focus {
-  border-color: rgb(127.5, 208, 204.5);
+  border-color: rgb(127.5, 127.5, 127.5);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -9323,13 +9323,13 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: rgb(127.5, 208, 204.5);
+  border-color: rgb(127.5, 127.5, 127.5);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 .form-check-input:checked {
-  background-color: #00A19A;
-  border-color: #00A19A;
+  background-color: #000;
+  border-color: #000;
 }
 .form-check-input:checked[type=checkbox] {
   --wtf-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -9338,8 +9338,8 @@ textarea.form-control-lg {
   --wtf-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #00A19A;
-  border-color: #00A19A;
+  background-color: #000;
+  border-color: #000;
   --wtf-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -9370,7 +9370,7 @@ textarea.form-control-lg {
   }
 }
 .form-switch .form-check-input:focus {
-  --wtf-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgb%28127.5, 208, 204.5%29'/%3e%3c/svg%3e");
+  --wtf-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgb%28127.5, 127.5, 127.5%29'/%3e%3c/svg%3e");
 }
 .form-switch .form-check-input:checked {
   background-position: right center;
@@ -9416,10 +9416,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -9429,7 +9429,7 @@ textarea.form-control-lg {
   height: 1rem;
   margin-top: -0.25rem;
   appearance: none;
-  background-color: #00A19A;
+  background-color: #000;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -9440,7 +9440,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-webkit-slider-thumb:active {
-  background-color: rgb(178.5, 226.8, 224.7);
+  background-color: rgb(178.5, 178.5, 178.5);
 }
 .form-range::-webkit-slider-runnable-track {
   width: 100%;
@@ -9455,7 +9455,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   appearance: none;
-  background-color: #00A19A;
+  background-color: #000;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -9466,7 +9466,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-moz-range-thumb:active {
-  background-color: rgb(178.5, 226.8, 224.7);
+  background-color: rgb(178.5, 178.5, 178.5);
 }
 .form-range::-moz-range-track {
   width: 100%;
@@ -9925,37 +9925,37 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --wtf-btn-color: #000;
-  --wtf-btn-bg: #00A19A;
-  --wtf-btn-border-color: #00A19A;
-  --wtf-btn-hover-color: #000;
-  --wtf-btn-hover-bg: rgb(38.25, 175.1, 169.15);
-  --wtf-btn-hover-border-color: rgb(25.5, 170.4, 164.1);
-  --wtf-btn-focus-shadow-rgb: 0, 137, 131;
-  --wtf-btn-active-color: #000;
-  --wtf-btn-active-bg: rgb(51, 179.8, 174.2);
-  --wtf-btn-active-border-color: rgb(25.5, 170.4, 164.1);
+  --wtf-btn-color: #fff;
+  --wtf-btn-bg: #000;
+  --wtf-btn-border-color: #000;
+  --wtf-btn-hover-color: #fff;
+  --wtf-btn-hover-bg: black;
+  --wtf-btn-hover-border-color: black;
+  --wtf-btn-focus-shadow-rgb: 38, 38, 38;
+  --wtf-btn-active-color: #fff;
+  --wtf-btn-active-bg: black;
+  --wtf-btn-active-border-color: black;
   --wtf-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --wtf-btn-disabled-color: #000;
-  --wtf-btn-disabled-bg: #00A19A;
-  --wtf-btn-disabled-border-color: #00A19A;
+  --wtf-btn-disabled-color: #fff;
+  --wtf-btn-disabled-bg: #000;
+  --wtf-btn-disabled-border-color: #000;
 }
 
 .btn-secondary {
-  --wtf-btn-color: #fff;
-  --wtf-btn-bg: #6c757d;
-  --wtf-btn-border-color: #6c757d;
-  --wtf-btn-hover-color: #fff;
-  --wtf-btn-hover-bg: rgb(91.8, 99.45, 106.25);
-  --wtf-btn-hover-border-color: rgb(86.4, 93.6, 100);
-  --wtf-btn-focus-shadow-rgb: 130, 138, 145;
-  --wtf-btn-active-color: #fff;
-  --wtf-btn-active-bg: rgb(86.4, 93.6, 100);
-  --wtf-btn-active-border-color: rgb(81, 87.75, 93.75);
+  --wtf-btn-color: #000;
+  --wtf-btn-bg: #fff;
+  --wtf-btn-border-color: #fff;
+  --wtf-btn-hover-color: #000;
+  --wtf-btn-hover-bg: white;
+  --wtf-btn-hover-border-color: white;
+  --wtf-btn-focus-shadow-rgb: 217, 217, 217;
+  --wtf-btn-active-color: #000;
+  --wtf-btn-active-bg: white;
+  --wtf-btn-active-border-color: white;
   --wtf-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --wtf-btn-disabled-color: #fff;
-  --wtf-btn-disabled-bg: #6c757d;
-  --wtf-btn-disabled-border-color: #6c757d;
+  --wtf-btn-disabled-color: #000;
+  --wtf-btn-disabled-bg: #fff;
+  --wtf-btn-disabled-border-color: #fff;
 }
 
 .btn-success {
@@ -10061,36 +10061,36 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --wtf-btn-color: #00A19A;
-  --wtf-btn-border-color: #00A19A;
-  --wtf-btn-hover-color: #000;
-  --wtf-btn-hover-bg: #00A19A;
-  --wtf-btn-hover-border-color: #00A19A;
-  --wtf-btn-focus-shadow-rgb: 0, 161, 154;
-  --wtf-btn-active-color: #000;
-  --wtf-btn-active-bg: #00A19A;
-  --wtf-btn-active-border-color: #00A19A;
+  --wtf-btn-color: #000;
+  --wtf-btn-border-color: #000;
+  --wtf-btn-hover-color: #fff;
+  --wtf-btn-hover-bg: #000;
+  --wtf-btn-hover-border-color: #000;
+  --wtf-btn-focus-shadow-rgb: 0, 0, 0;
+  --wtf-btn-active-color: #fff;
+  --wtf-btn-active-bg: #000;
+  --wtf-btn-active-border-color: #000;
   --wtf-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --wtf-btn-disabled-color: #00A19A;
+  --wtf-btn-disabled-color: #000;
   --wtf-btn-disabled-bg: transparent;
-  --wtf-btn-disabled-border-color: #00A19A;
+  --wtf-btn-disabled-border-color: #000;
   --wtf-gradient: none;
 }
 
 .btn-outline-secondary {
-  --wtf-btn-color: #6c757d;
-  --wtf-btn-border-color: #6c757d;
-  --wtf-btn-hover-color: #fff;
-  --wtf-btn-hover-bg: #6c757d;
-  --wtf-btn-hover-border-color: #6c757d;
-  --wtf-btn-focus-shadow-rgb: 108, 117, 125;
-  --wtf-btn-active-color: #fff;
-  --wtf-btn-active-bg: #6c757d;
-  --wtf-btn-active-border-color: #6c757d;
+  --wtf-btn-color: #fff;
+  --wtf-btn-border-color: #fff;
+  --wtf-btn-hover-color: #000;
+  --wtf-btn-hover-bg: #fff;
+  --wtf-btn-hover-border-color: #fff;
+  --wtf-btn-focus-shadow-rgb: 255, 255, 255;
+  --wtf-btn-active-color: #000;
+  --wtf-btn-active-bg: #fff;
+  --wtf-btn-active-border-color: #fff;
   --wtf-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --wtf-btn-disabled-color: #6c757d;
+  --wtf-btn-disabled-color: #fff;
   --wtf-btn-disabled-bg: transparent;
-  --wtf-btn-disabled-border-color: #6c757d;
+  --wtf-btn-disabled-border-color: #fff;
   --wtf-gradient: none;
 }
 
@@ -10208,7 +10208,7 @@ textarea.form-control-lg {
   --wtf-btn-disabled-color: #6c757d;
   --wtf-btn-disabled-border-color: transparent;
   --wtf-btn-box-shadow: 0 0 0 #000;
-  --wtf-btn-focus-shadow-rgb: 0, 137, 131;
+  --wtf-btn-focus-shadow-rgb: 38, 38, 38;
   text-decoration: underline;
 }
 .btn-link:focus-visible {
@@ -10315,7 +10315,7 @@ textarea.form-control-lg {
   --wtf-dropdown-link-hover-color: var(--wtf-body-color);
   --wtf-dropdown-link-hover-bg: var(--wtf-tertiary-bg);
   --wtf-dropdown-link-active-color: #fff;
-  --wtf-dropdown-link-active-bg: #00A19A;
+  --wtf-dropdown-link-active-bg: #000;
   --wtf-dropdown-link-disabled-color: var(--wtf-tertiary-color);
   --wtf-dropdown-item-padding-x: 1rem;
   --wtf-dropdown-item-padding-y: 0.25rem;
@@ -10581,7 +10581,7 @@ textarea.form-control-lg {
   --wtf-dropdown-divider-bg: var(--wtf-border-color-translucent);
   --wtf-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --wtf-dropdown-link-active-color: #fff;
-  --wtf-dropdown-link-active-bg: #00A19A;
+  --wtf-dropdown-link-active-bg: #000;
   --wtf-dropdown-link-disabled-color: #adb5bd;
   --wtf-dropdown-header-color: #adb5bd;
 }
@@ -10722,7 +10722,7 @@ textarea.form-control-lg {
 }
 .nav-link:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 .nav-link.disabled, .nav-link:disabled {
   color: var(--wtf-nav-link-disabled-color);
@@ -10765,7 +10765,7 @@ textarea.form-control-lg {
 .nav-pills {
   --wtf-nav-pills-border-radius: var(--wtf-border-radius);
   --wtf-nav-pills-link-active-color: #fff;
-  --wtf-nav-pills-link-active-bg: #00A19A;
+  --wtf-nav-pills-link-active-bg: #000;
 }
 .nav-pills .nav-link {
   border-radius: var(--wtf-nav-pills-border-radius);
@@ -10838,7 +10838,7 @@ textarea.form-control-lg {
   --wtf-navbar-toggler-padding-y: 0.25rem;
   --wtf-navbar-toggler-padding-x: 0.75rem;
   --wtf-navbar-toggler-font-size: 1.25rem;
-  --wtf-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --wtf-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --wtf-navbar-toggler-border-color: rgba(var(--wtf-emphasis-color-rgb), 0.15);
   --wtf-navbar-toggler-border-radius: var(--wtf-border-radius);
   --wtf-navbar-toggler-focus-width: 0.25rem;
@@ -11448,12 +11448,12 @@ textarea.form-control-lg {
   --wtf-accordion-btn-padding-y: 1rem;
   --wtf-accordion-btn-color: var(--wtf-body-color);
   --wtf-accordion-btn-bg: var(--wtf-accordion-bg);
-  --wtf-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --wtf-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   --wtf-accordion-btn-icon-width: 1.25rem;
   --wtf-accordion-btn-icon-transform: rotate(-180deg);
   --wtf-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --wtf-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgb%280, 64.4, 61.6%29' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-  --wtf-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+  --wtf-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  --wtf-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
   --wtf-accordion-body-padding-x: 1.25rem;
   --wtf-accordion-body-padding-y: 1rem;
   --wtf-accordion-active-color: var(--wtf-primary-text-emphasis);
@@ -11569,8 +11569,8 @@ textarea.form-control-lg {
 }
 
 [data-bs-theme=dark] .accordion-button::after {
-  --wtf-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb%28102, 198.6, 194.4%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3e%3c/svg%3e");
-  --wtf-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb%28102, 198.6, 194.4%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3e%3c/svg%3e");
+  --wtf-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23666666'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3e%3c/svg%3e");
+  --wtf-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23666666'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3e%3c/svg%3e");
 }
 
 .breadcrumb {
@@ -11619,10 +11619,10 @@ textarea.form-control-lg {
   --wtf-pagination-hover-border-color: var(--wtf-border-color);
   --wtf-pagination-focus-color: var(--wtf-link-hover-color);
   --wtf-pagination-focus-bg: var(--wtf-secondary-bg);
-  --wtf-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+  --wtf-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
   --wtf-pagination-active-color: #fff;
-  --wtf-pagination-active-bg: #00A19A;
-  --wtf-pagination-active-border-color: #00A19A;
+  --wtf-pagination-active-bg: #000;
+  --wtf-pagination-active-border-color: #000;
   --wtf-pagination-disabled-color: var(--wtf-secondary-color);
   --wtf-pagination-disabled-bg: var(--wtf-secondary-bg);
   --wtf-pagination-disabled-border-color: var(--wtf-border-color);
@@ -11834,7 +11834,7 @@ textarea.form-control-lg {
   --wtf-progress-border-radius: var(--wtf-border-radius);
   --wtf-progress-box-shadow: var(--wtf-box-shadow-inset);
   --wtf-progress-bar-color: #fff;
-  --wtf-progress-bar-bg: #00A19A;
+  --wtf-progress-bar-bg: #000;
   --wtf-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--wtf-progress-height);
@@ -11899,8 +11899,8 @@ textarea.form-control-lg {
   --wtf-list-group-disabled-color: var(--wtf-secondary-color);
   --wtf-list-group-disabled-bg: var(--wtf-body-bg);
   --wtf-list-group-active-color: #fff;
-  --wtf-list-group-active-bg: #00A19A;
-  --wtf-list-group-active-border-color: #00A19A;
+  --wtf-list-group-active-bg: #000;
+  --wtf-list-group-active-border-color: #000;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -12231,7 +12231,7 @@ textarea.form-control-lg {
   --wtf-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3e%3c/svg%3e");
   --wtf-btn-close-opacity: 0.5;
   --wtf-btn-close-hover-opacity: 0.75;
-  --wtf-btn-close-focus-shadow: 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+  --wtf-btn-close-focus-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
   --wtf-btn-close-focus-opacity: 1;
   --wtf-btn-close-disabled-opacity: 0.25;
   box-sizing: content-box;
@@ -13714,12 +13714,12 @@ textarea.form-control-lg {
 }
 
 .text-bg-primary {
-  color: #000 !important;
+  color: #fff !important;
   background-color: RGBA(var(--wtf-primary-rgb), var(--wtf-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
-  color: #fff !important;
+  color: #000 !important;
   background-color: RGBA(var(--wtf-secondary-rgb), var(--wtf-bg-opacity, 1)) !important;
 }
 
@@ -13758,8 +13758,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--wtf-primary-rgb), var(--wtf-link-underline-opacity, 1)) !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: RGBA(51, 180, 174, var(--wtf-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(51, 180, 174, var(--wtf-link-underline-opacity, 1)) !important;
+  color: RGBA(0, 0, 0, var(--wtf-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(0, 0, 0, var(--wtf-link-underline-opacity, 1)) !important;
 }
 
 .link-secondary {
@@ -13767,8 +13767,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--wtf-secondary-rgb), var(--wtf-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(86, 94, 100, var(--wtf-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(86, 94, 100, var(--wtf-link-underline-opacity, 1)) !important;
+  color: RGBA(255, 255, 255, var(--wtf-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(255, 255, 255, var(--wtf-link-underline-opacity, 1)) !important;
 }
 
 .link-success {
@@ -18844,11 +18844,15 @@ textarea.form-control-lg {
 }
 
 [data-bs-theme=wtf] {
-  --wtf-navbar-brand-color: url(#wtf);
   --wtf-brand-color: url(#wtf);
-  --wtf-primary: url(#wtf);
+  --wtf-navbar-brand-color: url(#wtf);
+  --wtf-primary: linear-gradient(89.7deg, rgba(223, 0, 0, 1) 2.7%, rgba(214, 91, 0, 1) 15.1%, rgba(233, 245, 0, 1) 29.5%, rgba(23, 255, 17, 1) 45.7%, rgba(29, 255, 255, 1) 61.5%, rgba(5, 17, 255, 1) 76.4%, rgba(202, 0, 253, 1) 92.4%);
   --wtf-gradient: linear-gradient(89.7deg, rgba(223, 0, 0, .7) 2.7%, rgba(214, 91, 0, .7) 15.1%, rgba(233, 245, 0, .7) 29.5%, rgba(23, 255, 17, .7) 45.7%, rgba(29, 255, 255, .7) 61.5%, rgba(5, 17, 255, .7) 76.4%, rgba(202, 0, 253, .7) 92.4%);
   --wtf-gradient-text: linear-gradient(89.7deg, rgba(223, 0, 0, 1) 2.7%, rgba(214, 91, 0, 1) 15.1%, rgba(233, 245, 0, 1) 29.5%, rgba(23, 255, 17, 1) 45.7%, rgba(29, 255, 255, 1) 61.5%, rgba(5, 17, 255, 1) 76.4%, rgba(202, 0, 253, 1) 92.4%);
+  --wtf-emphasis-color: url(#wtf);
+  --wtf-emphasis-color-rgb: url(#wtf);
+  --wtf-link-color: var(--wtf-black);
+  --wtf-link-color-rgb: var(--wtf-black-rgb);
 }
 [data-bs-theme=wtf] svg {
   --wtf-primary: url(#wtf);
@@ -18925,6 +18929,148 @@ textarea.form-control-lg {
   }
 }
   */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+html {
+  font-size: 50%;
+}
+@media (min-width: 576px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Black";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway BlackItalic";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway BoldItalic";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway ExtraBold";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway ExtraBoldItalic";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway ExtraLight";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway ExtraLightItalic";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Italic";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Light";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway LightItalic";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway MediumItalic";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway SemiBold";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway SemiBoldItalic";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Thin";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway ThinItalic";
+  src: url("http://localhost/wtf-library/wtf-theme-assets/fonts/raleway/Raleway-ThinItalic.ttf") format("truetype");
+}
 /*
 @mixin wtfBgWtfLinewtfTypeWhite {
     &-primary,
@@ -19301,270 +19447,6 @@ textarea.form-control-lg {
   font-size: var(--wtf-theme-heading-size);
   line-height: var(--wtf-theme-heading-size);
 }*/
-/*
-
-.bg {
-
-  &-primary,
-  &-primary-emphasis,
-  &-black {
-
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
-      color: var(--wtf-white);
-    }
-
-    p {
-      color: var(--wtf-white);
-    }
-  }
-}*/
-/*
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  &.wtf {
-
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    background-image: var(--wtf-gradient-text);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    letter-spacing: .2rem;
-
-    &.brand {
-      text-transform: lowercase;
-    }
-  }
-}*/
-/*
-// @include wtfTypeWtfPolygon;
-@mixin wtfTypeWtfPolygon {
-
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3,
-  h4,
-  .h4,
-  h5,
-  .h5,
-  h6,
-  .h6 {
-    &-wtf {
-      text-transform: capitalize;
-      font-weight: 700;
-      @include wtfHWtfPolygon;
-
-      &-wtf {
-        text-transform: lowercase;
-      }
-    }
-  }
-}*/
-/*
-// @include wtfTypeWtfWtf;
-@mixin wtfTypeWtfTheme {
-  text-transform: uppercase;
-  font-weight: 700;
-
-  &-wtf {
-    text-transform: lowercase;
-  }
-}
-
-// @include wtfTypeWtfTheme;
-@mixin wtfTypeWtfTheme {
-  &-wtf {
-    font-weight: 700;
-
-    &:first-child {
-      text-transform: lowercase;
-    }
-
-    &:not(:first-child) {
-      text-transform: uppercase;
-    }
-  }
-}*/
-/*
-
-.bg-black,
-.bg-primary,
-.bg-primary-emphasis {
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3,
-  h4,
-  .h4,
-  h5,
-  .h5,
-  h6,
-  .h6 {
-    &-wtf {
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 0.5rem;
-    text-align: center;
-
-    &::after {
-      margin-left: var(--wtf-body-font-size);
-      @include wtfDotSupportsBodyBg;
-    }
-
-    &::before {
-      margin-right: var(--wtf-body-font-size);
-      @include wtfDotSupportsBodyBg;
-    }
-  }
-}
-}
-
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3,
-  h4,
-  .h4,
-  h5,
-  .h5,
-  h6,
-  .h6 {
-    &-wtf {
-    text-transform: uppercase;
-    position: relative;
-    //padding-bottom: 0.5rem;
-    text-align: center;
-
-    &::after {
-      margin-left: var(--wtf-body-font-size);
-      @include wtfDotSupports;
-    }
-
-    &::before {
-      margin-right: var(--wtf-body-font-size);
-      @include wtfDotSupports;
-    }
-
-    &.brand {
-      text-transform: lowercase;
-    }
-  }
-}
-
-*/
-/*
-// @include wtfNavbarWtfLine;
-@mixin wtfNavbarWtfLine {}
-
-// @include wtfNavbarWtfPolygon;
-@mixin wtfNavbarWtfPolygon {}
-
-// @include wtfNavbarWtfDot;
-@mixin wtfNavbarWtfDot {}
-
-// @include wtfNavbarWtfMM;
-@mixin wtfNavbarWtfMM {}
-
-// @include wtfNavbarWtfWtf;
-@mixin wtfNavbarWtfWtf {}
-*/
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    box-shadow: none;
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: none;
-  }
-}
-html {
-  font-size: 50%;
-}
-@media (min-width: 576px) {
-  html {
-    font-size: 56.25%;
-  }
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 62.5%;
-  }
-}
-@media (min-width: 992px) {
-  html {
-    font-size: 75%;
-  }
-}
-@media (min-width: 1200px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 .wtf-line {
   --wtf-fraction-error-font: 8;
   --wtf-fraction-slide-h1: 3;
@@ -19684,25 +19566,61 @@ html {
   --wtf-theme-btn-padding-y: 0.5rem;
   --wtf-theme-btn-border-radius: 0;
 }
+.wtf-line [data-bs-theme=dark] {
+  --wtf-brand-color: #fff !important;
+  --wtf-body-color: #fff !important;
+  --wtf-body-color-rgb: 255, 255, 255 !important;
+  --wtf-primary: #fff !important;
+  --wtf-primary-rgb: 255, 255, 255 !important;
+  --wtf-white: #000 !important;
+  --wtf-white-rgb: 0, 0, 0 !important;
+}
+.wtf-line [data-bs-theme=mar] {
+  --wtf-brand-color: #131879;
+  --wtf-body-color: #34343b;
+  --wtf-body-color-rgb: 52, 52, 59 !important;
+  --wtf-primary: #131879;
+  --wtf-primary-rgb: 19, 24, 121;
+  --wtf-heading-color: #131879;
+  --wtf-navbar-brand-color: #131879;
+}
+.wtf-line [data-bs-theme=marlene] {
+  --wtf-navbar-brand-color: #00A19A;
+  --wtf-brand-color: #00A19A;
+  --wtf-primary: #00A19A;
+  --wtf-primary-rgb: 0, 161, 154;
+  --wtf-heading-color: #00A19A;
+}
+.wtf-line [data-bs-theme=wtf] {
+  --wtf-brand-color: url(#wtf);
+  --wtf-navbar-brand-color: url(#wtf);
+  --wtf-primary: linear-gradient(89.7deg, rgba(223, 0, 0, 1) 2.7%, rgba(214, 91, 0, 1) 15.1%, rgba(233, 245, 0, 1) 29.5%, rgba(23, 255, 17, 1) 45.7%, rgba(29, 255, 255, 1) 61.5%, rgba(5, 17, 255, 1) 76.4%, rgba(202, 0, 253, 1) 92.4%);
+  --wtf-gradient: linear-gradient(89.7deg, rgba(223, 0, 0, .7) 2.7%, rgba(214, 91, 0, .7) 15.1%, rgba(233, 245, 0, .7) 29.5%, rgba(23, 255, 17, .7) 45.7%, rgba(29, 255, 255, .7) 61.5%, rgba(5, 17, 255, .7) 76.4%, rgba(202, 0, 253, .7) 92.4%);
+  --wtf-gradient-text: linear-gradient(89.7deg, rgba(223, 0, 0, 1) 2.7%, rgba(214, 91, 0, 1) 15.1%, rgba(233, 245, 0, 1) 29.5%, rgba(23, 255, 17, 1) 45.7%, rgba(29, 255, 255, 1) 61.5%, rgba(5, 17, 255, 1) 76.4%, rgba(202, 0, 253, 1) 92.4%);
+  --wtf-emphasis-color: url(#wtf);
+  --wtf-emphasis-color-rgb: url(#wtf);
+  --wtf-link-color: var(--wtf-black);
+  --wtf-link-color-rgb: var(--wtf-black-rgb);
+}
+.wtf-line [data-bs-theme=wtf] svg {
+  --wtf-primary: url(#wtf);
+}
 .wtf-line .accordion {
   --wtf-accordion-active-color: rgba(var(--wtf-primary-rgb), 1);
   --wtf-accordion-active-bg: rgba(var(--wtf-primary-rgb), .1);
   font-size: var(--wtf-body-font-size);
+  width: 100%;
 }
-.wtf-line .accordion svg.wtfi,
-.wtf-line .accordion svg,
-.wtf-line .accordion img {
+.wtf-line .accordion svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
   line-height: var(--wtf-body-font-size);
 }
-.wtf-line .alert {
+.wtf-line {
   font-size: var(--wtf-body-font-size);
 }
-.wtf-line .alert svg.wtfi,
-.wtf-line .alert svg,
-.wtf-line .alert img {
+.wtf-line svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -19739,23 +19657,34 @@ html {
 .wtf-line a.footer-brand svg:hover {
   fill: rgba(var(--wtf-emphasis-color-rgb), 1);
 }
-.wtf-line a .hero svg,
-.wtf-line a .carousel svg {
-  height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
-  width: auto;
-  fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
-}
-.wtf-line a .hero svg:hover,
-.wtf-line a .carousel svg:hover {
-  fill: rgba(var(--wtf-emphasis-color-rgb), 1);
-}
-.wtf-line a .brand svg {
-  height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
-  width: auto;
-  fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
-}
-.wtf-line a .brand svg:hover {
-  fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+.wtf-line a {
+  /*
+          .hero,
+          .carousel {
+              svg {
+                  height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
+                  width: auto;
+                  fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                  &:hover {
+                      fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                  }
+
+              }
+          }
+
+          .brand {
+              svg {
+                  height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
+                  width: auto;
+                  fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+
+                  &:hover {
+                      fill: rgba(var(--wtf-emphasis-color-rgb), 1);
+                  }
+
+              }
+          }*/
 }
 .wtf-line .badge {
   --wtf-badge-border-radius: var(--wtf-theme-btn-border-radius);
@@ -19765,6 +19694,14 @@ html {
   background-image: var(--wtf-primary-rgb);
 }
 .wtf-line .badge.text-bg-primary svg {
+  width: calc(var(--wtf-badge-font-size) * 1.5);
+  height: calc(var(--wtf-badge-font-size) * 1.5);
+}
+.wtf-line .badge.text-bg-secondary {
+  color: var(--wtf-body-color) !important;
+  background-image: var(--wtf-secondary-rgb);
+}
+.wtf-line .badge.text-bg-secondary svg {
   width: calc(var(--wtf-badge-font-size) * 1.5);
   height: calc(var(--wtf-badge-font-size) * 1.5);
 }
@@ -19781,66 +19718,11 @@ html {
 .wtf-line .border-top {
   border-top: var(--wtf-theme-border-thickness) var(--wtf-border-style) var(--wtf-border-color) !important;
 }
-.wtf-line {
-  /*
-  a {
-      &.navbar-brand {
-          --wtf-navbar-brand-font-size: 0;
-
-          svg {
-              height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xs));
-              width: auto;
-              fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
-
-              &:hover {
-                  fill: rgba(var(--wtf-emphasis-color-rgb), 1);
-              }
-          }
-      }
-
-
-
-      &.footer-brand {
-          svg {
-              height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xs));
-              width: auto;
-              fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
-
-              &:hover {
-                  fill: rgba(var(--wtf-emphasis-color-rgb), 1);
-              }
-
-          }
-
-      }
-
-      .hero,
-      .carousel {
-          svg {
-              height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
-              width: auto;
-              fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
-
-              &:hover {
-                  fill: rgba(var(--wtf-emphasis-color-rgb), 1);
-              }
-
-          }
-      }
-
-      .brand {
-          svg {
-              height: calc(var(--wtf-body-font-size) + var(--wtf-body-font-size) * var(--wtf-fraction-xxl));
-              width: auto;
-              fill: rgba(var(--wtf-emphasis-color-rgb), 0.65);
-
-              &:hover {
-                  fill: rgba(var(--wtf-emphasis-color-rgb), 1);
-              }
-
-          }
-      }
-  }*/
+.wtf-line .breadcrumb svg {
+  fill: currentColor;
+  width: var(--wtf-body-font-size);
+  height: var(--wtf-body-font-size);
+  line-height: var(--wtf-body-font-size);
 }
 .wtf-line .breadcrumb-chevron {
   --wtf-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236c757d'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
@@ -19897,138 +19779,11 @@ html {
 .wtf-line .btn-group-vertical {
   border-radius: var(--wtf-theme-btn-border-radius);
 }
-.wtf-line .btn-top {
-  --wtf-btn-bg: var(--wtf-primary);
-  --wtf-btn-border-color: var(--wtf-primary);
-  --wtf-btn-hover-bg: var(--wtf-primary);
-  --wtf-btn-hover-border-color: var(--wtf-primary);
-  --wtf-btn-active-bg: var(--wtf-primary);
-  --wtf-btn-active-border-color: var(--wtf-primary);
-  --wtf-btn-disabled-bg: var(--wtf-primary);
-  --wtf-btn-disabled-border-color: var(--wtf-primary);
-  --wtf-heading-color: var(--wtf-body-bg);
-  --wtf-btn-color: var(--wtf-body-bg);
-  --wtf-btn-hover-color: var(--wtf-body-bg);
-  --wtf-btn-active-color: var(--wtf-body-bg);
-  --wtf-btn-disabled-color: var(--wtf-body-bg);
-  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
-  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
-  --wtf-btn-padding-x: 0rem;
-  --wtf-btn-padding-y: 0rem;
-  width: var(--wtf-theme-icon-size);
-  height: var(--wtf-theme-icon-size);
-}
-.wtf-line .btn-top:hover {
-  transform: translateY(-3px);
-}
-.wtf-line .btn-nav {
-  --wtf-btn-bg: var(--wtf-primary);
-  --wtf-btn-border-color: var(--wtf-primary);
-  --wtf-btn-hover-bg: var(--wtf-primary);
-  --wtf-btn-hover-border-color: var(--wtf-primary);
-  --wtf-btn-active-bg: var(--wtf-primary);
-  --wtf-btn-active-border-color: var(--wtf-primary);
-  --wtf-btn-disabled-bg: var(--wtf-primary);
-  --wtf-btn-disabled-border-color: var(--wtf-primary);
-  --wtf-heading-color: var(--wtf-body-bg);
-  --wtf-btn-color: var(--wtf-body-bg);
-  --wtf-btn-hover-color: var(--wtf-body-bg);
-  --wtf-btn-active-color: var(--wtf-body-bg);
-  --wtf-btn-disabled-color: var(--wtf-body-bg);
-  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
-  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
-  --wtf-btn-padding-x: 0rem;
-  --wtf-btn-padding-y: 0rem;
-  width: var(--wtf-theme-icon-size);
-  height: var(--wtf-theme-icon-size);
-}
-.wtf-line .btn-nav:hover {
-  transform: translateY(-3px);
-}
-.wtf-line .btn {
-  /*
-  &-theme {
-      @include wtfBtn;
-      //@include wtfBtnBodyColor;
-      @include wtfBtnBodyBg;
-      @include svgFontSize;
-
-      --wtf-btn-bg: var(--wtf-teal);
-      --wtf-btn-border-color: var(--wtf-teal);
-      --wtf-btn-hover-bg: var(--wtf-teal);
-      --wtf-btn-hover-border-color: var(--wtf-teal);
-      --wtf-btn-active-bg: var(--wtf-teal);
-      --wtf-btn-active-border-color: var(--wtf-teal);
-      --wtf-btn-disabled-bg: var(--wtf-teal);
-      --wtf-btn-disabled-border-color: var(--wtf-teal);
-
-      --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
-      --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
-      --wtf-btn-padding-x: 0.5rem;
-      --wtf-btn-padding-y: 0.5rem;
-
-      position: fixed;
-      right: 0.5rem;
-      bottom: 0.5rem;
-  }*/
-}
-.wtf-line .btn-primary {
-  --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
-  --wtf-btn-padding-y: var(--wtf-theme-btn-padding-y);
-  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
-  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
-  --wtf-heading-color: var(--wtf-body-bg);
-  --wtf-btn-color: var(--wtf-body-bg);
-  --wtf-btn-hover-color: var(--wtf-body-bg);
-  --wtf-btn-active-color: var(--wtf-body-bg);
-  --wtf-btn-disabled-color: var(--wtf-body-bg);
-}
-.wtf-line .btn-primary svg.wtfi,
-.wtf-line .btn-primary svg,
-.wtf-line .btn-primary img {
+.wtf-line .icon-link svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
   line-height: var(--wtf-body-font-size);
-}
-.wtf-line .btn-primary {
-  --wtf-btn-bg: var(--wtf-primary);
-  --wtf-btn-border-color: var(--wtf-primary);
-  --wtf-btn-hover-bg: var(--wtf-primary);
-  --wtf-btn-hover-border-color: var(--wtf-primary);
-  --wtf-btn-active-bg: var(--wtf-primary);
-  --wtf-btn-active-border-color: var(--wtf-primary);
-  --wtf-btn-disabled-bg: var(--wtf-primary);
-  --wtf-btn-disabled-border-color: var(--wtf-primary);
-}
-.wtf-line .btn-secondary {
-  --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
-  --wtf-btn-padding-y: var(--wtf-theme-btn-padding-y);
-  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
-  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
-  --wtf-heading-color: var(--wtf-body-color);
-  --wtf-btn-color: var(--wtf-body-color);
-  --wtf-btn-hover-color: var(--wtf-body-color);
-  --wtf-btn-active-color: var(--wtf-body-color);
-  --wtf-btn-disabled-color: var(--wtf-body-color);
-}
-.wtf-line .btn-secondary svg.wtfi,
-.wtf-line .btn-secondary svg,
-.wtf-line .btn-secondary img {
-  fill: currentColor;
-  width: var(--wtf-body-font-size);
-  height: var(--wtf-body-font-size);
-  line-height: var(--wtf-body-font-size);
-}
-.wtf-line .btn-secondary {
-  --wtf-btn-bg: var(--wtf-secondary);
-  --wtf-btn-border-color: var(--wtf-secondary);
-  --wtf-btn-hover-bg: var(--wtf-secondary);
-  --wtf-btn-hover-border-color: var(--wtf-secondary);
-  --wtf-btn-active-bg: var(--wtf-secondary);
-  --wtf-btn-active-border-color: var(--wtf-secondary);
-  --wtf-btn-disabled-bg: var(--wtf-secondary);
-  --wtf-btn-disabled-border-color: var(--wtf-secondary);
 }
 .wtf-line .btn-success {
   --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
@@ -20036,14 +19791,13 @@ html {
   --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
   --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
   --wtf-heading-color: var(--wtf-body-bg);
+  --wtf-brand-color: var(--wtf-body-bg);
   --wtf-btn-color: var(--wtf-body-bg);
   --wtf-btn-hover-color: var(--wtf-body-bg);
   --wtf-btn-active-color: var(--wtf-body-bg);
   --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-success svg.wtfi,
-.wtf-line .btn-success svg,
-.wtf-line .btn-success img {
+.wtf-line .btn-success svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20065,14 +19819,13 @@ html {
   --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
   --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
   --wtf-heading-color: var(--wtf-body-bg);
+  --wtf-brand-color: var(--wtf-body-bg);
   --wtf-btn-color: var(--wtf-body-bg);
   --wtf-btn-hover-color: var(--wtf-body-bg);
   --wtf-btn-active-color: var(--wtf-body-bg);
   --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-danger svg.wtfi,
-.wtf-line .btn-danger svg,
-.wtf-line .btn-danger img {
+.wtf-line .btn-danger svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20094,14 +19847,13 @@ html {
   --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
   --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
   --wtf-heading-color: var(--wtf-body-bg);
+  --wtf-brand-color: var(--wtf-body-bg);
   --wtf-btn-color: var(--wtf-body-bg);
   --wtf-btn-hover-color: var(--wtf-body-bg);
   --wtf-btn-active-color: var(--wtf-body-bg);
   --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-warning svg.wtfi,
-.wtf-line .btn-warning svg,
-.wtf-line .btn-warning img {
+.wtf-line .btn-warning svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20123,14 +19875,13 @@ html {
   --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
   --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
   --wtf-heading-color: var(--wtf-body-bg);
+  --wtf-brand-color: var(--wtf-body-bg);
   --wtf-btn-color: var(--wtf-body-bg);
   --wtf-btn-hover-color: var(--wtf-body-bg);
   --wtf-btn-active-color: var(--wtf-body-bg);
   --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-dark svg.wtfi,
-.wtf-line .btn-dark svg,
-.wtf-line .btn-dark img {
+.wtf-line .btn-dark svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20152,14 +19903,13 @@ html {
   --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
   --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
   --wtf-heading-color: var(--wtf-body-color);
+  --wtf-brand-color: var(--wtf-body-color);
   --wtf-btn-color: var(--wtf-body-color);
   --wtf-btn-hover-color: var(--wtf-body-color);
   --wtf-btn-active-color: var(--wtf-body-color);
   --wtf-btn-disabled-color: var(--wtf-body-color);
 }
-.wtf-line .btn-light svg.wtfi,
-.wtf-line .btn-light svg,
-.wtf-line .btn-light img {
+.wtf-line .btn-light svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20181,14 +19931,13 @@ html {
   --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
   --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
   --wtf-heading-color: var(--wtf-body-color);
+  --wtf-brand-color: var(--wtf-body-color);
   --wtf-btn-color: var(--wtf-body-color);
   --wtf-btn-hover-color: var(--wtf-body-color);
   --wtf-btn-active-color: var(--wtf-body-color);
   --wtf-btn-disabled-color: var(--wtf-body-color);
 }
-.wtf-line .btn-info svg.wtfi,
-.wtf-line .btn-info svg,
-.wtf-line .btn-info img {
+.wtf-line .btn-info svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20204,68 +19953,6 @@ html {
   --wtf-btn-disabled-bg: var(--wtf-info);
   --wtf-btn-disabled-border-color: var(--wtf-info);
 }
-.wtf-line .btn-outline-primary {
-  --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
-  --wtf-btn-padding-y: var(--wtf-theme-btn-padding-y);
-  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
-  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
-  /*
-  --wtf-heading-color: var(--wtf-body-bg);
-  --wtf-btn-color: var(--wtf-body-bg);
-  */
-  --wtf-btn-hover-color: var(--wtf-body-bg);
-  --wtf-btn-active-color: var(--wtf-body-bg);
-  --wtf-btn-disabled-color: var(--wtf-body-bg);
-}
-.wtf-line .btn-outline-primary svg.wtfi,
-.wtf-line .btn-outline-primary svg,
-.wtf-line .btn-outline-primary img {
-  fill: currentColor;
-  width: var(--wtf-body-font-size);
-  height: var(--wtf-body-font-size);
-  line-height: var(--wtf-body-font-size);
-}
-.wtf-line .btn-outline-primary {
-  --wtf-btn-color: var(--wtf-primary);
-  --wtf-btn-border-color: var(--wtf-primary);
-  --wtf-btn-hover-bg: var(--wtf-primary);
-  --wtf-btn-hover-border-color: var(--wtf-primary);
-  --wtf-btn-active-bg: var(--wtf-primary);
-  --wtf-btn-active-border-color: var(--wtf-primary);
-  --wtf-btn-disabled-color: var(--wtf-primary);
-  --wtf-btn-disabled-border-color: var(--wtf-primary);
-}
-.wtf-line .btn-outline-secondary {
-  --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
-  --wtf-btn-padding-y: var(--wtf-theme-btn-padding-y);
-  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
-  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
-  /*
-  --wtf-heading-color: var(--wtf-body-color);
-    --wtf-btn-color: var(--wtf-body-color);
-    */
-  --wtf-btn-hover-color: var(--wtf-body-color);
-  --wtf-btn-active-color: var(--wtf-body-color);
-  --wtf-btn-disabled-color: var(--wtf-body-color);
-}
-.wtf-line .btn-outline-secondary svg.wtfi,
-.wtf-line .btn-outline-secondary svg,
-.wtf-line .btn-outline-secondary img {
-  fill: currentColor;
-  width: var(--wtf-body-font-size);
-  height: var(--wtf-body-font-size);
-  line-height: var(--wtf-body-font-size);
-}
-.wtf-line .btn-outline-secondary {
-  --wtf-btn-color: var(--wtf-secondary);
-  --wtf-btn-border-color: var(--wtf-secondary);
-  --wtf-btn-hover-bg: var(--wtf-secondary);
-  --wtf-btn-hover-border-color: var(--wtf-secondary);
-  --wtf-btn-active-bg: var(--wtf-secondary);
-  --wtf-btn-active-border-color: var(--wtf-secondary);
-  --wtf-btn-disabled-color: var(--wtf-secondary);
-  --wtf-btn-disabled-border-color: var(--wtf-secondary);
-}
 .wtf-line .btn-outline-success {
   --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
   --wtf-btn-padding-y: var(--wtf-theme-btn-padding-y);
@@ -20279,9 +19966,7 @@ html {
   --wtf-btn-active-color: var(--wtf-body-bg);
   --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-outline-success svg.wtfi,
-.wtf-line .btn-outline-success svg,
-.wtf-line .btn-outline-success img {
+.wtf-line .btn-outline-success svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20310,9 +19995,7 @@ html {
   --wtf-btn-active-color: var(--wtf-body-bg);
   --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-outline-danger svg.wtfi,
-.wtf-line .btn-outline-danger svg,
-.wtf-line .btn-outline-danger img {
+.wtf-line .btn-outline-danger svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20341,9 +20024,7 @@ html {
   --wtf-btn-active-color: var(--wtf-body-bg);
   --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-outline-warning svg.wtfi,
-.wtf-line .btn-outline-warning svg,
-.wtf-line .btn-outline-warning img {
+.wtf-line .btn-outline-warning svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20372,9 +20053,7 @@ html {
   --wtf-btn-active-color: var(--wtf-body-bg);
   --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-outline-dark svg.wtfi,
-.wtf-line .btn-outline-dark svg,
-.wtf-line .btn-outline-dark img {
+.wtf-line .btn-outline-dark svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20403,9 +20082,7 @@ html {
   --wtf-btn-active-color: var(--wtf-body-color);
   --wtf-btn-disabled-color: var(--wtf-body-color);
 }
-.wtf-line .btn-outline-light svg.wtfi,
-.wtf-line .btn-outline-light svg,
-.wtf-line .btn-outline-light img {
+.wtf-line .btn-outline-light svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20434,9 +20111,7 @@ html {
   --wtf-btn-active-color: var(--wtf-body-color);
   --wtf-btn-disabled-color: var(--wtf-body-color);
 }
-.wtf-line .btn-outline-info svg.wtfi,
-.wtf-line .btn-outline-info svg,
-.wtf-line .btn-outline-info img {
+.wtf-line .btn-outline-info svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -20452,110 +20127,119 @@ html {
   --wtf-btn-disabled-bg: var(--wtf-info);
   --wtf-btn-disabled-border-color: var(--wtf-info);
 }
-.wtf-line .btn-i-circle {
+.wtf-line .btn-primary {
+  --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
+  --wtf-btn-padding-y: var(--wtf-theme-btn-padding-y);
+  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
+  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
+  --wtf-heading-color: var(--wtf-body-bg);
+  --wtf-brand-color: var(--wtf-body-bg);
   --wtf-btn-color: var(--wtf-body-bg);
+  --wtf-btn-hover-color: var(--wtf-body-bg);
+  --wtf-btn-active-color: var(--wtf-body-bg);
+  --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-i-clear {
-  position: relative;
-  --wtf-btn-border-radius: 50%;
-  --wtf-btn-border-width: 0;
-  --wtf-btn-padding-x: 0.5rem;
-  --wtf-btn-padding-y: 0.5rem;
-}
-.wtf-line .btn-i-clear svg.wtfi,
-.wtf-line .btn-i-clear svg,
-.wtf-line .btn-i-clear img {
+.wtf-line .btn-primary svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
   line-height: var(--wtf-body-font-size);
 }
-.wtf-line .btn-i-clear:hover {
-  transform: translateY(-3px);
-  opacity: 0.8;
-}
-.wtf-line .btn-i-contact {
-  position: relative;
-  --wtf-btn-border-radius: 50%;
-  --wtf-btn-border-width: 0;
-  --wtf-btn-padding-x: 0rem;
-  --wtf-btn-padding-y: 0rem;
-}
-.wtf-line .btn-i-contact svg {
-  fill: var(--wtf-primary);
-  color: var(--wtf-primary);
-  width: 1.5rem;
-  height: 1.5rem;
-  display: inline-block;
-  margin-right: 1rem;
-}
-.wtf-line .btn-i-contact:hover {
-  transform: translateY(-3px);
-  opacity: 0.8;
-}
-.wtf-line .btn-icon {
-  --wtf-heading-color: var(--wtf-body-bg);
-  --wtf-btn-color: var(--wtf-body-bg);
-  --wtf-heading-color: var(--wtf-body-bg);
+.wtf-line .btn-primary {
   --wtf-btn-bg: var(--wtf-primary);
   --wtf-btn-border-color: var(--wtf-primary);
-  --wtf-btn-hover-color: var(--wtf-body-bg);
   --wtf-btn-hover-bg: var(--wtf-primary);
   --wtf-btn-hover-border-color: var(--wtf-primary);
-  --wtf-btn-active-color: var(--wtf-body-bg);
   --wtf-btn-active-bg: var(--wtf-primary);
   --wtf-btn-active-border-color: var(--wtf-primary);
-  --wtf-btn-disabled-color: var(--wtf-body-bg);
   --wtf-btn-disabled-bg: var(--wtf-primary);
   --wtf-btn-disabled-border-color: var(--wtf-primary);
-  position: relative;
-  --wtf-btn-border-radius: 50%;
-  --wtf-btn-border-width: 0;
-  --wtf-btn-padding-x: 0.5rem;
-  --wtf-btn-padding-y: 0.5rem;
 }
-.wtf-line .btn-icon span {
-  display: none;
+.wtf-line .btn-secondary {
+  --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
+  --wtf-btn-padding-y: var(--wtf-theme-btn-padding-y);
+  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
+  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
+  --wtf-heading-color: var(--wtf-body-bg);
+  --wtf-brand-color: var(--wtf-body-bg);
+  --wtf-btn-color: var(--wtf-body-bg);
+  --wtf-btn-hover-color: var(--wtf-body-bg);
+  --wtf-btn-active-color: var(--wtf-body-bg);
+  --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn-icon svg.wtfi,
-.wtf-line .btn-icon svg,
-.wtf-line .btn-icon img {
+.wtf-line .btn-secondary svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
   line-height: var(--wtf-body-font-size);
 }
-.wtf-line .btn- .wtf-line .btn-animated {
-  animation: moveInBottom var(--wtf-in-animation-duration) ease-out var(--wtf-out-animation-duration);
-  animation-fill-mode: backwards;
-  position: relative;
-  /*
-  &::after {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      border-radius: var(--wtf-btn-border-radius);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all $wtf-transition-animation-duration;
-      background-color: var(--wtf-primary);
-
-  }*/
+.wtf-line .btn-secondary {
+  --wtf-btn-bg: var(--wtf-secondary);
+  --wtf-btn-border-color: var(--wtf-secondary);
+  --wtf-btn-hover-bg: var(--wtf-secondary);
+  --wtf-btn-hover-border-color: var(--wtf-secondary);
+  --wtf-btn-active-bg: var(--wtf-secondary);
+  --wtf-btn-active-border-color: var(--wtf-secondary);
+  --wtf-btn-disabled-bg: var(--wtf-secondary);
+  --wtf-btn-disabled-border-color: var(--wtf-secondary);
 }
-.wtf-line .btn- .wtf-line .btn-animated:hover {
-  transform: translateY(-3px);
+.wtf-line .btn-outline-primary {
+  --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
+  --wtf-btn-padding-y: var(--wtf-theme-btn-padding-y);
+  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
+  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
   /*
-  &::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-  }*/
+  --wtf-heading-color: var(--wtf-body-bg);
+  --wtf-btn-color: var(--wtf-body-bg);
+  */
+  --wtf-btn-hover-color: var(--wtf-body-bg);
+  --wtf-btn-active-color: var(--wtf-body-bg);
+  --wtf-btn-disabled-color: var(--wtf-body-bg);
 }
-.wtf-line .btn- .wtf-line .btn-animated:active, .wtf-line .btn- .wtf-line .btn-animated:focus {
-  outline: none;
-  transform: translateY(-1px);
+.wtf-line .btn-outline-primary svg {
+  fill: currentColor;
+  width: var(--wtf-body-font-size);
+  height: var(--wtf-body-font-size);
+  line-height: var(--wtf-body-font-size);
+}
+.wtf-line .btn-outline-primary {
+  --wtf-btn-color: var(--wtf-primary);
+  --wtf-btn-border-color: var(--wtf-primary);
+  --wtf-btn-hover-bg: var(--wtf-primary);
+  --wtf-btn-hover-border-color: var(--wtf-primary);
+  --wtf-btn-active-bg: var(--wtf-primary);
+  --wtf-btn-active-border-color: var(--wtf-primary);
+  --wtf-btn-disabled-bg: var(--wtf-primary);
+  --wtf-btn-disabled-border-color: var(--wtf-primary);
+}
+.wtf-line .btn-outline-secondary {
+  --wtf-btn-padding-x: var(--wtf-theme-btn-padding-x);
+  --wtf-btn-padding-y: var(--wtf-theme-btn-padding-y);
+  --wtf-btn-border-radius: var(--wtf-theme-btn-border-radius);
+  --wtf-btn-border-width: var(--wtf-theme-btn-border-width);
+  /*
+  --wtf-heading-color: var(--wtf-body-bg);
+  --wtf-btn-color: var(--wtf-body-bg);
+  */
+  --wtf-btn-hover-color: var(--wtf-body-bg);
+  --wtf-btn-active-color: var(--wtf-body-bg);
+  --wtf-btn-disabled-color: var(--wtf-body-bg);
+}
+.wtf-line .btn-outline-secondary svg {
+  fill: currentColor;
+  width: var(--wtf-body-font-size);
+  height: var(--wtf-body-font-size);
+  line-height: var(--wtf-body-font-size);
+}
+.wtf-line .btn-outline-secondary {
+  --wtf-btn-color: var(--wtf-secondary);
+  --wtf-btn-border-color: var(--wtf-secondary);
+  --wtf-btn-hover-bg: var(--wtf-secondary);
+  --wtf-btn-hover-border-color: var(--wtf-secondary);
+  --wtf-btn-active-bg: var(--wtf-secondary);
+  --wtf-btn-active-border-color: var(--wtf-secondary);
+  --wtf-btn-disabled-bg: var(--wtf-secondary);
+  --wtf-btn-disabled-border-color: var(--wtf-secondary);
 }
 .wtf-line .cal-month, .wtf-line .cal-days, .wtf-line .cal-weekdays {
   display: grid;
@@ -20567,31 +20251,47 @@ html {
 }
 .wtf-line .card-img,
 .wtf-line .card-img-top {
-  border-top-left-radius: var(--wtf-theme-border-radius);
-  border-top-right-radius: var(--wtf-theme-border-radius);
+  border-top-left-radius: var(--wtf-theme-btn-border-radius);
+  border-top-right-radius: var(--wtf-theme-btn-border-radius);
+  width: 100%;
+  height: auto;
 }
-.wtf-line .card-cover {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  border-radius: var(--wtf-theme-border-radius);
-}
-.wtf-line .card-cover svg.brand {
-  fill: currentColor;
-  width: var(--wtf-theme-brand-font-size);
-  height: var(--wtf-theme-brand-font-size);
-  line-height: var(--wtf-theme-brand-font-size);
-}
-.wtf-line .card-cover svg.wtfi {
-  fill: currentColor;
-  width: var(--wtf-theme-icon-size);
-  height: var(--wtf-theme-icon-size);
-  line-height: var(--wtf-theme-icon-size);
+.wtf-line {
+  /*
+  .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: var(--wtf-theme-btn-border-radius);
+
+    svg.brand {
+      fill: currentColor;
+      width: var(--wtf-theme-brand-font-size);
+      height: var(--wtf-theme-brand-font-size);
+      line-height: var(--wtf-theme-brand-font-size);
+    }
+
+    svg.wtfi {
+      fill: currentColor;
+      width: var(--wtf-theme-icon-size);
+      height: var(--wtf-theme-icon-size);
+      line-height: var(--wtf-theme-icon-size);
+    }
+
+  }*/
 }
 .wtf-line .card {
   --wtf-card-border-width: var(--wtf-theme-border-thickness);
   --wtf-card-border-color: rgba(var(--wtf-primary-rgb), .3);
-  --wtf-card-border-radius: var(--wtf-theme-border-radius);
+  --wtf-card-border-radius: var(--wtf-theme-btn-border-radius);
+  --wtf-card-inner-border-radius: var(--wtf-theme-btn-border-radius);
+}
+@media (max-width: 767.98px) {
+  .wtf-line .card:not(:last-child) {
+    padding-bottom: var(--wtf-body-font-size);
+  }
+}
+.wtf-line .card {
   /*
       border: var(--wtf-theme-border-thickness) solid rgba(var(--wtf-primary-rgb), .3);
       border-radius: var(--wtf-card-border-radius);
@@ -20639,7 +20339,7 @@ html {
       border-radius: var(--wtf-card-border-radius);
 
       border: var(--wtf-theme-border-thickness) solid rgba(var(--wtf-primary-rgb), .3);
-      border-radius: var(--wtf-theme-border-radius);
+      border-radius: var(--wtf-theme-btn-border-radius);
 
       &-header{
           border-bottom: var(--wtf-theme-border-thickness) solid rgba(var(--wtf-primary-rgb), .3);
@@ -20648,6 +20348,28 @@ html {
 }
 .wtf-line .card-link {
   --wtf-link-color-rgb: var(--wtf-primary-rgb);
+}
+.wtf-line .card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: var(--wtf-theme-btn-border-radius);
+}
+.wtf-line .card-cover svg.brand {
+  fill: currentColor;
+  width: calc(var(--wtf-body-font-size) * 1.5);
+  height: calc(var(--wtf-body-font-size) * 1.5);
+  line-height: calc(var(--wtf-body-font-size) * 1.5);
+}
+.wtf-line .card-cover svg.wtfi {
+  fill: currentColor;
+  width: var(--wtf-body-font-size);
+  height: var(--wtf-body-font-size);
+  line-height: var(--wtf-body-font-size);
+}
+.wtf-line .card-cover li {
+  font-size: var(--wtf-body-font-size);
+  line-height: var(--wtf-body-font-size);
 }
 .wtf-line .card.service {
   --wtf-card-border-width: 0;
@@ -20658,7 +20380,7 @@ html {
   position: relative;
   margin-top: calc(var(--wtf-body-font-size) * 3);
 }
-.wtf-line .card.service svg {
+.wtf-line .card.service svg.wtfi, .wtf-line .card.service svg.brand, .wtf-line .card.service img.wtfi {
   --wtf-brand-color: var(--wtf-primary);
   --wtf-emphasis-color-rgb: var(--wtf-primary-rgb);
   position: absolute;
@@ -20694,8 +20416,8 @@ html {
   height: 23rem;
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  border-top-left-radius: var(--wtf-theme-border-radius);
-  border-top-right-radius: var(--wtf-theme-border-radius);
+  border-top-left-radius: var(--wtf-theme-btn-border-radius);
+  border-top-right-radius: var(--wtf-theme-btn-border-radius);
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(var(--wtf-primary-rgb), 0.75)), to(rgba(var(--wtf-primary-rgb), 0.75))), var(--wtf-card-bg-image);
   background-image: linear-gradient(to right bottom, rgba(var(--wtf-primary-rgb), 0.75), rgba(var(--wtf-primary-rgb), 0.75)), var(--wtf-card-bg-image);
 }
@@ -20716,7 +20438,7 @@ html {
   background-image: linear-gradient(to right bottom, rgba(var(--wtf-primary-rgb), 0.85), rgba(var(--wtf-primary-rgb), 0.85));
 }
 .wtf-line .card.service .card-details {
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
 }
 .wtf-line .card.service .card-details ul {
   list-style: none;
@@ -20732,11 +20454,12 @@ html {
   padding: 0;
 }
 .wtf-line .card.service .card-body {
+  text-align: center;
   padding: 3rem 2rem 1.5rem 2rem;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
   background-color: var(--wtf-primary);
-  border-bottom-left-radius: var(--wtf-theme-border-radius);
-  border-bottom-right-radius: var(--wtf-theme-border-radius);
+  border-bottom-left-radius: var(--wtf-theme-btn-border-radius);
+  border-bottom-right-radius: var(--wtf-theme-btn-border-radius);
   color: var(--wtf-body-bg) !important;
 }
 .wtf-line .card.product {
@@ -20748,11 +20471,74 @@ html {
   position: relative;
   margin-top: calc(var(--wtf-body-font-size) * 3);
 }
+.wtf-line .card.product svg.wtfi, .wtf-line .card.product svg.brand, .wtf-line .card.product img.wtfi {
+  --wtf-brand-color: var(--wtf-primary);
+  --wtf-emphasis-color-rgb: var(--wtf-primary-rgb);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: calc(var(--wtf-body-font-size) * 5);
+  height: calc(var(--wtf-body-font-size) * 6);
+  z-index: 4;
+  color: var(--wtf-primary);
+  fill: var(--wtf-primary);
+}
+.wtf-line .card.product .svg-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: calc(var(--wtf-body-font-size) * 6);
+  height: calc(var(--wtf-body-font-size) * 6);
+  background-color: var(--wtf-body-bg);
+  border-radius: 50%;
+  border: var(--wtf-theme-border-thickness) solid var(--wtf-primary);
+  z-index: 3;
+}
 .wtf-line .card-nav {
   padding: var(--wtf-card-spacer-y) var(--wtf-card-spacer-x);
   color: var(--wtf-card-color);
-  border-radius: var(--wtf-theme-border-radius);
+  border-radius: var(--wtf-theme-btn-border-radius);
   background-color: rgba(var(--wtf-primary-rgb), 0.2);
+}
+.wtf-line .carousel-item {
+  height: var(--wtf-theme-hero-size);
+  border-bottom: var(--wtf-theme-border-thickness) solid var(--wtf-heading-color);
+  border-radius: var(--wtf-theme-border-radius);
+}
+.wtf-line .carousel-item .content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.wtf-line .carousel-item .content-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.wtf-line .carousel-item .location-wtf svg,
+.wtf-line .carousel-item .location-wtf img {
+  fill: currentColor;
+  width: var(--wtf-theme-icon-size);
+  height: var(--wtf-theme-icon-size);
+  line-height: var(--wtf-theme-icon-size);
+}
+.wtf-line .carousel-item .location-wtf {
+  font-size: calc(var(--wtf-theme-icon-size) * 0.75);
+  line-height: var(--wtf-theme-icon-size);
+  padding: calc(var(--wtf-theme-icon-size) * 0.75) 0rem;
 }
 .wtf-line {
   /*
@@ -20762,7 +20548,7 @@ html {
     --wtf-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3e%3c/svg%3e");
     --wtf-btn-close-opacity: 0.5;
     --wtf-btn-close-hover-opacity: 0.75;
-    --wtf-btn-close-focus-shadow: 0 0 0 0.25rem rgba(0, 161, 154, 0.25);
+    --wtf-btn-close-focus-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
     --wtf-btn-close-focus-opacity: 1;
     --wtf-btn-close-disabled-opacity: 0.25;
     // scss-docs-end close-css-vars
@@ -20822,7 +20608,7 @@ html {
   --wtf-dropdown-link-hover-color: var(--wtf-body-color);
   --wtf-dropdown-link-hover-bg: var(--wtf-tertiary-bg);
   --wtf-dropdown-link-active-color: #fff;
-  --wtf-dropdown-link-active-bg: #00A19A;
+  --wtf-dropdown-link-active-bg: #000;
   --wtf-dropdown-link-disabled-color: var(--wtf-tertiary-color);
   --wtf-dropdown-item-padding-x: 1rem;
   --wtf-dropdown-item-padding-y: 0.25rem;
@@ -20844,6 +20630,34 @@ html {
   fill: var(--wtf-dropdown-link-active-color);
   color: var(--wtf-dropdown-link-active-color);
 }
+.wtf-line .bg-primary .feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--wtf-theme-border-radius);
+  color: var(--wtf-white);
+}
+.wtf-line .bg-primary .feature-icon-large {
+  text-align: center;
+  padding: 1rem;
+}
+.wtf-line .bg-primary .feature-icon-large svg,
+.wtf-line .bg-primary .feature-icon-large img {
+  fill: var(--wtf-white);
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  background-image: var(--wtf-gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@media (max-width: 767.98px) {
+  .wtf-line .bg-primary .feature-icon-large svg,
+  .wtf-line .bg-primary .feature-icon-large img {
+    margin-bottom: 1rem;
+  }
+}
 .wtf-line .icon-square {
   width: 3rem;
   height: 3rem;
@@ -20861,6 +20675,7 @@ html {
   width: 4rem;
   height: 4rem;
   border-radius: var(--wtf-theme-border-radius);
+  color: var(--wtf-primary);
 }
 .wtf-line .feature-icon svg,
 .wtf-line .feature-icon img {
@@ -20890,7 +20705,7 @@ html {
 .wtf-line .feature-icon-large img {
   fill: var(--wtf-primary);
   height: 6rem;
-  max-width: 100%;
+  width: 6rem;
   margin-bottom: 2rem;
   display: inline-block;
   background-image: var(--wtf-gradient-text);
@@ -21017,6 +20832,49 @@ html {
     background-image: none;
   }
 }
+.wtf-line .bg-primary.hero .location-wtf {
+  color: var(--wtf-white);
+}
+.wtf-line .hero {
+  height: var(--wtf-theme-hero-size);
+  position: relative;
+  background-image: var(--wtf-gradient), var(--wtf-hero-bg-image);
+  background-size: cover;
+  background-position: top;
+}
+.wtf-line .hero .content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.wtf-line .hero .content-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.wtf-line .hero .location-wtf svg,
+.wtf-line .hero .location-wtf img {
+  fill: currentColor;
+  width: var(--wtf-theme-icon-size);
+  height: var(--wtf-theme-icon-size);
+  line-height: var(--wtf-theme-icon-size);
+}
+.wtf-line .hero .location-wtf {
+  font-size: calc(var(--wtf-theme-icon-size) * 0.75);
+  line-height: var(--wtf-theme-icon-size);
+  padding: calc(var(--wtf-theme-icon-size) * 0.75) 0rem;
+}
+.wtf-line .hero {
+  border-bottom: var(--wtf-theme-border-thickness) solid var(--wtf-heading-color);
+  border-radius: var(--wtf-theme-border-radius);
+}
 .wtf-line hr {
   color: rgba(var(--wtf-primary-rgb), 0.3);
 }
@@ -21054,13 +20912,13 @@ html {
   margin: 0rem 0;
   border-top: 0 solid;
 }
-.wtf-line hr.theme {
+.wtf-line hr.wtf {
   border-top: var(--wtf-theme-border-thickness) solid rgba(var(--wtf-primary-rgb), 0.3);
   border-radius: var(--wtf-theme-border-radius) !important;
   border-color: rgba(var(--wtf-primary-rgb), 0.3);
   opacity: 1;
 }
-.wtf-line hr.theme-sep {
+.wtf-line hr.wtf-sep {
   border-top: 0;
   height: var(--wtf-theme-border-thickness);
   width: var(--wtf-line-heading-width);
@@ -21225,18 +21083,22 @@ html {
 .wtf-line .nav-social {
   --wtf-nav-link-padding-x: 0;
   --wtf-nav-link-padding-y: 0;
+  --wtf-nav-link-color: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+  --wtf-nav-link-hover-color: rgba(var(--wtf-emphasis-color-rgb), 1);
+  --wtf-nav-link-disabled-color: rgba(var(--wtf-emphasis-color-rgb), 0.3);
   display: flex;
   flex-wrap: nowrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
+.wtf-line .nav-social .wtf-menu-title {
+  display: none;
+}
 .wtf-line .nav-item {
   font-size: var(--wtf-body-font-size);
 }
-.wtf-line .nav-item svg.wtfi,
-.wtf-line .nav-item svg,
-.wtf-line .nav-item img {
+.wtf-line .nav-item svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
@@ -21245,16 +21107,11 @@ html {
 .wtf-line .nav-link {
   font-size: var(--wtf-body-font-size);
 }
-.wtf-line .nav-link svg.wtfi,
-.wtf-line .nav-link svg,
-.wtf-line .nav-link img {
+.wtf-line .nav-link svg {
   fill: currentColor;
   width: var(--wtf-body-font-size);
   height: var(--wtf-body-font-size);
   line-height: var(--wtf-body-font-size);
-}
-.wtf-line .nav-link span.screen-reader-text {
-  display: none;
 }
 .wtf-line .navbar-wtf {
   --wtf-navbar-brand-font-size: 1.5rem;
@@ -21269,6 +21126,7 @@ html {
   --wtf-navbar-active-color: rgba(var(--wtf-emphasis-color-rgb), 1);
   --wtf-navbar-brand-color: rgba(var(--wtf-emphasis-color-rgb), 1);
   --wtf-navbar-brand-hover-color: rgba(var(--wtf-emphasis-color-rgb), 0.8);
+  --wtf-brand-color: rgba(var(--wtf-emphasis-color-rgb), 1);
   z-index: 1044;
   position: fixed;
   top: 0;
@@ -21276,9 +21134,10 @@ html {
   left: 0;
   height: var(--wtf-theme-navbar-height);
 }
-.wtf-line .header-bg .navbar-wtf {
+.wtf-line .header-wtf .navbar-wtf {
   --wtf-emphasis-color: var(--wtf-white);
   --wtf-emphasis-color-rgb: var(--wtf-white-rgb);
+  --wtf-brand-color: rgba(var(--wtf-emphasis-color-rgb), 1);
   background-color: var(--wtf-primary);
 }
 .wtf-line .pagination {
@@ -21384,7 +21243,7 @@ html {
     --wtf-progress-border-radius: var(--wtf-border-radius);
     --wtf-progress-box-shadow: var(--wtf-box-shadow-inset);
     --wtf-progress-bar-color: #fff;
-    --wtf-progress-bar-bg: #00A19A;
+    --wtf-progress-bar-bg: #000;
     --wtf-progress-bar-transition: width 0.6s ease;
     // scss-docs-end progress-css-vars
 
@@ -21442,13 +21301,20 @@ html {
 .wtf-line section:not(:first-child) {
   padding: var(--wtf-theme-section-padding) 0;
 }
-.wtf-line #about,
-.wtf-line #serviceAreas,
-.wtf-line #quote,
-.wtf-line #portfolio,
-.wtf-line #benefits,
-.wtf-line #skills {
-  overflow: hidden;
+.wtf-line {
+  /*
+      #about,
+      #serviceAreas,
+      #quote,
+      #portfolio,
+      #benefits,
+      #skills {
+          overflow: hidden;
+      }
+  */
+}
+.wtf-line .main-wtf {
+  padding: var(--wtf-theme-navbar-height) 0rem;
 }
 .wtf-line {
   /*
@@ -21673,101 +21539,9 @@ html {
   --wtf-tooltip-bg: var(--wtf-primary);
   --wtf-tooltip-color: var(--wtf-white);
 }
-.wtf-line .tooltip.custom-tooltip {
+.wtf-line .tooltip.tooltip-wtf {
   --wtf-tooltip-bg: var(--wtf-primary);
   --wtf-tooltip-color: var(--wtf-white);
-}
-.wtf-line .bg-100vh {
-  height: 100vh;
-}
-.wtf-line .bg-primary {
-  background-color: var(--wtf-primary);
-  --wtf-emphasis-color-rgb: var(--wtf-light-rgb);
-  --wtf-emphasis-color: var(--wtf-light);
-}
-.wtf-line .bg-secondary {
-  background-color: var(--wtf-secondary);
-}
-.wtf-line .bg-primary-emphasis {
-  background-color: var(--wtf-primary-text-emphasis);
-}
-.wtf-line .bg-primary-subtle {
-  background-color: var(--wtf-primary-bg-subtle);
-}
-.wtf-line .bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.15;
-  overflow: hidden;
-}
-.wtf-line .bg-video .video-content {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  overflow: hidden;
-}
-.wtf-line .bg-placeholder-img {
-  height: var(--wtf-theme-hero-size);
-  display: block;
-  fill: var(--wtf-primary);
-}
-.wtf-line .bg-image {
-  background-image: var(--wtf-gradient), var(--wtf-bg-image);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  height: var(--wtf-theme-hero-size);
-  overflow: hidden;
-}
-.wtf-line .bg-img {
-  height: var(--wtf-theme-hero-size);
-}
-.wtf-line .bg-img img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  overflow: hidden;
-  display: block;
-}
-.wtf-line .carousel-item {
-  height: var(--wtf-theme-hero-size);
-  border-bottom: var(--wtf-theme-border-thickness) solid var(--wtf-heading-color);
-  border-radius: var(--wtf-theme-border-radius);
-}
-.wtf-line .carousel-item .content-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.wtf-line .hero {
-  height: var(--wtf-theme-hero-size);
-  position: relative;
-  background-image: var(--wtf-gradient), var(--wtf-hero-bg-image);
-  background-size: cover;
-  background-position: top;
-}
-.wtf-line .hero .content-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.wtf-line .hero {
-  border-bottom: var(--wtf-theme-border-thickness) solid var(--wtf-heading-color);
-  border-radius: var(--wtf-theme-border-radius);
 }
 .wtf-line .h1,
 .wtf-line h1 {

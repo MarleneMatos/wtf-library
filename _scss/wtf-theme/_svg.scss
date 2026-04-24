@@ -1,0 +1,54 @@
+// @include svgAutoWFontSize;
+@mixin svgAutoWFontSize {
+    svg {
+    fill: currentColor;
+    width: auto;
+    height: var(--wtf-body-font-size);
+    line-height: var(--wtf-body-font-size);
+    }
+}
+
+// @include svgFontSize;
+@mixin svgFontSize {
+    svg{
+    fill: currentColor;
+    width: var(--wtf-body-font-size);
+    height: var(--wtf-body-font-size);
+    line-height: var(--wtf-body-font-size);
+    }
+}
+
+// @include svgBrandFontSize;
+@mixin svgBrandFontSize {
+    svg.brand {
+        fill: currentColor;
+        width: var(--wtf-theme-brand-font-size);
+        height: var(--wtf-theme-brand-font-size);
+        line-height: var(--wtf-theme-brand-font-size);
+    }
+}
+
+// @include svgIconFontSize;
+@mixin svgIconFontSize {
+    svg,
+    img {
+        fill: currentColor;
+        width: var(--wtf-theme-icon-size);
+        height: var(--wtf-theme-icon-size);
+        line-height: var(--wtf-theme-icon-size);
+    }
+}
+
+
+// @include svgFeatureIconSize;
+@mixin svgFeatureIconSize {
+    svg,
+    img {
+        fill: currentColor;
+        height: var(--wtf-body-font-size);
+        width: var(--wtf-body-font-size);
+        display: inline-block;
+        vertical-align: middle;
+
+    }
+}

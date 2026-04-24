@@ -1,0 +1,49 @@
+// @include wtfSectionWtfTheme;
+@mixin wtfSectionWtfTheme {
+    section {
+        position: relative;
+
+        &:not(:first-child) {
+            padding: var(--wtf-theme-section-padding) 0;
+        }
+    }
+
+    /*
+    #about,
+    #serviceAreas,
+    #quote,
+    #portfolio,
+    #benefits,
+    #skills {
+        overflow: hidden;
+    }
+*/
+    .main-wtf{
+        padding: var(--wtf-theme-navbar-height) 0rem;
+    }
+}
+
+// @include wtfSectionWtfLine;
+@mixin wtfSectionWtfLine {
+    @include wtfSectionWtfTheme;
+}
+
+// @include wtfSectionWtfPolygon;
+@mixin wtfSectionWtfPolygon {
+    @include wtfSectionWtfTheme;
+}
+
+// @include wtfSectionWtfDot;
+@mixin wtfSectionWtfDot {
+    @include wtfSectionWtfTheme;
+}
+
+// @include wtfSectionWtfMM;
+@mixin wtfSectionWtfMM {
+    @include wtfSectionWtfTheme;
+}
+
+// @include wtfSectionWtfWtf;
+@mixin wtfSectionWtfWtf {
+    @include wtfSectionWtfTheme;
+}

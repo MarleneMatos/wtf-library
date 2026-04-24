@@ -1,0 +1,37 @@
+// @include wtfTooltipWtfTheme;
+@mixin wtfTooltipWtfTheme {
+  .tooltip {
+    --wtf-tooltip-bg: var(--wtf-primary);
+    --wtf-tooltip-color: var(--wtf-white);
+
+    &.tooltip-wtf {
+      --wtf-tooltip-bg: var(--wtf-primary);
+      --wtf-tooltip-color: var(--wtf-white);
+    }
+  }
+}
+
+// @include wtfTooltipWtfLine;
+@mixin wtfTooltipWtfLine {
+  @include wtfTooltipWtfTheme;
+}
+
+// @include wtfTooltipWtfPolygon;
+@mixin wtfTooltipWtfPolygon {
+  @include wtfTooltipWtfTheme;
+}
+
+// @include wtfTooltipWtfDot;
+@mixin wtfTooltipWtfDot {
+  @include wtfTooltipWtfTheme;
+}
+
+// @include wtfTooltipWtfMM;
+@mixin wtfTooltipWtfMM {
+  @include wtfTooltipWtfTheme;
+}
+
+// @include wtfTooltipWtfWtf;
+@mixin wtfTooltipWtfWtf {
+  @include wtfTooltipWtfTheme;
+}

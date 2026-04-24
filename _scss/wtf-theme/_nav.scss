@@ -1,0 +1,77 @@
+// @include wtfNavItem;
+@mixin wtfNavItem {
+    font-size: var(--wtf-body-font-size);
+    @include svgFontSize;
+
+}
+
+// @include wtfNavLink;
+@mixin wtfNavLink {
+    font-size: var(--wtf-body-font-size);
+    @include svgFontSize;
+}
+
+//@include wtfNavSocial;
+@mixin wtfNavSocial {
+  &-social {
+    //--wtf-nav-link-padding-x: 0.5rem;
+    --wtf-nav-link-padding-x: 0;
+    --wtf-nav-link-padding-y: 0;
+    //--wtf-nav-link-font-weight: ;
+    --wtf-nav-link-color: rgba(var(--wtf-emphasis-color-rgb), 0.65);
+    --wtf-nav-link-hover-color: rgba(var(--wtf-emphasis-color-rgb), 1);
+    --wtf-nav-link-disabled-color: rgba(var(--wtf-emphasis-color-rgb), 0.3);
+    //display: flex;
+    //flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    .wtf-menu-title{
+        display: none;
+    }
+  }
+}
+
+// @include wtfNavWtfTheme;
+@mixin wtfNavWtfTheme {
+
+    .nav {
+        @include wtfNavSocial;
+
+        &-item {
+            @include wtfNavItem;
+        }
+
+        &-link {
+            @include wtfNavLink;
+        }
+    }
+}
+
+// @include wtfNavWtfLine;
+@mixin wtfNavWtfLine {
+@include wtfNavWtfTheme;
+}
+
+// @include wtfNavWtfPolygon;
+@mixin wtfNavWtfPolygon {
+@include wtfNavWtfTheme;
+}
+
+// @include wtfNavWtfDot;
+@mixin wtfNavWtfDot {
+  @include wtfNavWtfTheme;
+}
+
+// @include wtfNavWtfMM;
+@mixin wtfNavWtfMM {
+@include wtfNavWtfTheme;
+}
+
+// @include wtfNavWtfWtf;
+@mixin wtfNavWtfWtf {
+   @include wtfNavWtfTheme;
+}

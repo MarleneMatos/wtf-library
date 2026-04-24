@@ -25,7 +25,7 @@
   --wtf-gray-800: #343a40;
   --wtf-gray-900: #212529;
   --wtf-primary: #131879;
-  --wtf-secondary: #6c757d;
+  --wtf-secondary: #00A19A;
   --wtf-success: #198754;
   --wtf-info: #0dcaf0;
   --wtf-warning: #ffc107;
@@ -33,7 +33,7 @@
   --wtf-light: #f8f9fa;
   --wtf-dark: #212529;
   --wtf-primary-rgb: 19, 24, 121;
-  --wtf-secondary-rgb: 108, 117, 125;
+  --wtf-secondary-rgb: 0, 161, 154;
   --wtf-success-rgb: 25, 135, 84;
   --wtf-info-rgb: 13, 202, 240;
   --wtf-warning-rgb: 255, 193, 7;
@@ -41,7 +41,7 @@
   --wtf-light-rgb: 248, 249, 250;
   --wtf-dark-rgb: 33, 37, 41;
   --wtf-primary-text-emphasis: rgb(7.6, 9.6, 48.4);
-  --wtf-secondary-text-emphasis: rgb(43.2, 46.8, 50);
+  --wtf-secondary-text-emphasis: rgb(0, 64.4, 61.6);
   --wtf-success-text-emphasis: rgb(10, 54, 33.6);
   --wtf-info-text-emphasis: rgb(5.2, 80.8, 96);
   --wtf-warning-text-emphasis: rgb(102, 77.2, 2.8);
@@ -49,7 +49,7 @@
   --wtf-light-text-emphasis: #495057;
   --wtf-dark-text-emphasis: #495057;
   --wtf-primary-bg-subtle: rgb(207.8, 208.8, 228.2);
-  --wtf-secondary-bg-subtle: rgb(225.6, 227.4, 229);
+  --wtf-secondary-bg-subtle: rgb(204, 236.2, 234.8);
   --wtf-success-bg-subtle: rgb(209, 231, 220.8);
   --wtf-info-bg-subtle: rgb(206.6, 244.4, 252);
   --wtf-warning-bg-subtle: rgb(255, 242.6, 205.4);
@@ -57,7 +57,7 @@
   --wtf-light-bg-subtle: rgb(251.5, 252, 252.5);
   --wtf-dark-bg-subtle: #ced4da;
   --wtf-primary-border-subtle: rgb(160.6, 162.6, 201.4);
-  --wtf-secondary-border-subtle: rgb(196.2, 199.8, 203);
+  --wtf-secondary-border-subtle: rgb(153, 217.4, 214.6);
   --wtf-success-border-subtle: rgb(163, 207, 186.6);
   --wtf-info-border-subtle: rgb(158.2, 233.8, 249);
   --wtf-warning-border-subtle: rgb(255, 230.2, 155.8);
@@ -137,7 +137,7 @@
   --wtf-tertiary-bg: rgb(42.5, 47.5, 52.5);
   --wtf-tertiary-bg-rgb: 43, 48, 53;
   --wtf-primary-text-emphasis: rgb(113.4, 116.4, 174.6);
-  --wtf-secondary-text-emphasis: rgb(166.8, 172.2, 177);
+  --wtf-secondary-text-emphasis: rgb(102, 198.6, 194.4);
   --wtf-success-text-emphasis: rgb(117, 183, 152.4);
   --wtf-info-text-emphasis: rgb(109.8, 223.2, 246);
   --wtf-warning-text-emphasis: rgb(255, 217.8, 106.2);
@@ -145,7 +145,7 @@
   --wtf-light-text-emphasis: #f8f9fa;
   --wtf-dark-text-emphasis: #dee2e6;
   --wtf-primary-bg-subtle: rgb(3.8, 4.8, 24.2);
-  --wtf-secondary-bg-subtle: rgb(21.6, 23.4, 25);
+  --wtf-secondary-bg-subtle: rgb(0, 32.2, 30.8);
   --wtf-success-bg-subtle: rgb(5, 27, 16.8);
   --wtf-info-bg-subtle: rgb(2.6, 40.4, 48);
   --wtf-warning-bg-subtle: rgb(51, 38.6, 1.4);
@@ -153,7 +153,7 @@
   --wtf-light-bg-subtle: #343a40;
   --wtf-dark-bg-subtle: #1a1d20;
   --wtf-primary-border-subtle: rgb(11.4, 14.4, 72.6);
-  --wtf-secondary-border-subtle: rgb(64.8, 70.2, 75);
+  --wtf-secondary-border-subtle: rgb(0, 96.6, 92.4);
   --wtf-success-border-subtle: rgb(15, 81, 50.4);
   --wtf-info-border-subtle: rgb(7.8, 121.2, 144);
   --wtf-warning-border-subtle: rgb(153, 115.8, 4.2);
@@ -1859,7 +1859,7 @@ progress {
 }
 
 .text-bg-secondary {
-  color: #fff !important;
+  color: #000 !important;
   background-color: RGBA(var(--wtf-secondary-rgb), var(--wtf-bg-opacity, 1)) !important;
 }
 
@@ -1907,8 +1907,8 @@ progress {
   text-decoration-color: RGBA(var(--wtf-secondary-rgb), var(--wtf-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(86, 94, 100, var(--wtf-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(86, 94, 100, var(--wtf-link-underline-opacity, 1)) !important;
+  color: RGBA(51, 180, 174, var(--wtf-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(51, 180, 174, var(--wtf-link-underline-opacity, 1)) !important;
 }
 
 .link-success {
@@ -6986,7 +6986,7 @@ progress {
   --wtf-gray-800: #343a40;
   --wtf-gray-900: #212529;
   --wtf-primary: #131879;
-  --wtf-secondary: #6c757d;
+  --wtf-secondary: #00A19A;
   --wtf-success: #198754;
   --wtf-info: #0dcaf0;
   --wtf-warning: #ffc107;
@@ -6994,7 +6994,7 @@ progress {
   --wtf-light: #f8f9fa;
   --wtf-dark: #212529;
   --wtf-primary-rgb: 19, 24, 121;
-  --wtf-secondary-rgb: 108, 117, 125;
+  --wtf-secondary-rgb: 0, 161, 154;
   --wtf-success-rgb: 25, 135, 84;
   --wtf-info-rgb: 13, 202, 240;
   --wtf-warning-rgb: 255, 193, 7;
@@ -7002,7 +7002,7 @@ progress {
   --wtf-light-rgb: 248, 249, 250;
   --wtf-dark-rgb: 33, 37, 41;
   --wtf-primary-text-emphasis: rgb(7.6, 9.6, 48.4);
-  --wtf-secondary-text-emphasis: rgb(43.2, 46.8, 50);
+  --wtf-secondary-text-emphasis: rgb(0, 64.4, 61.6);
   --wtf-success-text-emphasis: rgb(10, 54, 33.6);
   --wtf-info-text-emphasis: rgb(5.2, 80.8, 96);
   --wtf-warning-text-emphasis: rgb(102, 77.2, 2.8);
@@ -7010,7 +7010,7 @@ progress {
   --wtf-light-text-emphasis: #495057;
   --wtf-dark-text-emphasis: #495057;
   --wtf-primary-bg-subtle: rgb(207.8, 208.8, 228.2);
-  --wtf-secondary-bg-subtle: rgb(225.6, 227.4, 229);
+  --wtf-secondary-bg-subtle: rgb(204, 236.2, 234.8);
   --wtf-success-bg-subtle: rgb(209, 231, 220.8);
   --wtf-info-bg-subtle: rgb(206.6, 244.4, 252);
   --wtf-warning-bg-subtle: rgb(255, 242.6, 205.4);
@@ -7018,7 +7018,7 @@ progress {
   --wtf-light-bg-subtle: rgb(251.5, 252, 252.5);
   --wtf-dark-bg-subtle: #ced4da;
   --wtf-primary-border-subtle: rgb(160.6, 162.6, 201.4);
-  --wtf-secondary-border-subtle: rgb(196.2, 199.8, 203);
+  --wtf-secondary-border-subtle: rgb(153, 217.4, 214.6);
   --wtf-success-border-subtle: rgb(163, 207, 186.6);
   --wtf-info-border-subtle: rgb(158.2, 233.8, 249);
   --wtf-warning-border-subtle: rgb(255, 230.2, 155.8);
@@ -7098,7 +7098,7 @@ progress {
   --wtf-tertiary-bg: rgb(42.5, 47.5, 52.5);
   --wtf-tertiary-bg-rgb: 43, 48, 53;
   --wtf-primary-text-emphasis: rgb(113.4, 116.4, 174.6);
-  --wtf-secondary-text-emphasis: rgb(166.8, 172.2, 177);
+  --wtf-secondary-text-emphasis: rgb(102, 198.6, 194.4);
   --wtf-success-text-emphasis: rgb(117, 183, 152.4);
   --wtf-info-text-emphasis: rgb(109.8, 223.2, 246);
   --wtf-warning-text-emphasis: rgb(255, 217.8, 106.2);
@@ -7106,7 +7106,7 @@ progress {
   --wtf-light-text-emphasis: #f8f9fa;
   --wtf-dark-text-emphasis: #dee2e6;
   --wtf-primary-bg-subtle: rgb(3.8, 4.8, 24.2);
-  --wtf-secondary-bg-subtle: rgb(21.6, 23.4, 25);
+  --wtf-secondary-bg-subtle: rgb(0, 32.2, 30.8);
   --wtf-success-bg-subtle: rgb(5, 27, 16.8);
   --wtf-info-bg-subtle: rgb(2.6, 40.4, 48);
   --wtf-warning-bg-subtle: rgb(51, 38.6, 1.4);
@@ -7114,7 +7114,7 @@ progress {
   --wtf-light-bg-subtle: #343a40;
   --wtf-dark-bg-subtle: #1a1d20;
   --wtf-primary-border-subtle: rgb(11.4, 14.4, 72.6);
-  --wtf-secondary-border-subtle: rgb(64.8, 70.2, 75);
+  --wtf-secondary-border-subtle: rgb(0, 96.6, 92.4);
   --wtf-success-border-subtle: rgb(15, 81, 50.4);
   --wtf-info-border-subtle: rgb(7.8, 121.2, 144);
   --wtf-warning-border-subtle: rgb(153, 115.8, 4.2);
@@ -8904,13 +8904,13 @@ progress {
 
 .table-secondary {
   --wtf-table-color: #000;
-  --wtf-table-bg: rgb(225.6, 227.4, 229);
-  --wtf-table-border-color: rgb(180.48, 181.92, 183.2);
-  --wtf-table-striped-bg: rgb(214.32, 216.03, 217.55);
+  --wtf-table-bg: rgb(204, 236.2, 234.8);
+  --wtf-table-border-color: rgb(163.2, 188.96, 187.84);
+  --wtf-table-striped-bg: rgb(193.8, 224.39, 223.06);
   --wtf-table-striped-color: #000;
-  --wtf-table-active-bg: rgb(203.04, 204.66, 206.1);
+  --wtf-table-active-bg: rgb(183.6, 212.58, 211.32);
   --wtf-table-active-color: #000;
-  --wtf-table-hover-bg: rgb(208.68, 210.345, 211.825);
+  --wtf-table-hover-bg: rgb(188.7, 218.485, 217.19);
   --wtf-table-hover-color: #000;
   color: var(--wtf-table-color);
   border-color: var(--wtf-table-border-color);
@@ -9942,20 +9942,20 @@ textarea.form-control-lg {
 }
 
 .btn-secondary {
-  --wtf-btn-color: #fff;
-  --wtf-btn-bg: #6c757d;
-  --wtf-btn-border-color: #6c757d;
-  --wtf-btn-hover-color: #fff;
-  --wtf-btn-hover-bg: rgb(91.8, 99.45, 106.25);
-  --wtf-btn-hover-border-color: rgb(86.4, 93.6, 100);
-  --wtf-btn-focus-shadow-rgb: 130, 138, 145;
-  --wtf-btn-active-color: #fff;
-  --wtf-btn-active-bg: rgb(86.4, 93.6, 100);
-  --wtf-btn-active-border-color: rgb(81, 87.75, 93.75);
+  --wtf-btn-color: #000;
+  --wtf-btn-bg: #00A19A;
+  --wtf-btn-border-color: #00A19A;
+  --wtf-btn-hover-color: #000;
+  --wtf-btn-hover-bg: rgb(38.25, 175.1, 169.15);
+  --wtf-btn-hover-border-color: rgb(25.5, 170.4, 164.1);
+  --wtf-btn-focus-shadow-rgb: 0, 137, 131;
+  --wtf-btn-active-color: #000;
+  --wtf-btn-active-bg: rgb(51, 179.8, 174.2);
+  --wtf-btn-active-border-color: rgb(25.5, 170.4, 164.1);
   --wtf-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --wtf-btn-disabled-color: #fff;
-  --wtf-btn-disabled-bg: #6c757d;
-  --wtf-btn-disabled-border-color: #6c757d;
+  --wtf-btn-disabled-color: #000;
+  --wtf-btn-disabled-bg: #00A19A;
+  --wtf-btn-disabled-border-color: #00A19A;
 }
 
 .btn-success {
@@ -10078,19 +10078,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --wtf-btn-color: #6c757d;
-  --wtf-btn-border-color: #6c757d;
-  --wtf-btn-hover-color: #fff;
-  --wtf-btn-hover-bg: #6c757d;
-  --wtf-btn-hover-border-color: #6c757d;
-  --wtf-btn-focus-shadow-rgb: 108, 117, 125;
-  --wtf-btn-active-color: #fff;
-  --wtf-btn-active-bg: #6c757d;
-  --wtf-btn-active-border-color: #6c757d;
+  --wtf-btn-color: #00A19A;
+  --wtf-btn-border-color: #00A19A;
+  --wtf-btn-hover-color: #000;
+  --wtf-btn-hover-bg: #00A19A;
+  --wtf-btn-hover-border-color: #00A19A;
+  --wtf-btn-focus-shadow-rgb: 0, 161, 154;
+  --wtf-btn-active-color: #000;
+  --wtf-btn-active-bg: #00A19A;
+  --wtf-btn-active-border-color: #00A19A;
   --wtf-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --wtf-btn-disabled-color: #6c757d;
+  --wtf-btn-disabled-color: #00A19A;
   --wtf-btn-disabled-bg: transparent;
-  --wtf-btn-disabled-border-color: #6c757d;
+  --wtf-btn-disabled-border-color: #00A19A;
   --wtf-gradient: none;
 }
 
@@ -13719,7 +13719,7 @@ textarea.form-control-lg {
 }
 
 .text-bg-secondary {
-  color: #fff !important;
+  color: #000 !important;
   background-color: RGBA(var(--wtf-secondary-rgb), var(--wtf-bg-opacity, 1)) !important;
 }
 
@@ -13767,8 +13767,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--wtf-secondary-rgb), var(--wtf-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(86, 94, 100, var(--wtf-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(86, 94, 100, var(--wtf-link-underline-opacity, 1)) !important;
+  color: RGBA(51, 180, 174, var(--wtf-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(51, 180, 174, var(--wtf-link-underline-opacity, 1)) !important;
 }
 
 .link-success {

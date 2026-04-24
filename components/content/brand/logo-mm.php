@@ -1,0 +1,1 @@
+<img src="https://library.webtechfocus.com/logos/mm-logo.svg" alt="Marlene Matos logo" class="hero--logo">

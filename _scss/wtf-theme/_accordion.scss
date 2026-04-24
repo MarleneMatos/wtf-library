@@ -1,0 +1,30 @@
+//@include wtfAccordion;
+@mixin wtfAccordion {
+  --wtf-accordion-active-color: rgba(var(--wtf-primary-rgb), 1);
+  --wtf-accordion-active-bg: rgba(var(--wtf-primary-rgb), .1);
+  font-size: var(--wtf-body-font-size);
+  width: 100%;
+  @include svgFontSize;
+}
+
+//@include wtfAccordionWtfTheme;
+@mixin wtfAccordionWtfTheme {
+  .accordion {
+    @include wtfAccordion;
+  }
+}
+
+// @include wtfAccordionWtfLine;
+@mixin wtfAccordionWtfLine {@include wtfAccordionWtfTheme;}
+
+// @include wtfAccordionWtfPolygon;
+@mixin wtfAccordionWtfPolygon {@include wtfAccordionWtfTheme;}
+
+// @include wtfAccordionWtfDot;
+@mixin wtfAccordionWtfDot {@include wtfAccordionWtfTheme;}
+
+// @include wtfAccordionWtfMM;
+@mixin wtfAccordionWtfMM {@include wtfAccordionWtfTheme;}
+
+// @include wtfAccordionWtfWtf;
+@mixin wtfAccordionWtfWtf {@include wtfAccordionWtfTheme;}

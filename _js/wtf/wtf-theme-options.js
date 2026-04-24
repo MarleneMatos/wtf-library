@@ -38,13 +38,13 @@
 
   const hexToRgb = hex => {
 
-    hex = hex.replace('#','')
+    hex = hex.replace('#', '')
 
-    if(hex.length === 3){
-      hex = hex.split('').map(x => x+x).join('')
+    if (hex.length === 3) {
+      hex = hex.split('').map(x => x + x).join('')
     }
 
-    const bigint = parseInt(hex,16)
+    const bigint = parseInt(hex, 16)
 
     const r = (bigint >> 16) & 255
     const g = (bigint >> 8) & 255
@@ -60,7 +60,7 @@
 
   const setTheme = theme => {
 
-    if(theme === 'auto'){
+    if (theme === 'auto') {
 
       const system = window.matchMedia('(prefers-color-scheme: dark)').matches
         ? 'dark'
@@ -82,7 +82,7 @@
 
   const applyCustomColours = (primary, secondary) => {
 
-    if(!primary || !secondary) return
+    if (!primary || !secondary) return
 
     const root = document.documentElement
 
@@ -114,7 +114,7 @@
 
     const body = document.getElementById('wtfTheme')
 
-    if(!body) return
+    if (!body) return
 
     body.className = design
 
@@ -130,19 +130,19 @@
 
     const btn = document.querySelector(`[data-bs-theme-value="${theme}"]`)
 
-    if(!btn) return
+    if (!btn) return
 
     const svg = btn.querySelector('svg use')
 
-    document.querySelectorAll('[data-bs-theme-value]').forEach(el=>{
+    document.querySelectorAll('[data-bs-theme-value]').forEach(el => {
       el.classList.remove('active')
-      el.setAttribute('aria-pressed','false')
+      el.setAttribute('aria-pressed', 'false')
     })
 
     btn.classList.add('active')
-    btn.setAttribute('aria-pressed','true')
+    btn.setAttribute('aria-pressed', 'true')
 
-    if(svg && activeIcon){
+    if (svg && activeIcon) {
       activeIcon.setAttribute('href', svg.getAttribute('href'))
     }
 
@@ -156,7 +156,7 @@
 
     const stored = getStoredTheme()
 
-    if(stored) return stored
+    if (stored) return stored
 
     return window.matchMedia('(prefers-color-scheme: dark)').matches
       ? 'dark'
@@ -173,13 +173,13 @@
 
     const colours = getStoredColours()
 
-    if(colours.primary && colours.secondary){
+    if (colours.primary && colours.secondary) {
       applyCustomColours(colours.primary, colours.secondary)
     }
 
     const design = getStoredDesign()
 
-    if(design){
+    if (design) {
       applyDesign(design)
     }
 
@@ -215,51 +215,116 @@
 
   const initColourForm = () => {
 
-    const primaryInput = document.getElementById('wtfPrimaryColour')
-    const secondaryInput = document.getElementById('wtfSecondaryColour')
+  const primaryInput = document.getElementById('wtfPrimaryColour')
+  const secondaryInput = document.getElementById('wtfSecondaryColour')
 
-    const updateBtn = document.getElementById('wtfColourUpdate')
-    const resetBtn = document.getElementById('wtfColourReset')
+  const primaryHex = document.getElementById('wtfPrimaryHex')
+  const secondaryHex = document.getElementById('wtfSecondaryHex')
 
-    if(!primaryInput || !secondaryInput) return
+  const previewPrimary = document.getElementById('wtfPreviewPrimary')
+  const previewSecondary = document.getElementById('wtfPreviewSecondary')
 
-    if(updateBtn){
+  const primaryRgbText = document.getElementById('wtfPrimaryRgb')
+  const secondaryRgbText = document.getElementById('wtfSecondaryRgb')
 
-      updateBtn.addEventListener('click', e => {
+  const resetBtn = document.getElementById('wtfColourReset')
 
-        e.preventDefault()
+  if(!primaryInput || !secondaryInput) return
 
-        const primary = primaryInput.value.trim()
-        const secondary = secondaryInput.value.trim()
+  const isValidHex = hex => /^#([0-9A-F]{3}){1,2}$/i.test(hex)
 
-        if(!primary || !secondary) return
+  const updateUI = (primary, secondary) => {
 
-        applyCustomColours(primary, secondary)
+  const currentPrimary = primary || primaryInput.value
+  const currentSecondary = secondary || secondaryInput.value
 
-        setStoredColours(primary, secondary)
+  if(!currentPrimary || !currentSecondary) return
 
-      })
+  // Apply theme instantly
+  applyCustomColours(currentPrimary, currentSecondary)
+  setStoredColours(currentPrimary, currentSecondary)
 
+  // Update preview
+  previewPrimary.style.background = currentPrimary
+  previewSecondary.style.background = currentSecondary
+
+  // Update RGB text
+  primaryRgbText.textContent = `RGB(${hexToRgb(currentPrimary)})`
+  secondaryRgbText.textContent = `RGB(${hexToRgb(currentSecondary)})`
+
+}
+
+  // 🎯 COLOR PICKER → HEX + UI
+  primaryInput.addEventListener('input', () => {
+  primaryHex.value = primaryInput.value
+  updateUI(primaryInput.value, null)
+})
+
+secondaryInput.addEventListener('input', () => {
+  secondaryHex.value = secondaryInput.value
+  updateUI(null, secondaryInput.value)
+})
+
+  // HEX → COLOR PICKER + UI
+  primaryHex.addEventListener('input', () => {
+    if(isValidHex(primaryHex.value)){
+      primaryInput.value = primaryHex.value
+      updateUI(primaryInput.value, secondaryInput.value)
     }
+  })
 
-    if(resetBtn){
-
-      resetBtn.addEventListener('click', e => {
-
-        e.preventDefault()
-
-        primaryInput.value = ''
-        secondaryInput.value = ''
-
-        clearStoredColours()
-
-        resetCustomColours()
-
-      })
-
+  secondaryHex.addEventListener('input', () => {
+    if(isValidHex(secondaryHex.value)){
+      secondaryInput.value = secondaryHex.value
+      updateUI(primaryInput.value, secondaryInput.value)
     }
+  })
 
+  // RESET
+  if (resetBtn) {
+
+  resetBtn.addEventListener('click', e => {
+
+    e.preventDefault()
+
+    // ❌ Remove stored colours
+    clearStoredColours()
+
+    // ❌ Remove inline CSS variables from <html>
+    resetCustomColours()
+
+    // ✅ Reset inputs to default HTML values (not forced values)
+    primaryInput.value = primaryInput.defaultValue
+    secondaryInput.value = secondaryInput.defaultValue
+
+    primaryHex.value = primaryInput.defaultValue
+    secondaryHex.value = secondaryInput.defaultValue
+
+    // ✅ Update UI preview ONLY (no re-applying styles)
+    previewPrimary.style.background = primaryInput.value
+    previewSecondary.style.background = secondaryInput.value
+
+    primaryRgbText.textContent = `RGB(${hexToRgb(primaryInput.value)})`
+    secondaryRgbText.textContent = `RGB(${hexToRgb(secondaryInput.value)})`
+
+  })
+
+}
+
+  // storage
+  const stored = getStoredColours()
+
+  if(stored.primary && stored.secondary){
+    primaryInput.value = stored.primary
+    secondaryInput.value = stored.secondary
+
+    primaryHex.value = stored.primary
+    secondaryHex.value = stored.secondary
+
+    updateUI(stored.primary, stored.secondary)
   }
+
+}
 
   /* ---------------------------------------
   DESIGN SWITCHER
@@ -267,21 +332,76 @@
 
   const initDesignSwitch = () => {
 
-    document.querySelectorAll('#wtfThemeDesign [data-bs-theme-value]').forEach(el => {
+    const container = document.getElementById('wtfThemeDesign')
+    if (!container) return
+
+    const elements = container.querySelectorAll('[data-bs-theme-value], a')
+
+    elements.forEach(el => {
 
       el.addEventListener('click', e => {
 
-        e.preventDefault()
+        const isLink = el.hasAttribute('href')
 
-        const design = el.getAttribute('data-bs-theme-value')
+        // 👉 DESIGN BUTTONS (no href)
+        if (!isLink) {
 
-        applyDesign(design)
+          e.preventDefault()
 
-        setStoredDesign(design)
+          const design = el.getAttribute('data-bs-theme-value')
+
+          // Apply + store
+          applyDesign(design)
+          setStoredDesign(design)
+
+          // ✅ ACTIVE STATE MANAGEMENT
+          container.querySelectorAll('[data-bs-theme-value]').forEach(btn => {
+            btn.classList.remove('active')
+          })
+
+          el.classList.add('active')
+
+          // ❗ Keep offcanvas OPEN (do nothing)
+
+        }
+
+        // 👉 LINKS (navigate away)
+        else {
+
+          // Remove active from others (optional but cleaner)
+          container.querySelectorAll('a').forEach(link => {
+            link.classList.remove('active')
+          })
+
+          el.classList.add('active')
+
+          // ✅ Close Bootstrap offcanvas before navigation
+          const offcanvasEl = el.closest('.offcanvas')
+
+          if (offcanvasEl) {
+            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl)
+            if (bsOffcanvas) {
+              bsOffcanvas.hide()
+            }
+          }
+
+          // Allow navigation normally (no preventDefault)
+
+        }
 
       })
 
     })
+
+    // ✅ Restore ACTIVE state on load
+    const storedDesign = getStoredDesign()
+
+    if (storedDesign) {
+      const activeEl = container.querySelector(`[data-bs-theme-value="${storedDesign}"]`)
+      if (activeEl) {
+        activeEl.classList.add('active')
+      }
+    }
 
   }
 
@@ -290,15 +410,71 @@
   --------------------------------------- */
 
   window.matchMedia('(prefers-color-scheme: dark)')
-  .addEventListener('change', () => {
+    .addEventListener('change', () => {
 
-    const stored = getStoredTheme()
+      const stored = getStoredTheme()
 
-    if(stored !== 'light' && stored !== 'dark'){
-      setTheme(getPreferredTheme())
-    }
+      if (stored !== 'light' && stored !== 'dark') {
+        setTheme(getPreferredTheme())
+      }
 
-  })
+    })
+
+
+  /* ---------------------------------------
+  ACTIVE BY URL
+  --------------------------------------- */
+  /*
+    const setActiveByUrl = (containerId) => {
+  
+    const container = document.getElementById(containerId)
+    if(!container) return
+  
+    const links = container.querySelectorAll('a')
+  
+    const currentUrl = window.location.pathname
+  
+    links.forEach(link => {
+  
+      const linkUrl = new URL(link.href).pathname
+  
+      if(linkUrl === currentUrl){
+        link.classList.add('active')
+      } else {
+        link.classList.remove('active')
+      }
+  
+    })
+  
+  }*/
+
+  const setActiveByUrl = (containerId) => {
+
+    const container = document.getElementById(containerId)
+    if (!container) return
+
+    const currentPath = window.location.pathname.replace(/\/$/, '')
+
+    const links = container.querySelectorAll('a[href]')
+
+    links.forEach(link => {
+
+      const href = link.getAttribute('href')
+
+      // Ignore empty or anchor links
+      if (!href || href === '#') return
+
+      const linkPath = new URL(link.href).pathname.replace(/\/$/, '')
+
+      if (linkPath === currentPath) {
+        link.classList.add('active')
+      } else {
+        link.classList.remove('active')
+      }
+
+    })
+
+  }
 
   /* ---------------------------------------
   DOM READY
@@ -310,6 +486,13 @@
     initEvents()
     initColourForm()
     initDesignSwitch()
+
+    // NEW ACTIVE STATES
+    setActiveByUrl('wtfThemeColours')
+    setActiveByUrl('wtfThemeDesign')
+    setActiveByUrl('wtfProducts')
+    setActiveByUrl('wtfLayouts')
+    setActiveByUrl('wtfThemeComponents')
 
   })
 

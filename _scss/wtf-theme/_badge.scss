@@ -1,0 +1,61 @@
+//@include wtfBadge;
+@mixin wtfBadge {
+  --wtf-badge-border-radius: var(--wtf-theme-btn-border-radius);
+
+  &.text-bg-primary {
+    color: var(--wtf-body-bg) !important;
+    background-image: var(--wtf-primary-rgb);
+
+    svg {
+      width: calc(var(--wtf-badge-font-size) * 1.5);
+      height: calc(var(--wtf-badge-font-size) * 1.5);
+    }
+  }
+
+  &.text-bg-secondary {
+    color: var(--wtf-body-color) !important;
+    background-image: var(--wtf-secondary-rgb);
+
+    svg {
+      width: calc(var(--wtf-badge-font-size) * 1.5);
+      height: calc(var(--wtf-badge-font-size) * 1.5);
+    }
+  }
+
+  svg {
+    width: calc(var(--wtf-badge-font-size) * 1.5);
+    height: calc(var(--wtf-badge-font-size) * 1.5);
+  }
+}
+
+//@include wtfBadgeWtfTheme;
+@mixin wtfBadgeWtfTheme {
+  .badge {
+    @include wtfBadge;
+  }
+}
+
+// @include wtfBadgeWtfLine;
+@mixin wtfBadgeWtfLine {
+  @include wtfBadgeWtfTheme;
+}
+
+// @include wtfBadgeWtfPolygon;
+@mixin wtfBadgeWtfPolygon {
+  @include wtfBadgeWtfTheme;
+}
+
+// @include wtfBadgeWtfDot;
+@mixin wtfBadgeWtfDot {
+  @include wtfBadgeWtfTheme;
+}
+
+// @include wtfBadgeWtfMM;
+@mixin wtfBadgeWtfMM {
+  @include wtfBadgeWtfTheme;
+}
+
+// @include wtfBadgeWtfWtf;
+@mixin wtfBadgeWtfWtf {
+  @include wtfBadgeWtfTheme;
+}
